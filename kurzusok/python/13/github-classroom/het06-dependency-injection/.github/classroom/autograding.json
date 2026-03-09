@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "name": "6.1 – app/ csomag struktúra létezik",
+      "setup": "",
+      "run": "test -d app && test -f app/__init__.py && test -f app/main.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "6.2 – config.py létezik a BaseSettings-szel",
+      "setup": "",
+      "run": "test -f app/config.py && grep -qE 'BaseSettings|Settings' app/config.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "6.3 – .env.example létezik",
+      "setup": "",
+      "run": "test -f .env.example && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "6.4 – dependencies.py létezik Depends használattal",
+      "setup": "",
+      "run": "test -f app/dependencies.py && grep -q 'Depends\\|def ' app/dependencies.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "6.5 – routers/ mappa és router fájl létezik",
+      "setup": "",
+      "run": "test -d app/routers && ls app/routers/*.py >/dev/null 2>&1 && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "6.6 – APIRouter használva a routerben",
+      "setup": "",
+      "run": "grep -rq 'APIRouter' app/routers/ && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "6.7 – common_params dependency létezik",
+      "setup": "",
+      "run": "grep -rq 'common_params\\|skip.*limit' app/dependencies.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "6.8 – API-kulcs ellenőrzés létezik",
+      "setup": "",
+      "run": "grep -rqE 'api.key\\|X-API-Key\\|get_api_key' app/ && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "6.9 – Az alkalmazás importálható",
+      "setup": "pip install -q fastapi httpx pydantic-settings 2>/dev/null",
+      "run": "python3 -c \"from app.main import app; print('PASS')\"",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    }
+  ]
+}

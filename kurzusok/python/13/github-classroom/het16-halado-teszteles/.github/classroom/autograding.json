@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "16.1 – tests/ mappa létezik",
+      "setup": "",
+      "run": "test -d tests && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "16.2 – Minimum 10 teszt fájlokban",
+      "setup": "",
+      "run": "test $(grep -rc 'def test_' tests/ | awk -F: '{s+=$2} END {print s}') -ge 10 && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "16.3 – Parametrizált tesztek léteznek (min. 3)",
+      "setup": "",
+      "run": "test $(grep -rc 'parametrize' tests/ | awk -F: '{s+=$2} END {print s}') -ge 3 && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "16.4 – Negatív tesztek léteznek (invalid, error, wrong)",
+      "setup": "",
+      "run": "grep -rcE 'invalid|error|wrong|hibas|422|401|403|404' tests/ | awk -F: '{s+=$2} END {if (s>=3) exit 0; else exit 1}' && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "16.5 – tests/conftest.py létezik (mock DB)",
+      "setup": "",
+      "run": "test -f tests/conftest.py && grep -q 'sqlite' tests/conftest.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "16.6 – Összes teszt zöld",
+      "setup": "pip install -q fastapi httpx pytest sqlalchemy 2>/dev/null",
+      "run": "pytest tests/ -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 3
+    },
+    {
+      "name": "16.7 – Coverage > 70%",
+      "setup": "pip install -q fastapi httpx pytest sqlalchemy pytest-cov 2>/dev/null",
+      "run": "pytest tests/ --cov=app --cov-fail-under=70 --tb=short 2>&1 | tail -5",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 3
+    }
+  ]
+}

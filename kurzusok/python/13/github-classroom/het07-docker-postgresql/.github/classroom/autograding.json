@@ -1,0 +1,114 @@
+{
+  "tests": [
+    {
+      "name": "7.1 – Dockerfile létezik",
+      "setup": "",
+      "run": "test -f Dockerfile && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "7.1 – Dockerfile FROM utasítást tartalmaz",
+      "setup": "",
+      "run": "grep -qi 'FROM' Dockerfile && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "7.2 – docker-compose.yml létezik",
+      "setup": "",
+      "run": "test -f docker-compose.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "7.2 – docker-compose.yml PostgreSQL szolgáltatást tartalmaz",
+      "setup": "",
+      "run": "grep -qi 'postgres' docker-compose.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "7.3 – feladatok.sql létezik",
+      "setup": "",
+      "run": "test -f feladatok.sql && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "7.3 – feladatok.sql CREATE TABLE-t tartalmaz",
+      "setup": "",
+      "run": "grep -qi 'CREATE TABLE' feladatok.sql && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "7.3 – feladatok.sql INSERT utasítást tartalmaz",
+      "setup": "",
+      "run": "grep -qi 'INSERT' feladatok.sql && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "7.4 – sql-parancsok.txt létezik",
+      "setup": "",
+      "run": "test -f sql-parancsok.txt && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "7.5 – docker-compose.yml volume-ot használ",
+      "setup": "",
+      "run": "grep -qi 'volumes' docker-compose.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "7.5 – docker-compose.yml depends_on használ",
+      "setup": "",
+      "run": "grep -q 'depends_on' docker-compose.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "7.6 – Legalább 3 commit",
+      "setup": "",
+      "run": "test $(git log --oneline | wc -l) -ge 3 && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}

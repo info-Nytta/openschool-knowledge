@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "name": "5.1 – main.py és models.py létezik",
+      "setup": "",
+      "run": "test -f main.py && test -f models.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "5.2 – models.py Pydantic modelleket tartalmaz",
+      "setup": "",
+      "run": "grep -q 'class Termek' models.py && grep -q 'class TermekResponse' models.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "5.3 – Response model elrejti a titkos_kod mezőt",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het05.py test_response_model",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "5.4 – GET /felhasznalok/{id} 404 ha nem létezik",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het05.py test_404_felhasznalo",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "5.5 – GET /felhasznalok/0 403 (admin tiltott)",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het05.py test_403_admin",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "5.6 – Különböző hibakódok (400, 401, 403, 404)",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het05.py test_hibakodok",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 3
+    },
+    {
+      "name": "5.7 – HTTPException kezelés a main.py-ban",
+      "setup": "",
+      "run": "grep -q 'HTTPException' main.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "5.8 – Egyedi exception handler létezik",
+      "setup": "",
+      "run": "grep -qE 'exception_handler|@app.exception_handler' main.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "5.9 – POST /termekek 201 status kódot ad",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het05.py test_status_code_201",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 1
+    }
+  ]
+}

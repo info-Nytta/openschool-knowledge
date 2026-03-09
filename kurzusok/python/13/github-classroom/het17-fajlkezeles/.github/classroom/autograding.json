@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "17.1 – Fájlfeltöltés végpont létezik",
+      "setup": "",
+      "run": "grep -rqE 'UploadFile|feltoltes' app/routers/*.py app/*.py *.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "17.2 – Képfeltöltés végpont létezik",
+      "setup": "",
+      "run": "grep -rqE 'kep|image|jpeg|png' app/routers/*.py app/*.py *.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "17.3 – Fájlméret validáció létezik",
+      "setup": "",
+      "run": "grep -rqE 'size|meret|5.*MB\\|5242880' app/routers/*.py app/*.py *.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "17.4 – uploads/ kezelés a kódban",
+      "setup": "",
+      "run": "grep -rqE 'uploads|upload' app/routers/*.py app/*.py *.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "17.5 – Teszt fájl létezik a feltöltéshez",
+      "setup": "",
+      "run": "test -d tests && grep -rqE 'BytesIO\\|UploadFile\\|upload' tests/ && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "17.6 – Tesztek zöldek",
+      "setup": "pip install -q fastapi httpx pytest sqlalchemy python-multipart 2>/dev/null",
+      "run": "pytest tests/ -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 3
+    }
+  ]
+}

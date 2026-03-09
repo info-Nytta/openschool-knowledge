@@ -1,0 +1,154 @@
+{
+  "tests": [
+    {
+      "name": "1. feladat – schemas.py Pydantic modellekkel (TodoCreate, TodoRead, Token)",
+      "setup": "",
+      "run": "test -f schemas.py && grep -q 'TodoCreate' schemas.py && grep -q 'TodoRead' schemas.py && grep -q 'FelhasznaloCreate' schemas.py && grep -q 'Token' schemas.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "1. feladat – utils.py legalább 4 segédfüggvénnyel",
+      "setup": "",
+      "run": "test -f utils.py && test $(grep -c 'def ' utils.py) -ge 4 && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "2. feladat – database.py SQLAlchemy konfigurációval",
+      "setup": "",
+      "run": "test -f database.py && grep -qE 'create_engine|sessionmaker|declarative_base' database.py && grep -q 'todok.db' database.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "2. feladat – models.py TodoModel és FelhasznaloModel",
+      "setup": "",
+      "run": "test -f models.py && grep -q 'TodoModel' models.py && grep -q 'FelhasznaloModel' models.py && grep -qE 'Column|Integer|String' models.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "2. feladat – main.py CRUD végpontok (GET, POST, PUT, DELETE /todos)",
+      "setup": "",
+      "run": "grep -q 'FastAPI' main.py && grep -q '@app.get' main.py && grep -q '@app.post' main.py && grep -q '@app.put' main.py && grep -q '@app.delete' main.py && grep -q '/todos' main.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "2. feladat – Adatfájl betöltés (todok.txt)",
+      "setup": "",
+      "run": "grep -q 'todok.txt' main.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "3. feladat – auth.py JWT authentikációval",
+      "setup": "",
+      "run": "test -f auth.py && grep -qE 'jwt|JWT|JWTError' auth.py && grep -qE 'OAuth2|oauth2' auth.py && grep -q 'regisztracio' auth.py && grep -q 'login' auth.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "3. feladat – Védett végpontok (Depends + get_current_user)",
+      "setup": "",
+      "run": "grep -qE 'Depends.*get_current_user|get_current_user' main.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "4. feladat – feldolgozas.py legalább 5 adatfeldolgozó függvénnyel",
+      "setup": "",
+      "run": "test -f feldolgozas.py && test $(grep -c 'def ' feldolgozas.py) -ge 5 && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "5. feladat – Dockerfile létezik és érvényes",
+      "setup": "",
+      "run": "test -f Dockerfile && grep -qE '^FROM' Dockerfile && grep -qE 'uvicorn|CMD' Dockerfile && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "5. feladat – requirements.txt szükséges csomagokkal",
+      "setup": "",
+      "run": "test -f requirements.txt && grep -q 'fastapi' requirements.txt && grep -q 'sqlalchemy' requirements.txt && grep -qE 'passlib|jose' requirements.txt && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "5. feladat – test_todos.py legalább 8 teszttel",
+      "setup": "",
+      "run": "test -f test_todos.py && test $(grep -c 'def test_' test_todos.py) -ge 8 && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "5. feladat – Tesztek zöldek (pytest)",
+      "setup": "pip install -q fastapi httpx pytest sqlalchemy 'passlib[bcrypt]' 'python-jose[cryptography]' 2>/dev/null",
+      "run": "pytest test_todos.py -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 8
+    },
+    {
+      "name": "API – Todo API gyökér végpont működik",
+      "setup": "pip install -q fastapi httpx sqlalchemy 'passlib[bcrypt]' 'python-jose[cryptography]' 2>/dev/null",
+      "run": "python3 -c \"from fastapi.testclient import TestClient; from main import app; c = TestClient(app); r = c.get('/'); assert r.status_code == 200; assert 'Todo' in r.json().get('message', ''); print('PASS')\"",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 4
+    },
+    {
+      "name": "Git – Legalább 5 commit",
+      "setup": "",
+      "run": "test $(git log --oneline | wc -l) -ge 5 && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}

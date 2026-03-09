@@ -1,0 +1,114 @@
+{
+  "tests": [
+    {
+      "name": "4.1 – models.py és main.py létezik",
+      "setup": "",
+      "run": "test -f models.py && test -f main.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "4.2 – Pydantic Termek modell létezik",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het04.py test_models_exist",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 1
+    },
+    {
+      "name": "4.3 – GET /termekek listát ad vissza",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het04.py test_get_termekek",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "4.4 – POST /termekek létrehoz terméket (201)",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het04.py test_post_termek",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "4.5 – POST /termekek validáció (422 ha hibás)",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het04.py test_post_termek_invalid",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "4.6 – GET /termekek/{id} egy terméket ad",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het04.py test_get_termek_by_id",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "4.7 – GET /termekek/{id} 404 ha nem létezik",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het04.py test_get_termek_not_found",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 1
+    },
+    {
+      "name": "4.8 – PUT /termekek/{id} módosítja a terméket",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het04.py test_put_termek",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "4.9 – DELETE /termekek/{id} törli a terméket",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het04.py test_delete_termek",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "4.10 – POST /rendelesek összetett rendelés",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het04.py test_post_rendeles",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "4.11 – PUT partial update (csak megadott mezők)",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het04.py test_put_partial_update",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    }
+  ]
+}

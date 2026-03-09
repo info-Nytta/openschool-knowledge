@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "name": "1.1 – requirements.txt létezik",
+      "setup": "",
+      "run": "test -f requirements.txt && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "1.2 – feladat2.py létezik és lefut",
+      "setup": "",
+      "run": "test -f feladat2.py && python3 feladat2.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "1.2 – feladat2.py type()-ot használ",
+      "setup": "",
+      "run": "grep -q 'type' feladat2.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "1.3 – feladat3.py lefut (szótár + tanulók)",
+      "setup": "",
+      "run": "test -f feladat3.py && python3 feladat3.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "1.4 – feladat4.py lefut az input.txt-vel",
+      "setup": "echo -e 'első sor\nmásodik sor\nharmadik sor\nnegyedik sor\nötödik sor' > input.txt",
+      "run": "python3 feladat4.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "1.4 – input.txt létezik",
+      "setup": "",
+      "run": "test -f input.txt && test $(wc -l < input.txt) -ge 5 && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "1.5 – utils.py 3 függvényt tartalmaz",
+      "setup": "",
+      "run": "grep -q 'def atlag' utils.py && grep -q 'def maximum' utils.py && grep -q 'def minimum' utils.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "1.5 – main.py importálja az utils modult",
+      "setup": "",
+      "run": "test -f main.py && grep -qE 'import utils|from utils' main.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "1.5 – main.py lefut",
+      "setup": "",
+      "run": "python3 main.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}

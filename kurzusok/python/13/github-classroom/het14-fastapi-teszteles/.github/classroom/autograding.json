@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "14.1 – main.py létezik",
+      "setup": "",
+      "run": "test -f main.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "14.2 – main.py FastAPI app-ot tartalmaz",
+      "setup": "",
+      "run": "grep -q 'FastAPI' main.py && grep -q 'jegyzet' main.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "14.3 – GET / teszt",
+      "setup": "pip install -q fastapi httpx pytest 2>/dev/null",
+      "run": "pytest .github/classroom/test_het14.py::test_root -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "14.4 – GET /jegyzetek teszt",
+      "setup": "pip install -q fastapi httpx pytest 2>/dev/null",
+      "run": "pytest .github/classroom/test_het14.py::test_jegyzetek_ures -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "14.5 – POST /jegyzetek teszt",
+      "setup": "pip install -q fastapi httpx pytest 2>/dev/null",
+      "run": "pytest .github/classroom/test_het14.py::test_jegyzet_letrehozas -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "14.6 – GET /jegyzetek/{id} + 404 teszt",
+      "setup": "pip install -q fastapi httpx pytest 2>/dev/null",
+      "run": "pytest .github/classroom/test_het14.py -k 'lekeres or nem_letezik' -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "14.7 – DELETE teszt",
+      "setup": "pip install -q fastapi httpx pytest 2>/dev/null",
+      "run": "pytest .github/classroom/test_het14.py -k 'torles' -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "14.8 – Összes teszt zöld",
+      "setup": "pip install -q fastapi httpx pytest 2>/dev/null",
+      "run": "pytest .github/classroom/test_het14.py -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 3
+    }
+  ]
+}

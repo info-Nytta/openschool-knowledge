@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "21.1 – README.md létezik",
+      "setup": "",
+      "run": "test -f README.md && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "21.2 – README.md témát tartalmaz",
+      "setup": "",
+      "run": "grep -qiE 'todo|blog|webshop|recept' README.md && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "21.3 – README.md adatmodellt tartalmaz",
+      "setup": "",
+      "run": "grep -qiE 'modell|tábla|table|model' README.md && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "21.4 – README.md végpont táblázatot tartalmaz",
+      "setup": "",
+      "run": "grep -qE 'GET|POST|PUT|DELETE' README.md && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "21.5 – requirements.txt létezik",
+      "setup": "",
+      "run": "test -f requirements.txt && grep -qi 'fastapi' requirements.txt && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "21.6 – docker-compose.yml létezik",
+      "setup": "",
+      "run": "test -f docker-compose.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "21.7 – Dockerfile létezik",
+      "setup": "",
+      "run": "test -f Dockerfile && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "21.8 – .env.example létezik",
+      "setup": "",
+      "run": "test -f .env.example && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "21.9 – app/ struktúra létezik",
+      "setup": "",
+      "run": "test -d app && test -f app/main.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "21.10 – GET / és GET /health működik",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 -c \"from fastapi.testclient import TestClient; from app.main import app; c = TestClient(app); r = c.get('/'); assert r.status_code == 200; r2 = c.get('/health'); assert r2.status_code in (200, 503); print('PASS')\"",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    }
+  ]
+}

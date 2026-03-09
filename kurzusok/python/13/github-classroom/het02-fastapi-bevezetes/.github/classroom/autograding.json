@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "name": "2.1 – main.py létezik",
+      "setup": "",
+      "run": "test -f main.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "2.1 – requirements.txt létezik",
+      "setup": "",
+      "run": "test -f requirements.txt && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "2.2 – GET / visszaadja Helló, világ!",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het02.py test_root",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "2.3 – GET /info működik",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het02.py test_info",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "2.4 – GET /datum működik",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het02.py test_datum",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 1
+    },
+    {
+      "name": "2.5 – GET /gyumolcsok listát ad vissza",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het02.py test_gyumolcsok_lista",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "2.6 – GET /gyumolcsok/{index} működik",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het02.py test_gyumolcs_index",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "2.7 – POST /gyumolcsok hozzáad elemet",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het02.py test_gyumolcs_hozzaadas",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "2.8 – DELETE /gyumolcsok/{index} töröl elemet",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het02.py test_gyumolcs_torles",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    }
+  ]
+}

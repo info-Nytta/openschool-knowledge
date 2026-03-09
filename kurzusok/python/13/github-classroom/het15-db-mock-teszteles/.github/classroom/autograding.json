@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "15.1 – app/ csomag struktúra",
+      "setup": "",
+      "run": "test -d app && test -f app/__init__.py && test -f app/main.py && test -f app/database.py && test -f app/models.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "15.2 – tests/conftest.py létezik (diák által írt)",
+      "setup": "",
+      "run": "test -f tests/conftest.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "15.3 – conftest.py SQLite mock DB-t használ",
+      "setup": "",
+      "run": "grep -q 'sqlite' tests/conftest.py && grep -q 'override' tests/conftest.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "15.4 – GET / teszt",
+      "setup": "pip install -q -r requirements.txt 2>/dev/null && cp .github/classroom/test_het15.py tests/test_termekek.py",
+      "run": "pytest tests/test_termekek.py::test_root -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 1
+    },
+    {
+      "name": "15.5 – Üres lista teszt",
+      "setup": "pip install -q -r requirements.txt 2>/dev/null && cp .github/classroom/test_het15.py tests/test_termekek.py",
+      "run": "pytest tests/test_termekek.py::test_termek_lista_ures -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "15.6 – Termék létrehozás teszt",
+      "setup": "pip install -q -r requirements.txt 2>/dev/null && cp .github/classroom/test_het15.py tests/test_termekek.py",
+      "run": "pytest tests/test_termekek.py::test_termek_letrehozas -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "15.7 – Összes teszt zöld",
+      "setup": "pip install -q -r requirements.txt 2>/dev/null && cp .github/classroom/test_het15.py tests/test_termekek.py",
+      "run": "pytest tests/ -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 3
+    }
+  ]
+}

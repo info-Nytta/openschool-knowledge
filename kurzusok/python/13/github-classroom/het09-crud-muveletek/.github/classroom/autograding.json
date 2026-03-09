@@ -1,0 +1,114 @@
+{
+  "tests": [
+    {
+      "name": "9.1 – schemas.py létezik",
+      "setup": "",
+      "run": "test -f schemas.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "9.1 – schemas.py Pydantic sémákat tartalmaz",
+      "setup": "",
+      "run": "grep -q 'class KonyvCreate' schemas.py && grep -q 'class KonyvResponse' schemas.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "9.2 – crud.py létezik",
+      "setup": "",
+      "run": "test -f crud.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "9.2 – crud.py CRUD függvényeket tartalmaz",
+      "setup": "",
+      "run": "grep -q 'def get_konyvek' crud.py && grep -q 'def create_konyv' crud.py && grep -q 'def delete_konyv' crud.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "9.3 – routers/ mappa és konyvek.py létezik",
+      "setup": "",
+      "run": "test -f routers/konyvek.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "9.3 – konyvek.py APIRouter-t használ",
+      "setup": "",
+      "run": "grep -q 'APIRouter' routers/konyvek.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "9.4 – CRUD végpontok definiálva (GET, POST, PUT, DELETE)",
+      "setup": "",
+      "run": "grep -q '@router.get' routers/konyvek.py && grep -q '@router.post' routers/konyvek.py && grep -q '@router.put' routers/konyvek.py && grep -q '@router.delete' routers/konyvek.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "9.5 – crud.py update_konyv függvényt tartalmaz",
+      "setup": "",
+      "run": "grep -q 'def update_konyv' crud.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "9.6 – schemas.py from_attributes = True",
+      "setup": "",
+      "run": "grep -qE 'from_attributes.*True|orm_mode.*True' schemas.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "9.7 – main.py include_router-t használ",
+      "setup": "",
+      "run": "grep -q 'include_router' main.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "9.8 – Keresés funkció (ilike/filter)",
+      "setup": "",
+      "run": "grep -rqE 'ilike|filter|kereses|search|query' crud.py routers/konyvek.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}

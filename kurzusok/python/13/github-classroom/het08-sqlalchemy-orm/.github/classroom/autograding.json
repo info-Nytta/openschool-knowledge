@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "name": "8.1 – database.py létezik",
+      "setup": "",
+      "run": "test -f database.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "8.1 – database.py engine-t és SessionLocal-t tartalmaz",
+      "setup": "",
+      "run": "grep -q 'create_engine' database.py && grep -q 'sessionmaker' database.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "8.2 – models.py létezik",
+      "setup": "",
+      "run": "test -f models.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "8.2 – models.py SQLAlchemy modellt tartalmaz",
+      "setup": "",
+      "run": "grep -q 'class Konyv' models.py && grep -q 'Column' models.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "8.3 – models.py Szerzo modellt is tartalmaz",
+      "setup": "",
+      "run": "grep -q 'class Szerzo' models.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "8.4 – models.py ForeignKey kapcsolatot tartalmaz",
+      "setup": "",
+      "run": "grep -q 'ForeignKey' models.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "8.5 – models.py relationship()-et tartalmaz",
+      "setup": "",
+      "run": "grep -q 'relationship' models.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "8.6 – alembic/ mappa létezik",
+      "setup": "",
+      "run": "test -d alembic && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "8.7 – database.py get_db függvényt tartalmaz",
+      "setup": "",
+      "run": "grep -q 'def get_db' database.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}

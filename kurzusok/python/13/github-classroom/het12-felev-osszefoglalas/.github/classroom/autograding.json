@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "12.1 – main.py létezik",
+      "setup": "",
+      "run": "test -f main.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "12.2 – GET / működik",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het12.py test_root",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "12.3 – GET /eszkozok listát ad vissza",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het12.py test_get_eszkozok",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "12.4 – POST /eszkozok létrehoz eszközt",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het12.py test_post_eszkoz",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 3
+    },
+    {
+      "name": "12.5 – POST /eszkozok validáció (422)",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het12.py test_post_eszkoz_invalid",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "12.6 – probavizsga/ mappa létezik",
+      "setup": "",
+      "run": "test -d probavizsga && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "12.7 – Legalább 5 commit",
+      "setup": "",
+      "run": "test $(git log --oneline | wc -l) -ge 5 && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "18.1 – BackgroundTasks használva",
+      "setup": "",
+      "run": "grep -rqE 'BackgroundTasks|background_tasks' app/*.py *.py routers/*.py app/routers/*.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "18.2 – WebSocket végpont létezik",
+      "setup": "",
+      "run": "grep -rqE 'websocket|WebSocket' app/*.py *.py app/routers/*.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "18.3 – WebSocket chat végpont (ConnectionManager)",
+      "setup": "",
+      "run": "grep -rqE 'ConnectionManager|broadcast|chat' app/*.py *.py app/routers/*.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "18.4 – Háttérfeladat naplózást használ",
+      "setup": "",
+      "run": "grep -rqE 'app\\.log|logging|log_' app/*.py *.py app/routers/*.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "18.5 – WebSocket teszt létezik",
+      "setup": "",
+      "run": "test -d tests && grep -rqE 'websocket|WebSocket' tests/ && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "18.6 – Tesztek zöldek",
+      "setup": "pip install -q fastapi httpx pytest sqlalchemy websockets 2>/dev/null",
+      "run": "pytest tests/ -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 3
+    }
+  ]
+}

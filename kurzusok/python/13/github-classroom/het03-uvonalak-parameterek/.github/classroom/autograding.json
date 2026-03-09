@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "3.1 – main.py létezik",
+      "setup": "",
+      "run": "test -f main.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "3.2 – GET /koszontes/{nev} személyre szóló köszöntés",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het03.py test_koszontes",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "3.3 – GET /szorzas/{a}/{b} helyes eredmény",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het03.py test_szorzas",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "3.4 – GET /kereses query paraméterekkel működik",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het03.py test_kereses_query",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "3.5 – GET /elemek skip/limit szűréssel",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het03.py test_elemek_skip_limit",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "3.6 – GET /elemek limit validáció (422 ha túl nagy)",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het03.py test_elemek_limit_validation",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "3.7 – GET /termekek/{kategoria} Enum paraméter",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het03.py test_termekek_kategoria",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "3.8 – GET /termekek ár szűrés query paraméterrel",
+      "setup": "pip install -q fastapi httpx 2>/dev/null",
+      "run": "python3 .github/classroom/test_het03.py test_termekek_ar_szures",
+      "input": "",
+      "output": "PASS",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    }
+  ]
+}

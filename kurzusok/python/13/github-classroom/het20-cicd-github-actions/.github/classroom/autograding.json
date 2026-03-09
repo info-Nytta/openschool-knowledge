@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "20.1 – .github/workflows/ci.yml létezik",
+      "setup": "",
+      "run": "test -f .github/workflows/ci.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "20.2 – ci.yml lint job-ot tartalmaz",
+      "setup": "",
+      "run": "grep -qE 'lint|flake8' .github/workflows/ci.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "20.3 – ci.yml test job-ot tartalmaz",
+      "setup": "",
+      "run": "grep -qE 'test|pytest' .github/workflows/ci.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "20.4 – ci.yml needs: lint (multi-job)",
+      "setup": "",
+      "run": "grep -q 'needs' .github/workflows/ci.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "20.5 – ci.yml coverage-et tartalmaz",
+      "setup": "",
+      "run": "grep -qE 'cov|coverage' .github/workflows/ci.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "20.6 – README.md CI badge-et tartalmaz",
+      "setup": "",
+      "run": "grep -qE 'badge|shield|workflow.*status|actions' README.md && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "20.7 – Tesztek léteznek",
+      "setup": "",
+      "run": "test -d tests && ls tests/test_*.py >/dev/null 2>&1 && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "23.1 – tests/conftest.py létezik (mock DB)",
+      "setup": "",
+      "run": "test -f tests/conftest.py && grep -q 'sqlite' tests/conftest.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "23.2 – Legalább 15 teszt",
+      "setup": "",
+      "run": "test $(grep -rc 'def test_' tests/ | awk -F: '{s+=$2} END {print s}') -ge 15 && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "23.3 – .github/workflows/ci.yml létezik",
+      "setup": "",
+      "run": "test -f .github/workflows/ci.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "23.4 – docker-compose.yml létezik",
+      "setup": "",
+      "run": "test -f docker-compose.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "23.5 – README.md teljes (végpontok, telepítés, tesztelés)",
+      "setup": "",
+      "run": "grep -qE 'GET|POST' README.md && grep -qiE 'telepít|install|setup' README.md && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "23.6 – .env.example létezik",
+      "setup": "",
+      "run": "test -f .env.example && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "23.7 – Nincs jelszó/titok a kódban",
+      "setup": "",
+      "run": "grep -rqE '(password|secret|token)\\s*=\\s*[\"'\\'']((?!os\\.environ|getenv|settings).){5,}' app/ 2>/dev/null && echo FAIL || echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "23.8 – Összes teszt zöld",
+      "setup": "pip install -q fastapi httpx pytest sqlalchemy passlib python-jose bcrypt 2>/dev/null",
+      "run": "pytest tests/ -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 3
+    }
+  ]
+}

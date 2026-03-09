@@ -1,0 +1,114 @@
+{
+  "tests": [
+    {
+      "name": "19.1 – Dockerfile létezik",
+      "setup": "",
+      "run": "test -f Dockerfile && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "19.1 – Dockerfile python:3.11-slim-et használ",
+      "setup": "",
+      "run": "grep -qi 'python.*slim' Dockerfile && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "19.2 – .dockerignore létezik",
+      "setup": "",
+      "run": "test -f .dockerignore && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "19.3 – docker-compose.yml létezik",
+      "setup": "",
+      "run": "test -f docker-compose.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "19.3 – docker-compose.yml api és db szolgáltatást tartalmaz",
+      "setup": "",
+      "run": "grep -q 'api' docker-compose.yml && grep -qi 'postgres' docker-compose.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "19.4 – entrypoint.sh létezik",
+      "setup": "",
+      "run": "test -f entrypoint.sh && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "19.4 – entrypoint.sh alembic migrációt tartalmaz",
+      "setup": "",
+      "run": "grep -q 'alembic' entrypoint.sh && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "19.5 – docker-compose.yml depends_on használ",
+      "setup": "",
+      "run": "grep -q 'depends_on' docker-compose.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "19.6 – GET /health végpont létezik a kódban",
+      "setup": "",
+      "run": "grep -rqE '/health' app/*.py app/routers/*.py *.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "19.7 – docker-compose.yml volume-ot használ",
+      "setup": "",
+      "run": "grep -q 'volumes' docker-compose.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "19.8 – docker-compose.yml healthcheck-et tartalmaz",
+      "setup": "",
+      "run": "grep -qi 'healthcheck' docker-compose.yml && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}

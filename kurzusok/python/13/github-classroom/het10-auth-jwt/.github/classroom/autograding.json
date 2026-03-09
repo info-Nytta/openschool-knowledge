@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "10.1 – auth.py létezik",
+      "setup": "",
+      "run": "test -f auth.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "10.2 – auth.py jelszó hash-elést tartalmaz",
+      "setup": "",
+      "run": "grep -qE 'hash_jelszo|bcrypt|passlib' auth.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "10.3 – auth.py JWT token generálást tartalmaz",
+      "setup": "",
+      "run": "grep -qE 'jwt|jose|access_token' auth.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "10.4 – Felhasznalo modell létezik (models.py-ban)",
+      "setup": "",
+      "run": "grep -rq 'class Felhasznalo' models.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "10.5 – Regisztrációs végpont létezik",
+      "setup": "",
+      "run": "grep -rqE 'regisztracio|register' *.py routers/*.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "10.6 – Login végpont létezik",
+      "setup": "",
+      "run": "grep -rqE 'login|bejelentkezes' *.py routers/*.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "10.7 – get_current_user dependency létezik",
+      "setup": "",
+      "run": "grep -rqE 'get_current_user|current_user' *.py dependencies.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "10.8 – Védett végpont létezik (Depends + auth)",
+      "setup": "",
+      "run": "grep -rqE 'Depends.*current_user\\|Depends.*get_current' routers/*.py *.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}

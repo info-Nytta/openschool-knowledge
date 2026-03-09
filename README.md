@@ -1,26 +1,28 @@
-# Python kurzus – 10. évfolyam
+# Kurzusok
 
-13 hetes Python programozás kurzus középiskolai diákok számára, GitHub Classroom integrációval és automatizált értékeléssel.
+Programozás kurzusok középiskolai és felnőttképzési diákok számára, GitHub Classroom integrációval és automatizált értékeléssel.
 
-## Mappaszerkezet
+## Kurzusok
 
-| Mappa | Tartalom |
-|-------|----------|
-| [`doksik/`](doksik/) | Összes dokumentáció (diákok, tanár, tanterv) |
-| [`vizsgak/`](vizsgak/) | Vizsgavariánsok (feladatlapok, értékelések, megoldások, forrásfájlok) |
-| [`github-classroom/`](github-classroom/) | GitHub Classroom template repók (heti házi + vizsgák) |
+| Kurzus | Évfolyam | Időtartam | Nyelv / Keretrendszer | Vizsga |
+|--------|----------|-----------|----------------------|--------|
+| [Python alapok](kurzusok/python/10/) | 10. (nappali) | 13 hét, heti 2 óra | Python 3.10+ | 40 pont, 90 perc |
+| [Backend FastAPI](kurzusok/python/13/) | 13. (esti / felnőtt) | 25 hét, heti 6 óra | Python + FastAPI | 60 pont, 240 perc |
 
-## Gyors navigáció
+## Szerkezet
 
-- **Diákoknak:** [Leckék](doksik/diakok/leckek/) · [Feladatok](doksik/diakok/feladatok/)
-- **Tanárnak:** [Tanári útmutató](doksik/tanar/tanari-utmutato.md) · [GitHub Classroom útmutató](doksik/tanar/github-classroom-utmutato.md) · [Értékelési módszertan](doksik/tanar/ertekeles-modszertan.md)
-- **Tanterv:** [13 hetes tanterv](doksik/tanterv/tanterv.md)
-- **Vizsgák:** [4 variáns](vizsgak/) (filmek, könyvek, zenék, sportolók)
+Minden kurzus azonos mappastruktúrát követ:
 
-## Összefoglaló
+```
+kurzusok/python/{évfolyam}/
+├── doksik/                  # Dokumentáció
+│   ├── diakok/              #   Leckék + feladatok
+│   ├── tanar/               #   Tanári útmutató, értékelés
+│   └── tanterv/             #   Tanterv
+├── vizsgak/                 # Vizsgavariánsok (feladatlap, megoldás, értékelés)
+└── github-classroom/        # GitHub Classroom template repók
+```
 
-- **Időtartam:** 13 hét (0–12), heti 2 óra
-- **Nyelv:** Python 3.10+
-- **Vizsga:** 40 pont, 90 perc, 3 feladat (8 + 14 + 18 pont)
-- **Beadás:** GitHub Classroom (automatikus értékelés)
-- **Variánsok:** 4 db (A – filmek, B – könyvek, C – zenék, D – sportolók)
+## Értékelés
+
+Mindkét kurzus GitHub Classroom-on keresztül működik: a diákok hetente pusholják a megoldásaikat, az automatikus tesztek (pytest / shell) azonnal pontoznak.

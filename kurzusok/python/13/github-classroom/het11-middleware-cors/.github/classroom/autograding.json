@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "11.1 – CORS beállítás létezik",
+      "setup": "",
+      "run": "grep -rqE 'CORSMiddleware|add_middleware' main.py app/main.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "11.2 – CORS nem enged mindent (nem *)",
+      "setup": "",
+      "run": "grep -rqE 'allow_origins.*\\[\"\\*\"\\]' main.py app/main.py 2>/dev/null && echo FAIL || echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "11.3 – Logging middleware létezik",
+      "setup": "",
+      "run": "grep -rqE 'middleware|@app.middleware' main.py app/main.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "11.4 – Request ID (X-Request-ID) hozzáadása",
+      "setup": "",
+      "run": "grep -rqE 'X-Request-ID|request.id\\|uuid' main.py app/main.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "11.5 – Lifespan context manager létezik",
+      "setup": "",
+      "run": "grep -rqE 'lifespan|@asynccontextmanager\\|startup\\|shutdown' main.py app/main.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "11.6 – GET /health végpont létezik",
+      "setup": "",
+      "run": "grep -rqE '/health' main.py app/main.py routers/*.py app/routers/*.py 2>/dev/null && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "11.7 – .env vagy config.py létezik",
+      "setup": "",
+      "run": "(test -f .env || test -f .env.example || test -f config.py || test -f app/config.py) && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}

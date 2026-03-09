@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "13.1 – utils.py létezik",
+      "setup": "",
+      "run": "test -f utils.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "13.2 – utils.py 8 függvényt tartalmaz",
+      "setup": "",
+      "run": "grep -q 'def osszead' utils.py && grep -q 'def kivon' utils.py && grep -q 'def szoroz' utils.py && grep -q 'def osztas' utils.py && grep -q 'def atlag' utils.py && grep -q 'def egyedi' utils.py && grep -q 'def leggyakoribb' utils.py && grep -q 'def szavak_szama' utils.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "13.3 – Alap műveletek tesztek",
+      "setup": "pip install -q pytest 2>/dev/null",
+      "run": "pytest .github/classroom/test_het13.py::TestOsszead .github/classroom/test_het13.py::TestKivon .github/classroom/test_het13.py::TestSzoroz -v --tb=short 2>&1 | tail -5",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "13.4 – Osztás tesztek (ValueError kezelés)",
+      "setup": "pip install -q pytest 2>/dev/null",
+      "run": "pytest .github/classroom/test_het13.py::TestOsztas -v --tb=short 2>&1 | tail -5",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "13.5 – Átlag tesztek",
+      "setup": "pip install -q pytest 2>/dev/null",
+      "run": "pytest .github/classroom/test_het13.py::TestAtlag -v --tb=short 2>&1 | tail -5",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "13.6 – Egyedi és leggyakoribb tesztek",
+      "setup": "pip install -q pytest 2>/dev/null",
+      "run": "pytest .github/classroom/test_het13.py::TestEgyedi .github/classroom/test_het13.py::TestLeggyakoribb -v --tb=short 2>&1 | tail -5",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "13.7 – Szavak száma tesztek",
+      "setup": "pip install -q pytest 2>/dev/null",
+      "run": "pytest .github/classroom/test_het13.py::TestSzavakSzama -v --tb=short 2>&1 | tail -5",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+    {
+      "name": "13.8 – Összes teszt zöld",
+      "setup": "pip install -q pytest 2>/dev/null",
+      "run": "pytest .github/classroom/test_het13.py -v --tb=short 2>&1 | tail -3",
+      "input": "",
+      "output": "passed",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    }
+  ]
+}

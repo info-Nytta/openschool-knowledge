@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "22.1 – app/ csomag megfelelő struktúrával",
+      "setup": "",
+      "run": "test -f app/main.py && test -f app/database.py && test -f app/models.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "22.2 – Legalább 3 SQLAlchemy modell",
+      "setup": "",
+      "run": "test $(grep -c 'class.*Base' app/models.py) -ge 3 && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "22.3 – relationship() használva",
+      "setup": "",
+      "run": "grep -q 'relationship' app/models.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "22.4 – Pydantic sémák léteznek",
+      "setup": "",
+      "run": "test -f app/schemas.py && grep -qE 'class.*Create|class.*Response' app/schemas.py && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "22.5 – CRUD modul létezik",
+      "setup": "",
+      "run": "test -f app/crud.py && grep -cE 'def ' app/crud.py | awk '{if ($1 >= 4) exit 0; else exit 1}' && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "22.6 – Routers léteznek",
+      "setup": "",
+      "run": "test -d app/routers && ls app/routers/*.py >/dev/null 2>&1 && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "22.7 – Auth modul létezik",
+      "setup": "",
+      "run": "grep -rqE 'jwt|jose|passlib|bcrypt' app/ && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "22.8 – Legalább 5 commit (nem egy nagy commit)",
+      "setup": "",
+      "run": "test $(git log --oneline | wc -l) -ge 5 && echo OK",
+      "input": "",
+      "output": "OK",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}
