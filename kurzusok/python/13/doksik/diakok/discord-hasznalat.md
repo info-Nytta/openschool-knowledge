@@ -12,8 +12,11 @@ Ez a dokumentum elmagyarázza, hogyan csatlakozz a kurzusok közös Discord szer
 2. Kattints: **Register** (vagy töltsd le az asztali/mobil alkalmazást)
 3. Add meg az e-mail címedet, felhasználóneved és jelszavad
 4. Erősítsd meg az e-mail címedet
+5. Állítsd be a szerveren a becenevedet a valódi nevedre (lásd lent)
 
-> **Fontos:** Használj felismerhető felhasználónevet (pl. a valódi nevedet vagy annak rövidítését), hogy a tanár be tudjon azonosítani.
+> **Kötelező:** A szerveren a valódi nevedet kell használnod becenévként (pl. `Kovács Anna`). Így a tanár és a többi diák is be tud azonosítani. A Discord felhasználóneved bármi lehet, de a szerver-becenév (nickname) legyen a valódi neved.
+>
+> Beállítás: Kattints a szerver nevére (bal felső sarok) → **Edit Server Profile** → **Nickname** mezőbe írd be a neved.
 
 ### 1.2 Csatlakozás a szerverhez
 
@@ -122,14 +125,15 @@ Más nyelvekhez:
 
 ## 5. Szerver szabályok
 
-1. **Légy tisztelettudó** – Mindenki tanul, senkit nem szabad kigúnyolni kérdés miatt
-2. **Használj kódblokkot** – Formázd a kódot (lásd 3. fejezet)
-3. **Ne oszd meg a teljes megoldást** – Segíts, de ne csináld meg helyette (különösen házi feladatnál)
-4. **Megfelelő csatornán írj** – Backend 13 kérdés → `#backend13-segítség`
-5. **Használd a szálakat** – Kérdezz az aktuális hét szálában
-6. **Nincs spam** – Ne küldj felesleges üzeneteket vagy emotikonokat tömegesen
-7. **Privát üzenetek** – Kérdéseket inkább a nyilvános csatornákon tedd fel, mások is tanulhatnak belőle
-8. **Hibaüzenetek** – A szöveget másold be (ne csak képet küldj), hogy kereshető legyen
+1. **Valódi név** – A szerver-becenév (nickname) a valódi neved legyen. Fantázianeveknél a tanár kérni fogja a változtatást.
+2. **Légy tisztelettudató** – Mindenki tanul, senkit nem szabad kigúnyolni kérdés miatt
+3. **Használj kódblokkot** – Formázd a kódot (lásd 3. fejezet)
+4. **Ne oszd meg a teljes megoldást** – Segíts, de ne csináld meg helyette (különösen házi feladatnál)
+5. **Megfelelő csatornán írj** – Backend 13 kérdés → `#backend13-segítség`
+6. **Használd a szálakat** – Kérdezz az aktuális hét szálában
+7. **Nincs spam** – Ne küldj felesleges üzeneteket vagy emotikonokat tömegesen
+8. **Privát üzenetek** – Kérdéseket inkább a nyilvános csatornákon tedd fel, mások is tanulhatnak belőle
+9. **Hibaüzenetek** – A szöveget másold be (ne csak képet küldj), hogy kereshető legyen
 
 ---
 

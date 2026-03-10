@@ -12,8 +12,11 @@ Ez a dokumentum elmagyarázza, hogyan csatlakozz a kurzusok közös Discord szer
 2. Kattints: **Register** (vagy töltsd le az asztali/mobil alkalmazást)
 3. Add meg az e-mail címedet, felhasználóneved és jelszavad
 4. Erősítsd meg az e-mail címedet
+5. Állítsd be a szerveren a becenevedet a valódi nevedre (lásd lent)
 
-> **Fontos:** Használj felismerhető felhasználónevet (pl. a valódi nevedet vagy annak rövidítését), hogy a tanár be tudjon azonosítani.
+> **Kötelező:** A szerveren a valódi nevedet kell használnod becenévként (pl. `Kovács Anna`). Így a tanár és a többi diák is be tud azonosítani. A Discord felhasználóneved bármi lehet, de a szerver-becenév (nickname) legyen a valódi neved.
+>
+> Beállítás: Kattints a szerver nevére (bal felső sarok) → **Edit Server Profile** → **Nickname** mezőbe írd be a neved.
 
 ### 1.2 Csatlakozás a szerverhez
 
@@ -107,13 +110,14 @@ print(f"Szia, {nev}!")
 
 ## 5. Szerver szabályok
 
-1. **Légy tisztelettudó** – Mindenki tanul, senkit nem szabad kigúnyolni kérdés miatt
-2. **Használj kódblokkot** – Formázd a kódot (lásd 3. fejezet)
-3. **Ne oszd meg a teljes megoldást** – Segíts, de ne csináld meg helyette
-4. **Megfelelő csatornán írj** – Python 10 kérdés → `#python10-segítség`, ne az `#általános`-on
-5. **Használd a szálakat** – Kérdezz az aktuális hét szálában
-6. **Nincs spam** – Ne küldj felesleges üzeneteket vagy emotikonokat tömegesen
-7. **Privát üzenetek** – Kérdéseket inkább a nyilvános csatornákon tedd fel, mások is tanulhatnak belőle
+1. **Valódi név** – A szerver-becenév (nickname) a valódi neved legyen. Fantázianeveknél a tanár kérni fogja a változtatást.
+2. **Légy tisztelettudató** – Mindenki tanul, senkit nem szabad kigúnyolni kérdés miatt
+3. **Használj kódblokkot** – Formázd a kódot (lásd 3. fejezet)
+4. **Ne oszd meg a teljes megoldást** – Segíts, de ne csináld meg helyette
+5. **Megfelelő csatornán írj** – Python 10 kérdés → `#python10-segítség`, ne az `#általános`-on
+6. **Használd a szálakat** – Kérdezz az aktuális hét szálában
+7. **Nincs spam** – Ne küldj felesleges üzeneteket vagy emotikonokat tömegesen
+8. **Privát üzenetek** – Kérdéseket inkább a nyilvános csatornákon tedd fel, mások is tanulhatnak belőle
 
 ---
 

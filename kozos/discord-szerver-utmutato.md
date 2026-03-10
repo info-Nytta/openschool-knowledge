@@ -23,7 +23,7 @@ Az alábbi struktúra egyetlen szerveren kezeli az összes kurzust. Új kurzus h
 
 ```
 📋 INFORMÁCIÓ
-  #szabályzat           → Szerver szabályok, viselkedési kódex
+  #szabályzat           → Szerver szabályok, viselkedési kódex (valódi név kötelező!)
   #közlemények           → Tanári bejelentések, minden kurzushoz (csak olvasható diákoknak)
   #hasznos-linkek        → Dokumentációk, tutorialok, eszközök
 
@@ -93,6 +93,8 @@ Szerver beállítások → **Roles** → **Create Role**
 | `Backend 13 – 2026` | 🔵 Kék | Üzenetküldés, olvasás, reakciók, fájlcsatolás |
 
 > **Tipp:** Az évszámot tedd a szerepkör nevébe (pl. `Python 10 – 2026`), hogy évről évre könnyen kezeld, ki az aktív diák. A kurzusonkénti szerepkörökkel szabályozhatod, ki melyik kurzus csatornáit látja. Ha nem szükséges az elkülönítés, elég egyetlen `Diák – 2026` szerepkör.
+
+> **Fontos:** Az új diákok csatlakozása után ellenőrizd, hogy valódi nevet használnak-e becenévként (nickname). Ha nem, kérd meg őket a változtatásra. Beállítás: jobb klikk a felhasználóra → **Change Nickname**.
 
 ### 3.2 Fontos jogosultság-beállítások
 
