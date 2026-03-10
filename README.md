@@ -14,23 +14,42 @@ Egy programozástanár félévente ugyanazokat a feladatokat végzi el kézzel: 
 
 ### A megoldás
 
-Ez a projekt egy **teljes, újrahasználható oktatási rendszert** ad egyetlen tanár kezébe:
+A diákok nem iskolai platformon dolgoznak, hanem **ugyanazokkal az eszközökkel, amelyeket a szakmában is használnak**:
 
-- **Automatikus értékelés** — a diákok pusholnak, a GitHub Actions azonnal pontozza a megoldásokat. A tanár nem kézzel javít, hanem a kódminőséget és a tanulási folyamatot figyeli.
-- **Félév 3 parancsból indul** — template repók létrehozása, Discord szálak nyitása, assignment linkek küldése. A félév végén egy szkript kiszámolja a jegyeket.
-- **Évről évre újrahasználható** — ugyanaz a szerver, ugyanazok a sablonok, ugyanazok az eszközök. Új tanév = új szerepkörök és szálak, semmi mást nem kell újraépíteni.
-- **Két nagyon különböző kurzus, egy rendszer** — 10.-es kezdők és felnőtt backend-fejlesztők is ugyanabban a struktúrában tanulnak, de a saját szintjükön.
+| Iskolai verzió | Ipari megfelelő | Mit tanul a diák? |
+|----------------|-----------------|-------------------|
+| GitHub repóba pushol | Fejlesztő commitol és pushol | Verziókezelés, commitolási kultúra, kódtörténet |
+| GitHub Actions futtatja a teszteket | CI pipeline ellenőriz minden PR-t | Automatikus tesztelés, zöld build = kész |
+| Discord szálakban kérdez | Slack/Discord csatornákon kommunikál a csapat | Aszinkron kommunikáció, kérdésfeltevés, segítségkérés |
+| VS Code + terminál | Ipari fejlesztőkörnyezet | Szerkesztő, CLI, git parancsok |
+| Docker + PostgreSQL (13. évf.) | Konténerizált fejlesztés | Reprodukálható környezet, adatbáziskezelés |
+| pytest / shell tesztek | Unit és integrációs tesztek | Tesztvezérelt gondolkodás |
+
+A cél nem az, hogy a diák egy feladatbeadó rendszert tanuljon meg használni, hanem hogy **a munkafolyamat maga legyen a tananyag része**. Amikor a diák commitol, pushol, olvassa a teszt kimenetét és Discord-on kérdez — már fejlesztőként dolgozik.
 
 ### Alapelvek
 
 | Elv | Megvalósítás |
 |-----|-------------|
-| **Gyakorlat az elmélet előtt** | Max 15 perc elmélet, utána live coding és kézzel írás. A programozás kézműves szakma. |
+| **Valódi eszközök, nem iskolai pótlékok** | GitHub (nem Google Classroom), Discord (nem Kréta üzenet), VS Code (nem online editor), Docker (nem szimulált környezet). |
+| **Gyakorlat az elmélet előtt** | Max 15 perc elmélet, utána live coding. A programozás kézműves szakma — kézzel kell írni, nem slideokon nézni. |
 | **A vizsga nem meglepetés** | Minden házi feladat egy vizsgafeladat-típust gyakoroltat. A félév végére a diák már 10× megcsinálta, amit a vizsgán kérünk. |
-| **Az automatikus teszt alap, nem cél** | Az autograding objektív alapot ad, de a tanár a kódminőséget, a git történetet és szükség esetén szóban értékel. |
+| **CI mint visszajelzés** | Az automatikus tesztek nem büntetnek — azonnal megmutatják, mi működik és mi nem. A diák megtanulja olvasni a teszt kimenetet, ahogy egy fejlesztő a CI logot. |
+| **A git történet számít** | A tanár nem csak a végeredményt nézi, hanem a commitokat: mikor dolgozott, hogyan építette fel, mennyit írt egyszerre. Ez fejleszti a folyamatos, iteratív munkastílust. |
 | **Növekedési szemlélet** | A házi feladat visszajelzés, nem büntetés. A fejlődés számít, nem a hibátlanság. |
-| **Nulla külső függőség** | Minden eszköz Python stdlib + `gh` CLI. Nincs npm, nincs pip csomag, nincs fizetős szolgáltatás. |
-| **Adatvédelem beépítve** | Tanulói adatok soha nem kerülnek verziókövetésbe (`.gitignore`). Webhook URL-ek `.env` fájlban. |
+
+### Mi hiányzik még?
+
+A projekt jelenleg az **egyéni munkát** fedi le. Egy valódi fejlesztői környezethez még közelebb vinné:
+
+| Hiányzó elem | Ipari megfelelő | Tervezett kurzus |
+|-------------|-----------------|------------------|
+| Pull Request alapú beadás | Kód review, branch-elés, merge | Backend 13 (haladó hetek) |
+| GitHub Issues használata | Feladat- és hibakezelés | Mindkét kurzus |
+| Közös repón dolgozás (csapatmunka) | Együttműködés, konfliktuskezelés | Projekt hetek |
+| Éles szerverre deploy | CI/CD pipeline VPS-re | Backend 13 (VPS + GitHub Actions) |
+| Projekt board (GitHub Projects) | Kanban, sprint tervezés | Backend 13 (projekt hetek) |
+| Dokumentáció írás (README, docstring) | Fejlesztői dokumentáció | Mindkét kurzus |
 
 ### Kinek való?
 
