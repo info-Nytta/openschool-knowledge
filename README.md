@@ -4,6 +4,44 @@ Programozás kurzusok középiskolai és felnőttképzési diákok számára, Gi
 
 **Operációs rendszer:** Windows 10+, Linux, macOS – minden útmutató és eszköz mindhárom platformon működik.
 
+---
+
+## Miért jó ez a projekt?
+
+### A probléma
+
+Egy programozástanár félévente ugyanazokat a feladatokat végzi el kézzel: repók létrehozása, feladatok kiosztása, megoldások ellenőrzése, pontok összesítése, kommunikáció a diákokkal. Ez rengeteg ismétlődő munka, ami elveszi az időt az oktatástól.
+
+### A megoldás
+
+Ez a projekt egy **teljes, újrahasználható oktatási rendszert** ad egyetlen tanár kezébe:
+
+- **Automatikus értékelés** — a diákok pusholnak, a GitHub Actions azonnal pontozza a megoldásokat. A tanár nem kézzel javít, hanem a kódminőséget és a tanulási folyamatot figyeli.
+- **Félév 3 parancsból indul** — template repók létrehozása, Discord szálak nyitása, assignment linkek küldése. A félév végén egy szkript kiszámolja a jegyeket.
+- **Évről évre újrahasználható** — ugyanaz a szerver, ugyanazok a sablonok, ugyanazok az eszközök. Új tanév = új szerepkörök és szálak, semmi mást nem kell újraépíteni.
+- **Két nagyon különböző kurzus, egy rendszer** — 10.-es kezdők és felnőtt backend-fejlesztők is ugyanabban a struktúrában tanulnak, de a saját szintjükön.
+
+### Alapelvek
+
+| Elv | Megvalósítás |
+|-----|-------------|
+| **Gyakorlat az elmélet előtt** | Max 15 perc elmélet, utána live coding és kézzel írás. A programozás kézműves szakma. |
+| **A vizsga nem meglepetés** | Minden házi feladat egy vizsgafeladat-típust gyakoroltat. A félév végére a diák már 10× megcsinálta, amit a vizsgán kérünk. |
+| **Az automatikus teszt alap, nem cél** | Az autograding objektív alapot ad, de a tanár a kódminőséget, a git történetet és szükség esetén szóban értékel. |
+| **Növekedési szemlélet** | A házi feladat visszajelzés, nem büntetés. A fejlődés számít, nem a hibátlanság. |
+| **Nulla külső függőség** | Minden eszköz Python stdlib + `gh` CLI. Nincs npm, nincs pip csomag, nincs fizetős szolgáltatás. |
+| **Adatvédelem beépítve** | Tanulói adatok soha nem kerülnek verziókövetésbe (`.gitignore`). Webhook URL-ek `.env` fájlban. |
+
+### Kinek való?
+
+Programozástanároknak, akik:
+- GitHub Classroom-ot használnak (vagy szeretnének)
+- szeretnék automatizálni az ismétlődő adminisztrációt
+- magyar nyelvű, kulturálisan illeszkedő anyagokat keresnek
+- egy jól strukturált kiindulópontot akarnak, amit a saját igényeikre szabhatnak
+
+---
+
 ## Kurzusok
 
 | Kurzus | Évfolyam | Időtartam | Nyelv / Keretrendszer | Vizsga |
