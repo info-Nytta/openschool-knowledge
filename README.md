@@ -42,14 +42,14 @@ A cél nem az, hogy a diák egy feladatbeadó rendszert tanuljon meg használni,
 
 A projekt jelenleg az **egyéni munkát** fedi le. Egy valódi fejlesztői környezethez még közelebb vinné:
 
-| Hiányzó elem | Ipari megfelelő | Tervezett kurzus |
-|-------------|-----------------|------------------|
-| Pull Request alapú beadás | Kód review, branch-elés, merge | Backend 13 (haladó hetek) |
-| GitHub Issues használata | Feladat- és hibakezelés | Mindkét kurzus |
-| Közös repón dolgozás (csapatmunka) | Együttműködés, konfliktuskezelés | Projekt hetek |
-| Éles szerverre deploy | CI/CD pipeline VPS-re | Backend 13 (VPS + GitHub Actions) |
-| Projekt board (GitHub Projects) | Kanban, sprint tervezés | Backend 13 (projekt hetek) |
-| Dokumentáció írás (README, docstring) | Fejlesztői dokumentáció | Mindkét kurzus |
+| Hiányzó elem | Ipari megfelelő |
+|-------------|-----------------|
+| Pull Request alapú beadás | Kód review, branch-elés, merge |
+| GitHub Issues használata | Feladat- és hibakezelés |
+| Közös repón dolgozás (csapatmunka) | Együttműködés, konfliktuskezelés |
+| Éles szerverre deploy | CI/CD pipeline VPS-re |
+| Projekt board (GitHub Projects) | Kanban, sprint tervezés |
+| Dokumentáció írás (README, docstring) | Fejlesztői dokumentáció |
 
 ### Kinek való?
 
