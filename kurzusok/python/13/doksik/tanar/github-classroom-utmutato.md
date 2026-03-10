@@ -77,8 +77,8 @@ git push -u origin main
    - `het19-docker-compose-eles`
    - `het20-cicd-github-actions`
    - `het21-projekt-tervezes`
-   - `het22-projekt-fejlesztes`
-   - `het23-projekt-befejezes`
+   - `het22-projekt-fejlesztes-1`
+   - `het23-projekt-fejlesztes-2`
    - `het24-vizsga`
 
 2. Mindegyik repot **Template repository**-nak kell jelölni:
@@ -299,8 +299,8 @@ Minden héten ezeket kell megtenned:
 | `het19-docker-compose-eles/` | README.md | – |
 | `het20-cicd-github-actions/` | README.md | – |
 | `het21-projekt-tervezes/` | README.md | – |
-| `het22-projekt-fejlesztes/` | README.md | – |
-| `het23-projekt-befejezes/` | README.md | – |
+| `het22-projekt-fejlesztes-1/` | README.md | – |
+| `het23-projekt-fejlesztes-2/` | README.md | – |
 | `het24-vizsga/` | README.md | – |
 
 > A 13–15. heti template repók tartalmaznak pytest tesztfájlokat. A korábbi hetek (0–12) nem tartalmaznak automatikus teszteket, mert a diákok ekkor még nem ismerik a pytest-et. A 16. héttől a diákok maguk írják a teszteket.
@@ -349,4 +349,4 @@ Minden héten ezeket kell megtenned:
 - **Névsor feltöltése** a Classroom-ba: így a diákok nevéhez rendelheted a GitHub felhasználónevüket
 - **Docker telepítés** (7. hét): készíts lépésről lépésre útmutatót, mert ez a leggyakoribb technikai akadály
 - **pytest bevezetése** (13. hét): innentől az autograding pytest-tel történik — készítsd fel a diákokat, hogy a tesztfájlokat NE módosítsák
-- **Vizsga előtt** (23. hét): tartass próbavizsgát GitHub Classroom-ban a `het12-felev-probavizsga` vagy egy hasonló template-tel
+- **Vizsga előtt** (23. hét): tartass próbavizsgát GitHub Classroom-ban a `het12-felev-osszefoglalas` template-tel

@@ -1,4 +1,4 @@
-# Feladatok – 0. hét: Git, GitHub, Linux
+# Feladatok – 0. hét: Git, GitHub, parancssor
 
 > A feladatok nehézség szerint vannak jelölve: ⭐ könnyű | ⭐⭐ közepes | ⭐⭐⭐ nehéz
 > A megoldásokat commitold és pushold a GitHub repódba.

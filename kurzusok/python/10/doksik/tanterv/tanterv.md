@@ -224,17 +224,20 @@
 
 | Elem | Arány |
 |------|-------|
-| Órai munka, gyakorlatok | 30% |
-| Házi feladatok | 20% |
+| Házi feladatok | 25% |
+| Órai munka, gyakorlatok | 15% |
 | Próbavizsga | 10% |
-| Szintfelmérő vizsga (40 pont) | 40% |
+| Szintfelmérő vizsga (40 pont) | 50% |
 
 ---
 
 ## Ajánlott eszközök
 
 - **IDE:** VS Code vagy Thonny
-- **Python verzió:** 3.10+
-- **Git:** 2.x+
+- **Python verzió:** 3.10+ (Windows: [python.org](https://www.python.org/downloads/), telepítéskor **"Add Python to PATH"** be legyen pipálva)
+- **Git:** 2.x+ (Windows: [git-scm.com](https://git-scm.com))
+- **Operációs rendszer:** Windows 10+, Linux vagy macOS
 - **GitHub fiók:** minden diáknak kell (ingyenes)
 - **Segédanyagok:** órai kódpéldák a `doksik/diakok/` mappában
+
+> **Windows megjegyzés:** A `python3` parancs helyett Windowson `python`-t használj. A terminál lehet PowerShell, Parancssor (cmd), vagy a VS Code beépített terminálja.

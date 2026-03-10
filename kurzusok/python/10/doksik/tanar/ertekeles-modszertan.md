@@ -199,7 +199,7 @@ git blame feladat3.py
 
 ### Összesítés
 
-A 12 heti házi feladat összpontszáma **223 pont**. Ebből számított százalék:
+A 12 heti házi feladat összpontszáma **203 pont**. Ebből számított százalék:
 
 | Százalék | Házi feladat jegy |
 |----------|-------------------|

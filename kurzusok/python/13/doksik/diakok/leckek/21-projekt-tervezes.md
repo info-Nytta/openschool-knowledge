@@ -139,7 +139,8 @@ blog-api/
 mkdir blog-api && cd blog-api
 git init
 python -m venv venv
-source venv/bin/activate
+source venv/bin/activate      # Linux/Mac
+venv\Scripts\activate         # Windows
 ```
 
 ### 2. Függőségek

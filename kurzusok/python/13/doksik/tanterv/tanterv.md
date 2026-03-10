@@ -5,7 +5,7 @@
 | Jellemző | Érték |
 |----------|-------|
 | Évfolyam | 13. (esti tagozat / felnőttképzés) |
-| Időtartam | 24 hét (6 hónap) |
+| Időtartam | 25 hét (6 hónap) |
 | Heti óraszám | 6 óra (3 × 2 óra) |
 | Összes óra | 144 |
 | Nyelv | Python 3.10+ |
@@ -38,24 +38,24 @@ A 10. évfolyamos Python kurzus ismeretanyaga:
 
 | Eszköz | Verzió | Megjegyzés |
 |--------|--------|------------|
-| Python | 3.10+ | `python3 --version` |
+| Python | 3.10+ | `python3 --version` (Windows: `python --version`) |
 | Git | 2.x+ | `git --version` |
 | VS Code | legújabb | Python + REST Client kiegészítők |
 | Docker | 20.x+ | `docker --version` |
 | Docker Compose | 2.x+ | `docker compose version` |
-| Linux | Ubuntu 22.04+ | natív vagy WSL2 |
+| Operációs rendszer | Windows 10+ / Linux / macOS | Windowson Docker Desktop szükséges |
 
 ## Heti bontás
 
 ---
 
-### 0. hét – Git, GitHub, Linux alapok
+### 0. hét – Git, GitHub, parancssor alapok
 > 3 × 2 óra = 6 óra
 
-**1–2. óra: Linux parancssor alapok**
-- Terminál megnyitása, navigáció (`cd`, `ls`, `pwd`, `mkdir`)
-- Fájlműveletek (`cp`, `mv`, `rm`, `cat`, `nano`)
-- Jogosultságok (`chmod`, `chown`)
+**1–2. óra: Parancssor alapok**
+- Terminál megnyitása, navigáció (`cd`, `ls`/`dir`, `pwd`, `mkdir`)
+- Fájlműveletek (`cp`/`copy`, `mv`/`move`, `rm`/`del`, `cat`/`type`)
+- Linux jogosultságok (`chmod`, `chown`) – Windows: a Git Bash vagy WSL2 által elérhetőek
 
 **3–4. óra: Git ismétlés és haladó funkciók**
 - `git init`, `add`, `commit`, `push`, `pull`
@@ -81,7 +81,7 @@ A 10. évfolyamos Python kurzus ismeretanyaga:
 
 **9–10. óra: Virtuális környezetek**
 - Mi a `venv` és miért fontos?
-- `python3 -m venv venv` → `source venv/bin/activate`
+- `python3 -m venv venv` → `source venv/bin/activate` (Windows: `python -m venv venv` → `venv\Scripts\activate`)
 - `pip install`, `pip freeze > requirements.txt`
 - `pip install -r requirements.txt`
 - `.gitignore` beállítása (`venv/`, `__pycache__/`)
@@ -556,7 +556,7 @@ A 10. évfolyamos Python kurzus ismeretanyaga:
 
 ---
 
-### 23. hét – Projekt befejezés
+### 23. hét – Projekt fejlesztés II
 > 3 × 2 óra = 6 óra
 
 **139–140. óra: Docker és deployment**

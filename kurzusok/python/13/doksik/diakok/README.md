@@ -6,7 +6,7 @@ Heti tananyagok, kódpéldákkal és dokumentáció linkekkel.
 
 | Hét | Téma | Lecke |
 |-----|------|-------|
-| 0 | Git, GitHub, Linux alapok | [00-git-github-linux.md](leckek/00-git-github-linux.md) |
+| 0 | Git, GitHub, parancssor alapok | [00-git-github-linux.md](leckek/00-git-github-linux.md) |
 | 1 | Python, venv, pip | [01-python-venv.md](leckek/01-python-venv.md) |
 | 2 | FastAPI bevezetés | [02-fastapi-bevezetes.md](leckek/02-fastapi-bevezetes.md) |
 | 3 | Útvonalak és paraméterek | [03-uvonalak-parameterek.md](leckek/03-uvonalak-parameterek.md) |
@@ -38,7 +38,7 @@ Gyakorló feladatok heti bontásban, nehézségi szintekkel (⭐ könnyű – �
 
 | Hét | Téma | Feladatok |
 |-----|------|-----------|
-| 0 | Git, GitHub, Linux gyakorlatok | [00-git-github-linux.md](feladatok/00-git-github-linux.md) |
+| 0 | Git, GitHub, parancssor gyakorlatok | [00-git-github-linux.md](feladatok/00-git-github-linux.md) |
 | 1 | Python, venv gyakorlatok | [01-python-venv.md](feladatok/01-python-venv.md) |
 | 2 | FastAPI bevezetés gyakorlatok | [02-fastapi-bevezetes.md](feladatok/02-fastapi-bevezetes.md) |
 | 3 | Útvonalak gyakorlatok | [03-uvonalak-parameterek.md](feladatok/03-uvonalak-parameterek.md) |
@@ -63,3 +63,7 @@ Gyakorló feladatok heti bontásban, nehézségi szintekkel (⭐ könnyű – �
 | 22 | Projekt fejlesztés I gyakorlatok | [22-projekt-fejlesztes-1.md](feladatok/22-projekt-fejlesztes-1.md) |
 | 23 | Projekt fejlesztés II gyakorlatok | [23-projekt-fejlesztes-2.md](feladatok/23-projekt-fejlesztes-2.md) |
 | 24 | Vizsga gyakorlatok | [24-vizsga.md](feladatok/24-vizsga.md) |
+
+## Discord
+
+- [Discord használat](discord-hasznalat.md) – Csatlakozás a szerverhez, kód küldése, segítségkérés, szabályok

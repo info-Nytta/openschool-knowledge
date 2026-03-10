@@ -35,7 +35,7 @@ git --version
 ```
 
 Ha nincs telepítve:
-- **Windows:** letöltés a [git-scm.com](https://git-scm.com) oldalról
+- **Windows:** letöltés a [git-scm.com](https://git-scm.com) oldalról (a telepítő tartalmaz egy Git Bash terminált is)
 - **Linux:** `sudo apt install git`
 - **Mac:** `brew install git`
 

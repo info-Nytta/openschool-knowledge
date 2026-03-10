@@ -17,16 +17,24 @@ A Docker **konténereket** használ az alkalmazások futtatására. Egy konténe
 | **Dockerfile** | Az image leírása (utasítások) |
 | **Volume** | Tartós tárolás (adatok megmaradnak újraindítás után) |
 
-### Docker telepítés (Linux)
+### Docker telepítés
+
+**Linux:**
 
 ```bash
-# Docker telepítése
 sudo apt update
 sudo apt install docker.io docker-compose-v2
 sudo usermod -aG docker $USER
 # Jelentkezz ki és be, hogy érvényesüljön!
+```
 
-# Ellenőrzés
+**Windows:**
+
+1. Töltsd le és telepítsd a [Docker Desktop](https://www.docker.com/products/docker-desktop/)-ot
+2. A telepítő bekapcsolja a WSL2 intégrációt (ajánlott) vagy Hyper-V-t
+3. Újraindítás után ellenőrizd:
+
+```bash
 docker --version
 docker compose version
 ```

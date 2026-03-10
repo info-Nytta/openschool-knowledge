@@ -1,4 +1,4 @@
-# 0. hét – Git, GitHub, Linux
+# 0. hét – Git, GitHub, parancssor
 
 > **Határidő:** a következő óra előtt
 > **Beadás:** commitold és pushold a megoldásaidat ebbe a repóba!
@@ -6,7 +6,7 @@
 
 ---
 
-## 0.1 – Linux navigáció ⭐
+## 0.1 – Parancssor navigáció ⭐
 Készíts egy `parancsok.txt` fájlt, amely tartalmazza a következő parancsok kimenetét:
 - `pwd` (aktuális könyvtár)
 - `ls -la` (fájlok listázása)
@@ -29,7 +29,7 @@ Hozz létre két branch-et, mindkettőben módosítsd ugyanazt a fájlt. Merge-e
 ## Dokumentáció
 
 - [Git alapok](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
-- [Linux parancssor](https://ubuntu.com/tutorials/command-line-for-beginners)
+- [Parancssor alapok](https://ubuntu.com/tutorials/command-line-for-beginners)
 - [.gitignore](https://www.w3schools.com/git/git_ignore.asp)
 
 ## Beadás

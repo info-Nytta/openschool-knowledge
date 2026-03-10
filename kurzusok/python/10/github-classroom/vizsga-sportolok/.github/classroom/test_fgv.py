@@ -85,7 +85,7 @@ def test_sportaghoz_tartozo_sportolok():
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Hasznalat: python3 test_fgv.py <teszt_neve>")
+        print("Hasznalat: python test_fgv.py <teszt_neve>")
         sys.exit(1)
     test_func = globals().get(sys.argv[1])
     if test_func is None:

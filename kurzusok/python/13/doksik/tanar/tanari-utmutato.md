@@ -15,9 +15,9 @@ A kurzus 25 hétre van bontva (0–24. hét, heti 6 óra = 3 × 2 óra), és fok
 
 ## Heti ütemterv és javaslatok
 
-### 0. hét: Git, GitHub, Linux alapok
-- **Cél:** A diákok beállítják a Linux környezetet, ismétlik a Git-et, és megismerik a GitHub Classroom workflow-t
-- **Tipp:** Előre készíts egy GitHub Classroom szervezetet és egy próba-feladatot. Esti tagozatnál sokan régebben tanultak Git-et — számíts arra, hogy ismétlésre szükség lesz.
+### 0. hét: Git, GitHub, parancssor alapok
+- **Cél:** A diákok beállítják a fejlesztői környezetet, ismétlik a Git-et, és megismerik a GitHub Classroom workflow-t
+- **Tipp:** Előre készíts egy GitHub Classroom szervezetet és egy próba-feladatot. Esti tagozatnál sokan régebben tanultak Git-et — számíts arra, hogy ismétlésre szükség lesz. **Windowsos diákoknál** a Git Bash telepítését és a Docker Desktop beállítását külön segítsd.
 - **Beállítás:** Lásd [`github-classroom-utmutato.md`](github-classroom-utmutato.md)
 - **Házi feladat:** Próba repo: klónozás, branch létrehozása, merge, push
 
@@ -53,7 +53,7 @@ A kurzus 25 hétre van bontva (0–24. hét, heti 6 óra = 3 × 2 óra), és fok
 
 ### 7. hét: Docker és PostgreSQL
 - **Cél:** Docker alapok, PostgreSQL konténer, Docker Compose
-- **Tipp:** **Telepítés/beállítás — szánj rá időt!** A Docker telepítése Linux-on is kihívás lehet (felhasználó hozzáadása a `docker` csoporthoz). Készíts egy lépésről lépésre telepítési segédletet. A `docker compose up -d` utáni `psql` csatlakozás az első „varázslat" — mutasd élőben.
+- **Tipp:** **Telepítés/beállítás — szánj rá időt!** A Docker telepítése kihívás lehet (Linuxon felhasználó hozzáadása a `docker` csoporthoz, Windowson Docker Desktop + WSL2 beállítás). Készíts egy lépésről lépésre telepítési segédletet mindkét rendszerre. A `docker compose up -d` utáni `psql` csatlakozás az első „varázslat” — mutasd élőben.
 - **Házi feladat:** Docker Compose: FastAPI + PostgreSQL, `psql` csatlakozás
 
 ### 8. hét: SQLAlchemy ORM
@@ -78,7 +78,7 @@ A kurzus 25 hétre van bontva (0–24. hét, heti 6 óra = 3 × 2 óra), és fok
 
 ### 12. hét: Félév összefoglalás, próbavizsga
 - **Cél:** Próbavizsga vizsgakörülmények között
-- **Tipp:** A próbavizsga **vizsgakörülmények között** zajlik — GitHub Classroom-on keresztül, 120 perc, 60 pont. A próba utáni megbeszélés legalább annyira fontos, mint maga a próba. Tipikus hibákat érdemes közösen elemezni. A próbavizsga GitHub Classroom repója: `het12-felev-probavizsga`
+- **Tipp:** A próbavizsga **vizsgakörülmények között** zajlik — GitHub Classroom-on keresztül, 120 perc, 60 pont. A próba utáni megbeszélés legalább annyira fontos, mint maga a próba. Tipikus hibákat érdemes közösen elemezni. A próbavizsga GitHub Classroom repója: `het12-felev-osszefoglalas`
 - **Házi feladat:** A próbavizsga hiányosságainak pótlása
 
 ### 13. hét: Tesztelés alapok, pytest
@@ -171,14 +171,14 @@ Vizsga és házi feladat kezelése GitHub Classroom-ban: lásd [`github-classroo
 
 | Probléma | Megoldás |
 |----------|----------|
-| `ModuleNotFoundError: No module named 'fastapi'` | A `venv` nincs aktiválva. `source venv/bin/activate` |
+| `ModuleNotFoundError: No module named 'fastapi'` | A `venv` nincs aktiválva. `source venv/bin/activate` (Windows: `venv\Scripts\activate`) |
 | `uvicorn: command not found` | Telepítsd: `pip install uvicorn` (venv aktív?) |
 | `sqlalchemy.exc.OperationalError: connection refused` | A PostgreSQL konténer nem fut. `docker compose up -d` |
 | `alembic.util.exc.CommandError: Can't determine revision` | `alembic upgrade head` nem futott le. Ellenőrizd a `DATABASE_URL`-t. |
 | `422 Unprocessable Entity` | A request body nem felel meg a Pydantic sémának — ellenőrizd a JSON-t |
 | `401 Unauthorized` | Hiányzó vagy lejárt JWT token. Újra kell login-olni. |
-| `docker: permission denied` | A felhasználó nincs a `docker` csoportban. `sudo usermod -aG docker $USER` + kijelentkezés |
-| `psycopg2` telepítési hiba | Hiányzik a `libpq-dev`. `sudo apt install libpq-dev python3-dev` |
+| `docker: permission denied` | **Linux:** A felhasználó nincs a `docker` csoportban. `sudo usermod -aG docker $USER` + kijelentkezés. **Windows:** Docker Desktop fut? Rendszergazdaként indítsd. |
+| `psycopg2` telepítési hiba | **Linux:** `sudo apt install libpq-dev python3-dev`. **Windows:** használd a `psycopg2-binary` csomagot helyette. |
 | `git push` sikertelen | Ellenőrizd: van-e commit? A megfelelő mappában vagy-e? |
 | GitHub Classroom tesztek FAIL, de lokálisan PASS | A tesztek SQLite in-memory DB-t használnak — ellenőrizd a `conftest.py`-t |
 | `ImportError: cannot import name 'get_db'` | A `database.py` vagy `dependencies.py` nincs a megfelelő helyen, vagy rossz az import path |

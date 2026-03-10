@@ -1,14 +1,16 @@
-# Lecke 00 – Git, GitHub, Linux alapok
+# Lecke 00 – Git, GitHub, parancssor alapok
 
 > **Dokumentáció:** [Git kézikönyv](https://git-scm.com/book/en/v2) · [Linux parancsok](https://www.tutorialspoint.com/unix/unix-useful-commands.htm) · [GitHub Docs](https://docs.github.com/en)
 
 ---
 
-## 1–2. óra: Linux parancssor alapok
+## 1–2. óra: Parancssor alapok
 
 ### Miért tanuljuk a parancssort?
 
 Backend fejlesztőként minden nap használod a terminált: szerveren futtatsz programokat, fájlokat kezelsz, konténereket indítasz. A grafikus felület nem mindig elérhető.
+
+> **Windows:** Használhatod a PowerShell-t, a Parancssort (cmd), a VS Code beépített terminálját, vagy a Git Bash-t (a Git telepítővel jön). A Git Bash Windowson is biztosítja a lenti Linux parancsokat.
 
 ### Navigáció
 

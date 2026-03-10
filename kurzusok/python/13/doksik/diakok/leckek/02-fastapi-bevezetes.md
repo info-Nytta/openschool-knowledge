@@ -56,7 +56,8 @@ Az API-k **JSON** formátumban kommunikálnak:
 ### Telepítés
 
 ```bash
-source venv/bin/activate
+source venv/bin/activate      # Linux/Mac
+venv\Scripts\activate         # Windows
 pip install fastapi uvicorn
 pip freeze > requirements.txt
 ```

@@ -92,10 +92,12 @@ Minden Python projektnek lehetnek különböző csomagfüggőségei. A virtuáli
 
 ```bash
 # Virtuális környezet létrehozása
-python3 -m venv venv
+python3 -m venv venv          # Linux/Mac
+python -m venv venv           # Windows
 
-# Aktiválás (Linux/Mac)
-source venv/bin/activate
+# Aktiválás
+source venv/bin/activate      # Linux/Mac
+venv\Scripts\activate         # Windows (PowerShell / cmd)
 
 # Deaktiválás
 deactivate
@@ -168,8 +170,8 @@ print(koszontes("Anna"))
 ## Gyakorlat
 
 1. Hozz létre egy `het01` mappát
-2. Készíts virtuális környezetet: `python3 -m venv venv`
-3. Aktiváld: `source venv/bin/activate`
+2. Készíts virtuális környezetet: `python3 -m venv venv` (Windows: `python -m venv venv`)
+3. Aktiváld: `source venv/bin/activate` (Windows: `venv\Scripts\activate`)
 4. Telepíts egy csomagot: `pip install requests`
 5. Mentsd a függőségeket: `pip freeze > requirements.txt`
 6. Hozd létre a `.gitignore` fájlt a megfelelő bejegyzésekkel

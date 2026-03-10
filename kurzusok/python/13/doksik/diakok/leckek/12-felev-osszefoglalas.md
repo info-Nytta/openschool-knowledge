@@ -10,7 +10,7 @@
 
 | Hét | Téma | Kulcs fogalmak |
 |-----|------|----------------|
-| 0 | Git, GitHub, Linux | CLI, git branch, GitHub Classroom |
+| 0 | Git, GitHub, parancssor | CLI, git branch, GitHub Classroom |
 | 1 | Python, venv | venv, pip, requirements.txt |
 | 2 | FastAPI bevezetés | REST, HTTP methods, Swagger UI |
 | 3 | Útvonalak, paraméterek | Path params, Query params |

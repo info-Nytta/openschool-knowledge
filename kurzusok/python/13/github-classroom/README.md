@@ -4,7 +4,7 @@
 
 | Hét | Template | Téma |
 |-----|----------|------|
-| 0 | [het00-git-github-linux/](het00-git-github-linux/) | Git, GitHub, Linux alapok |
+| 0 | [het00-git-github-linux/](het00-git-github-linux/) | Git, GitHub, parancssor alapok |
 | 1 | [het01-python-venv/](het01-python-venv/) | Python, venv, pip |
 | 2 | [het02-fastapi-bevezetes/](het02-fastapi-bevezetes/) | FastAPI bevezetés |
 | 3 | [het03-uvonalak-parameterek/](het03-uvonalak-parameterek/) | Útvonalak és paraméterek |
@@ -29,6 +29,15 @@
 | 22 | [het22-projekt-fejlesztes-1/](het22-projekt-fejlesztes-1/) | Projekt fejlesztés I |
 | 23 | [het23-projekt-fejlesztes-2/](het23-projekt-fejlesztes-2/) | Projekt fejlesztés II |
 | 24 | [het24-vizsga/](het24-vizsga/) | Vizsga |
+
+## Vizsga template-ek
+
+| Variáns | Template |
+|---------|----------|
+| A – Todo API | [vizsga-todo-api/](vizsga-todo-api/) |
+| B – Blog API | [vizsga-blog-api/](vizsga-blog-api/) |
+| C – Recept API | [vizsga-recept-api/](vizsga-recept-api/) |
+| D – Webshop API | [vizsga-webshop-api/](vizsga-webshop-api/) |
 
 ## Beállítás
 
