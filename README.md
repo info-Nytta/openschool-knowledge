@@ -42,16 +42,16 @@ A cél nem az, hogy a diák egy feladatbeadó rendszert tanuljon meg használni,
 
 ### Mi hiányzik még?
 
-A projekt jelenleg az **egyéni munkát** fedi le. Egy valódi fejlesztői környezethez még közelebb vinné:
+A heti kurzusok (Python 10, Backend 13) jelenleg az **egyéni munkát** fedik le. A Projekt Labor már tartalmaz néhány haladó elemet (✅), de a heti kurzusokba ezek még nem épültek be:
 
-| Hiányzó elem | Ipari megfelelő |
-|-------------|-----------------|
-| Pull Request alapú beadás | Kód review, branch-elés, merge |
-| GitHub Issues használata | Feladat- és hibakezelés |
-| Közös repón dolgozás (csapatmunka) | Együttműködés, konfliktuskezelés |
-| Éles szerverre deploy | CI/CD pipeline VPS-re |
-| Projekt board (GitHub Projects) | Kanban, sprint tervezés |
-| Dokumentáció írás (README, docstring) | Fejlesztői dokumentáció |
+| Elem | Státusz | Ipari megfelelő |
+|------|---------|------------------|
+| Pull Request alapú beadás | ✅ Projekt Labor (Modul 7) | Kód review, branch-elés, merge |
+| Éles szerverre deploy | ✅ Projekt Labor (Modul 6) | CI/CD pipeline VPS-re |
+| Dokumentáció írás | ✅ Projekt Labor (Modul 7) | README, CONTRIBUTING, issue template-ek |
+| GitHub Issues használata | ❌ | Feladat- és hibakezelés |
+| Közös repón dolgozás (csapatmunka) | ❌ | Együttműködés, konfliktuskezelés |
+| Projekt board (GitHub Projects) | ❌ | Kanban, sprint tervezés |
 
 ### Kinek való?
 
@@ -69,6 +69,9 @@ Programozástanároknak, akik:
 |--------|----------|-----------|----------------------|--------|
 | [Python alapok](kurzusok/python/10/) | 10. (nappali) | 13 hét, heti 2 óra | Python 3.10+ | 40 pont, 90 perc |
 | [Backend FastAPI](kurzusok/python/13/) | 13. (esti / felnőtt) | 25 hét, heti 6 óra | Python + FastAPI | 60 pont, 240 perc |
+| [Projekt Labor](kurzusok/python/projekt-labor/) | Backend 13 után | 7 modul, egyéni tempó | FastAPI + PostgreSQL + Docker + Astro | — |
+
+A **Projekt Labor** nem hagyományos kurzus: a résztvevő a DevSchool platform kódját építi fel az alapoktól az éles üzemig. A végeredmény nem egy gyakorló feladat, hanem egy működő, open source webalkalmazás.
 
 ## Projekt szerkezet
 
@@ -76,7 +79,8 @@ Programozástanároknak, akik:
 ├── kurzusok/                # Kurzus-specifikus tartalom
 │   └── python/
 │       ├── 10/              #   Python alapok (13 hét)
-│       └── 13/              #   Backend FastAPI (25 hét)
+│       ├── 13/              #   Backend FastAPI (25 hét)
+│       └── projekt-labor/   #   Projekt Labor (7 modul)
 ├── kozos/                   # Kurzusokon átívelő közös dokumentáció
 │   ├── discord-szerver-utmutato.md
 │   └── integralt-munkafolyamat.md
@@ -92,16 +96,29 @@ Programozástanároknak, akik:
 
 ### Kurzus mappastruktúra
 
-Minden kurzus azonos mappastruktúrát követ:
+A heti kurzusok (Python 10, Backend 13) azonos struktúrát követnek:
 
 ```
-kurzusok/python/{évfolyam}/
+kurzusok/python/{10,13}/
 ├── doksik/                  # Dokumentáció
-│   ├── diakok/              #   Leckék + feladatok
-│   ├── tanar/               #   Tanári útmutató, értékelés
+│   ├── diakok/              #   Leckék, feladatok, Discord útmutató
+│   ├── tanar/               #   Tanári útmutató, értékelés módszertan
 │   └── tanterv/             #   Tanterv
 ├── vizsgak/                 # Vizsgavariánsok (feladatlap, megoldás, értékelés)
 └── github-classroom/        # GitHub Classroom template repók
+```
+
+A Projekt Labor más struktúrát követ — nincs vizsgája, nincs GitHub Classroom, a tananyag modulokba szerveződik:
+
+```
+kurzusok/python/projekt-labor/
+├── doksik/                  # Dokumentáció
+│   ├── diakok/              #   Környezet beállítás, Discord útmutató
+│   ├── modulok/             #   7 modul (01-projekt-inditas … 07-open-source)
+│   └── tanterv/             #   Tanterv
+└── tesztek/                 # Verifikációs tesztek modulonként
+    ├── conftest.py
+    └── modul-{01..07}/      #   Modul-specifikus tesztfájlok
 ```
 
 ## Közös dokumentáció
@@ -123,7 +140,9 @@ A tanári munkát automatizáló szkriptek: → [eszkozok/](eszkozok/)
 
 ## Értékelés
 
-Mindkét kurzus GitHub Classroom-on keresztül működik: a diákok hetente pusholják a megoldásaikat, az automatikus tesztek (pytest / shell) azonnal pontoznak.
+### Heti kurzusok (Python 10, Backend 13)
+
+GitHub Classroom-on keresztül működik: a diákok hetente pusholják a megoldásaikat, az automatikus tesztek (pytest / shell) azonnal pontoznak.
 
 | Komponens | Python 10 | Backend 13 |
 |-----------|-----------|------------|
@@ -133,3 +152,13 @@ Mindkét kurzus GitHub Classroom-on keresztül működik: a diákok hetente push
 | Vizsga | 50% | 50% |
 
 A félév végi jegyek a `jegy-szamolo.py` szkripttel számíthatók ki a GitHub Classroom CSV exportokból (lásd [integrált munkafolyamat](kozos/integralt-munkafolyamat.md)).
+
+### Projekt Labor
+
+Nincs hagyományos jegyrendszer. Minden modul végén **verifikációs tesztek** ellenőrzik a munkát:
+
+```bash
+pytest tesztek/modul-01/ -v   # Modul 1 ellenőrzése
+```
+
+A diák akkor halad tovább, ha a modul összes verifikációs tesztje zöld — saját tempóban, vizsganyomás nélkül.

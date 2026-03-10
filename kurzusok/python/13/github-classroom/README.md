@@ -21,7 +21,7 @@
 | 14 | [het14-fastapi-teszteles/](het14-fastapi-teszteles/) | FastAPI tesztelés |
 | 15 | [het15-db-mock-teszteles/](het15-db-mock-teszteles/) | DB mock tesztelés |
 | 16 | [het16-halado-teszteles/](het16-halado-teszteles/) | Haladó tesztelés |
-| 17 | [het17-fajlkezeles/](het17-fajlkezeles/) | Fájlkezelés, képfeltöltés |
+| 17 | [het17-fajlkezeles-kepfeltoltes/](het17-fajlkezeles-kepfeltoltes/) | Fájlkezelés, képfeltöltés |
 | 18 | [het18-background-websocket/](het18-background-websocket/) | Background Tasks, WebSocket |
 | 19 | [het19-docker-compose-eles/](het19-docker-compose-eles/) | Docker Compose éles környezet |
 | 20 | [het20-cicd-github-actions/](het20-cicd-github-actions/) | CI/CD GitHub Actions |
@@ -36,8 +36,8 @@
 |---------|----------|
 | A – Todo API | [vizsga-todo-api/](vizsga-todo-api/) |
 | B – Blog API | [vizsga-blog-api/](vizsga-blog-api/) |
-| C – Recept API | [vizsga-recept-api/](vizsga-recept-api/) |
-| D – Webshop API | [vizsga-webshop-api/](vizsga-webshop-api/) |
+| C – Webshop API | [vizsga-webshop-api/](vizsga-webshop-api/) |
+| D – Recept API | [vizsga-recept-api/](vizsga-recept-api/) |
 
 ## Beállítás
 

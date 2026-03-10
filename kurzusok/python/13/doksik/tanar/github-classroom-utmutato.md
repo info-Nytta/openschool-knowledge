@@ -72,7 +72,7 @@ git push -u origin main
    - `het14-fastapi-teszteles`
    - `het15-db-mock-teszteles`
    - `het16-halado-teszteles`
-   - `het17-fajlkezeles`
+   - `het17-fajlkezeles-kepfeltoltes`
    - `het18-background-websocket`
    - `het19-docker-compose-eles`
    - `het20-cicd-github-actions`
@@ -294,7 +294,7 @@ Minden héten ezeket kell megtenned:
 | `het14-fastapi-teszteles/` | README.md, requirements.txt | `tests/test_api.py` (8 teszt) |
 | `het15-db-mock-teszteles/` | README.md, requirements.txt, `tests/conftest_minta.py` | `tests/test_termekek.py` (10 teszt) |
 | `het16-halado-teszteles/` | README.md | – |
-| `het17-fajlkezeles/` | README.md | – |
+| `het17-fajlkezeles-kepfeltoltes/` | README.md | – |
 | `het18-background-websocket/` | README.md | – |
 | `het19-docker-compose-eles/` | README.md | – |
 | `het20-cicd-github-actions/` | README.md | – |
