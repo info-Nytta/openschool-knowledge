@@ -11,6 +11,5 @@ Ez a mappa a mentorok számára készült segédanyagokat tartalmazza.
 
 A kurzusokon átívelő útmutatók a `guides/` mappában találhatók:
 
-- [Discord szerver útmutató](../../../guides/discord-szerver-utmutato.md)
-- [GitHub szervezet útmutató](../../../guides/github-szervezet-utmutato.md)
-- [Integrált munkafolyamat](../../../guides/integralt-munkafolyamat.md)
+- [Discord szerver útmutató](../../../../guides/discord-szerver-utmutato.md)
+- [Integrált munkafolyamat](../../../../guides/integralt-munkafolyamat.md)

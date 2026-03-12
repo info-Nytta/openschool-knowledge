@@ -15,7 +15,7 @@
 - [Mentori útmutató](mentor/mentori-utmutato.md) – Heti ütemterv, tippek, vizsgavariánsok
 - [GitHub Classroom útmutató](mentor/github-classroom-utmutato.md) – Template repók, házi feladatok, autograding
 - [Értékelési módszertan](mentor/ertekeles-modszertan.md) – Szinthatárok, code review, szóbeli kérdések
-- [Discord szerver útmutató](../../../../guides/discord-szerver-utmutato.md) – Szerver létrehozása, csatornák, jogosultságok, botok (közös dokumentum)
+- [Discord szerver útmutató](../../../guides/discord-szerver-utmutato.md) – Szerver létrehozása, csatornák, jogosultságok, botok (közös dokumentum)
 
 → Részletes tartalomjegyzék: [mentor/README.md](mentor/)
 

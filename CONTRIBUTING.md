@@ -56,4 +56,4 @@ A hozzájárulásoddal elfogadod, hogy a munkád a projekt licencelése szerint 
 
 ## Kérdéseid vannak?
 
-Nyiss egy [Issue](../../issues)-t, és szívesen segítünk!
+Nyiss egy Issue-t a GitHub repóban, és szívesen segítünk!

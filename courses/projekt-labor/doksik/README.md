@@ -48,5 +48,5 @@ Az OpenSchool közösség megosztott dokumentumai, amelyek minden kurzusra érv�
 
 | Dokumentum | Leírás |
 |------------|--------|
-| [Discord szerver útmutató](../../../../guides/discord-szerver-utmutato.md) | A közös Discord szerver létrehozása és kezelése (mentori) |
-| [Integrált munkafolyamat](../../../../guides/integralt-munkafolyamat.md) | GitHub Classroom + Discord + értékelés összekötése |
+| [Discord szerver útmutató](../../../guides/discord-szerver-utmutato.md) | A közös Discord szerver létrehozása és kezelése (mentori) |
+| [Integrált munkafolyamat](../../../guides/integralt-munkafolyamat.md) | GitHub Classroom + Discord + értékelés összekötése |
