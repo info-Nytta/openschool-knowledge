@@ -50,14 +50,7 @@ A mentori szerepkör az OpenSchool közösségen belül a tapasztaltabb tagok sz
 
 ### Segítés kérés struktúrája (amit elvárj a tanulótól)
 
-Kérd meg a tanulókat, hogy a kérdéseikben adják meg:
-
-```
-1. Melyik hét / feladat / fájl?
-2. Mit próbáltam?
-3. Mi történt (hibaüzenet vagy váratlan eredmény)?
-4. Mit vártam volna?
-```
+Kérd meg a tanulókat, hogy kövessék a [Hogyan kérdezz jól?](kozossegi-utmutato.md#hogyan-kérdezz-jól) útmutatót — ez tartalmazza a kérdésfeltevés struktúráját és a jó példákat.
 
 ---
 
@@ -73,32 +66,12 @@ A kód-átnézés a tanulási folyamat egyik legfontosabb eleme. A cél: **segí
 - **Adj kontextust** — magyarázd meg, *miért* jobb az egyik megoldás (olvashatóság, karbantarthatóság)
 - **Dicsérj, ha fejlődés van** — „A múlt héthez képest sokkal szebben bontottad függvényekre!"
 
-### Python Alapok — Ellenőrzőlista
+### Kurzus-specifikus ellenőrzőlisták
 
-```
-□ Működik-e hiba nélkül?
-□ Az input/output megfelel a feladat leírásnak?
-□ Függvényekre bontotta-e a kódot?
-□ Nincsenek globális változók?
-□ A változónevek értelmesek-e? (nem a, b, x, y)
-□ Van-e felesleges kód (kikommentezett sorok, debug printek)?
-□ A Git története értelmes-e? (több commit, leíró üzenetek)
-```
+A részletes code review ellenőrzőlistákat a kurzusok értékelési módszertana tartalmazza:
 
-### Backend FastAPI — Ellenőrzőlista
-
-```
-□ A Pydantic sémák elkülönülnek (Create/Read)?
-□ Az SQLAlchemy modellek helyesek (oszloptípusok, kapcsolatok)?
-□ A CRUD réteg paraméteres (session átadva, nincs globális)?
-□ Az endpointok a helyes HTTP metódust és státuszkódot használják?
-□ Van HTTPException hibakezelés?
-□ Vannak tesztek (pozitív ÉS negatív)?
-□ A jelszavak hash-elve vannak (bcrypt)?
-□ A .env nincs commitolva?
-□ A Git történet logikus (5+ commit, értelmes üzenetek)?
-□ Nincs felesleges, kikommentezett kód?
-```
+- [Python Alapok — Code review szempontok](../courses/python-alapok/doksik/tanar/ertekeles-modszertan.md#4-tanári-kód-átnézés-code-review)
+- [Backend FastAPI — Code review szempontok](../courses/python-backend/doksik/tanar/ertekeles-modszertan.md#4-tanári-kód-átnézés-code-review)
 
 ### Visszajelzés formátuma
 
@@ -123,14 +96,10 @@ GitHub-on (Pull Request vagy commit megjegyzés):
 
 ## Git történet elemzése
 
-A Git történet sokat elárul a tanuló munkamódszeréről:
+A Git history elemzés részletes módszertanát (ellenőrizendő szempontok, piros zászlók, git parancsok) a kurzusok értékelési módszertana tartalmazza:
 
-| Amit nézz | Mi a jó? | Mi a gyanús? |
-|-----------|----------|--------------|
-| Commit szám | 3+ commit per feladat | 1 commit az egész feladatra |
-| Commit üzenetek | „2. feladat: input kezelés kész" | „asdf" / „." / „done" |
-| Időzítés | Több napon át dolgozott | Minden az utolsó percben |
-| Szerző | Konzisztens felhasználónév | Váltakozó szerzők |
+- [Python Alapok — Git history elemzés](../courses/python-alapok/doksik/tanar/ertekeles-modszertan.md#5-git-history-elemzés)
+- [Backend FastAPI — Git history elemzés](../courses/python-backend/doksik/tanar/ertekeles-modszertan.md#5-git-history-elemzés)
 
 Ha gyanús mintát látsz, ne vádolj — kérdezz:
 > „Látom, hogy egy commitban jött az egész feladat. Előfordult, hogy nem commitoltál közben, vagy szükséged van-e segítségre a Git munkafolyamatban?"
@@ -139,19 +108,10 @@ Ha gyanús mintát látsz, ne vádolj — kérdezz:
 
 ## Szóbeli visszakérdezés
 
-Ha a kód-átnézés során kérdés merül fel, informális szóbeli visszakérdezéssel tisztázhatod:
+Ha a kód-átnézés során kérdés merül fel, informális szóbeli visszakérdezéssel tisztázhatod. A kurzus-specifikus példakérdéseket és az értékelési hatást a részletes módszertan tartalmazza:
 
-### Python Alapok — példa kérdések
-
-- „Miért használtál itt `while`-t `for` helyett?"
-- „Mi történik, ha a felhasználó nem számot ad meg?"
-- „Hogyan működik a te `szamol()` függvényed?"
-
-### Backend FastAPI — példa kérdések
-
-- „Mi a különbség a Pydantic séma és az SQLAlchemy modell között?"
-- „Miért kell `dependency_overrides` a tesztekhez?"
-- „Hogy működik a JWT token a te API-dban?"
+- [Python Alapok — Szóbeli ellenőrzés](../courses/python-alapok/doksik/tanar/ertekeles-modszertan.md#6-szóbeli-ellenőrzés)
+- [Backend FastAPI — Szóbeli ellenőrzés](../courses/python-backend/doksik/tanar/ertekeles-modszertan.md#6-szóbeli-ellenőrzés)
 
 ### Hogyan reagálj
 

@@ -6,29 +6,11 @@ Ez a dokumentum lépésről lépésre elmagyarázza, hogyan kell a GitHub Classr
 
 ## 1. Előkészületek (egyszer kell megcsinálni)
 
-### 1.1 GitHub Organization létrehozása
+Az előkészületek lépései (Organization létrehozása, Classroom beállítása, diákok meghívása) megegyeznek a Python Alapok kurzusnál leírtakkal. Részletes útmutató: [GitHub Classroom előkészületek — Python Alapok](../../python-alapok/doksik/tanar/github-classroom-utmutato.md#1-előkészületek-egyszer-kell-megcsinálni).
 
-1. Lépj be a [github.com](https://github.com) oldalra a saját GitHub fiókoddal
-2. Kattints a jobb felső sarokban a **+** gombra → **New organization**
-3. Válaszd a **Free** tervet
-4. Adj nevet (pl. `openschool-backend-2026`)
-5. Add meg az email címedet, majd kattints a **Create** gombra
-
-### 1.2 GitHub Classroom létrehozása
-
-1. Nyisd meg: [classroom.github.com](https://classroom.github.com)
-2. Kattints: **New Classroom**
-3. Válaszd ki az imént létrehozott Organization-t
-4. Adj nevet a Classroom-nak (pl. „Backend FastAPI – 2026”)
-5. Készen is van!
-
-### 1.3 Diákok meghívása
-
-1. A Classroom oldalán kattints a **Students** fülre
-2. Itt két lehetőséged van:
-   - **Meghívó link** küldése (a diákok magukat adják hozzá)
-   - **Névsor feltöltése** (CSV fájl, hogy a diákok nevüket kiválaszthassák)
-3. **Ajánlás:** Töltsd fel a névjegyzéket, hogy a résztvevők a saját azonosítójukat válasszák ki az első assignment elfogadásakor — így a GitHub felhasználónevük össze lesz rendelve a névjegyzékbeli nevükkel
+**Backend-specifikus eltérések:**
+- Organization neve: pl. `openschool-backend-2026`
+- Classroom neve: pl. „Backend FastAPI – 2026"
 
 ---
 
@@ -331,15 +313,11 @@ Minden héten ezeket kell megtenned:
 
 ## 9. Gyakori problémák és megoldásaik
 
-| Probléma | Megoldás |
-|----------|---------|
-| „A diák nem tudja elfogadni a linket" | Ellenőrizd, hogy van-e GitHub fiókja. Segítsd a regisztrációban. |
-| „Nem lát semmit a repo-ban" | Valószínűleg nem klónozta le. Segíts a `git clone` paranccsal. |
-| „Commitolt, de nem pusholt" | Mutasd meg neki a `git push` parancsot. Ellenőrizd a GitHub oldalon. |
-| „Deadline után pusholt" | A GitHub Classroom mutatja az utolsó commit időpontját. Te döntöd el, elfogadod-e. |
-| „A pytest lokálisan zöld, de Actions-ben piros" | Ellenőrizd a `requirements.txt`-et — hiányzik-e valami csomag? Az import path egyezik? |
-| „A tesztek SQLite hibát dobnak" | A `conftest.py` nincs a megfelelő helyen, vagy a `dependency_overrides` nem megfelelő. |
-| „A diák módosította a tesztfájlokat" | A GitHub history-ban ellenőrizheted. A template-ből származó tesztfájlokat nem szabad módosítani. |
+Részletes hibaelhárítási táblázat és megoldások:
+
+- [Hibaelhárítás és GYIK — GitHub Classroom](../../../../guides/hibaelharitas.md#github-classroom)
+- [Hibaelhárítás és GYIK — Git és GitHub](../../../../guides/hibaelharitas.md#git-és-github)
+- [GitHub Classroom — Diák útmutató](../../../../guides/github-classroom-diak-utmutato.md) (diákoknak továbbítható)
 
 ---
 

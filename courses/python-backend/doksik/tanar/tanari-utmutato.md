@@ -169,20 +169,12 @@ Vizsga és házi feladat kezelése GitHub Classroom-ban: lásd [`github-classroo
 
 ## Gyakori diákproblémák és megoldásuk
 
-| Probléma | Megoldás |
-|----------|----------|
-| `ModuleNotFoundError: No module named 'fastapi'` | A `venv` nincs aktiválva. `source venv/bin/activate` (Windows: `venv\Scripts\activate`) |
-| `uvicorn: command not found` | Telepítsd: `pip install uvicorn` (venv aktív?) |
-| `sqlalchemy.exc.OperationalError: connection refused` | A PostgreSQL konténer nem fut. `docker compose up -d` |
-| `alembic.util.exc.CommandError: Can't determine revision` | `alembic upgrade head` nem futott le. Ellenőrizd a `DATABASE_URL`-t. |
-| `422 Unprocessable Entity` | A request body nem felel meg a Pydantic sémának — ellenőrizd a JSON-t |
-| `401 Unauthorized` | Hiányzó vagy lejárt JWT token. Újra kell login-olni. |
-| `docker: permission denied` | **Linux:** A felhasználó nincs a `docker` csoportban. `sudo usermod -aG docker $USER` + kijelentkezés. **Windows:** Docker Desktop fut? Rendszergazdaként indítsd. |
-| `psycopg2` telepítési hiba | **Linux:** `sudo apt install libpq-dev python3-dev`. **Windows:** használd a `psycopg2-binary` csomagot helyette. |
-| `git push` sikertelen | Ellenőrizd: van-e commit? A megfelelő mappában vagy-e? |
-| GitHub Classroom tesztek FAIL, de lokálisan PASS | A tesztek SQLite in-memory DB-t használnak — ellenőrizd a `conftest.py`-t |
-| `ImportError: cannot import name 'get_db'` | A `database.py` vagy `dependencies.py` nincs a megfelelő helyen, vagy rossz az import path |
-| `pydantic.error_wrappers.ValidationError` | Érvénytelen adat a Pydantic modellben — ellenőrizd a típusokat |
+A kurzus-specifikus hibák és megoldásaik részletes listáját lásd a központi hibaelhárítási útmutatóban:
+
+- [Hibaelhárítás és GYIK — Backend FastAPI kurzus](../../../../guides/hibaelharitas.md#backend-fastapi-kurzus)
+- [Hibaelhárítás és GYIK — Docker](../../../../guides/hibaelharitas.md#docker)
+- [Hibaelhárítás és GYIK — Git és GitHub](../../../../guides/hibaelharitas.md#git-és-github)
+- [Hibaelhárítás és GYIK — GitHub Classroom](../../../../guides/hibaelharitas.md#github-classroom)
 
 ---
 

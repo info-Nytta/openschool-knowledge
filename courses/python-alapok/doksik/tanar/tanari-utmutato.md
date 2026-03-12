@@ -93,12 +93,8 @@ Vizsga és házi feladat kezelése GitHub Classroom-ban: lásd [`github-classroo
 
 ## Gyakori diákproblémák és megoldásuk
 
-| Probléma | Megoldás |
-|----------|----------|
-| `SyntaxError` ékezetes változóneveknél | Kerüljék az ékezetes változóneveket, vagy használjanak ASCII neveket |
-| `FileNotFoundError` | A `.txt` fájl nem ugyanabban a mappában van, mint a `.py` |
-| `UnicodeDecodeError` | Hiányzik az `encoding="utf-8"` paraméter |
-| `ModuleNotFoundError: fgv` | A `fgv.py` és a főprogram nem ugyanabban a mappában van |
-| `TypeError: can't concat str to int` | Elfelejtett `int()` vagy `str()` konverzió |
-| `git push` sikertelen | Ellenőrizd: van-e commit? A megfelelő mappában vagy-e? |
-| GitHub Classroom link nem működik | A diák nincs bejelentkezve GitHubra, vagy nem tagja a szervezetnek |
+A kurzus-specifikus hibák és megoldásaik részletes listáját lásd a központi hibaelhárítási útmutatóban:
+
+- [Hibaelhárítás és GYIK — Python Alapok kurzus](../../../../guides/hibaelharitas.md#python-alapok-kurzus)
+- [Hibaelhárítás és GYIK — Git és GitHub](../../../../guides/hibaelharitas.md#git-és-github)
+- [Hibaelhárítás és GYIK — GitHub Classroom](../../../../guides/hibaelharitas.md#github-classroom)

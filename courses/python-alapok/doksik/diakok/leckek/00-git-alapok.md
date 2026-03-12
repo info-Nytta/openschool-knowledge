@@ -88,6 +88,8 @@ git status                   # Mi változott?
 git log --oneline            # Eddigi commitok listája
 ```
 
+> **Teljes parancsreferencia:** [Git puskalap](../../../../../guides/git-puskalap.md)
+
 ---
 
 ## Tipikus munkafolyamat (minden óra/házi feladat)
@@ -120,6 +122,8 @@ git log --oneline            # Eddigi commitok listája
 - Az utolsó `git push` a beadás
 - A határidő után a tanár értékeli a repóban lévő fájlokat
 
+> **Részletes útmutató:** [GitHub Classroom — Diák útmutató](../../../../../guides/github-classroom-diak-utmutato.md)
+
 ---
 
 ## Gyakorlat
@@ -142,9 +146,8 @@ git push
 
 ## Gyakori hibák és megoldásuk
 
-| Hiba | Megoldás |
-|------|----------|
-| `fatal: not a git repository` | Nem a repo mappájában vagy – `cd` paranccsal lépj be |
-| `nothing to commit` | Nem változtattál semmit, vagy már commitoltad |
-| `failed to push` | Előbb `git pull`, aztán `git push` |
-| `Permission denied` | Nincs jogosultságod – jelezd a tanárnak |
+Ha hibába ütközöl, nézd meg a részletes hibaelhárítási útmutatót:
+
+- [Hibaelhárítás és GYIK — Git és GitHub](../../../../../guides/hibaelharitas.md#git-és-github)
+- [Hibaelhárítás és GYIK — GitHub Classroom](../../../../../guides/hibaelharitas.md#github-classroom)
+- [Git puskalap — Gyors parancskereső](../../../../../guides/git-puskalap.md)

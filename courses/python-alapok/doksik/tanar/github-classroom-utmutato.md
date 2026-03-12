@@ -233,14 +233,11 @@ Minden héten ezeket kell megtenned:
 
 ## 9. Gyakori problémák és megoldásaik
 
-| Probléma | Megoldás |
-|----------|---------|
-| „A diák nem tudja elfogadni a linket" | Ellenőrizd, hogy van-e GitHub fiókja. Segítsd a regisztrációban. |
-| „Nem lát semmit a repo-ban" | Valószínűleg nem klónozta le. Segíts a `git clone` paranccsal. |
-| „Commitolt, de nem pusholt" | Mutasd meg neki a `git push` parancsot. Ellenőrizd a GitHub oldalon. |
-| „Deadline után pusholt" | A GitHub Classroom mutatja az utolsó commit időpontját. Te döntöd el, elfogadod-e. |
-| „A kód más gépen nem fut" | Valószínűleg fájlútvonal probléma. Mutasd meg a relatív útvonalat. |
-| „Nem tudja, mit commitoljon" | Mutasd meg: `git add .` → `git commit -m "üzenet"` → `git push` |
+Részletes hibaelhárítási táblázat és megoldások:
+
+- [Hibaelhárítás és GYIK — GitHub Classroom](../../../../guides/hibaelharitas.md#github-classroom)
+- [Hibaelhárítás és GYIK — Git és GitHub](../../../../guides/hibaelharitas.md#git-és-github)
+- [GitHub Classroom — Diák útmutató](../../../../guides/github-classroom-diak-utmutato.md) (diákoknak továbbítható)
 
 ---
 
