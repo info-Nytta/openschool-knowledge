@@ -6,11 +6,29 @@ Ez a dokumentum lépésről lépésre elmagyarázza, hogyan kell a GitHub Classr
 
 ## 1. Előkészületek (egyszer kell megcsinálni)
 
-Az előkészületek lépései (Organization létrehozása, Classroom beállítása, diákok meghívása) megegyeznek a Python Alapok kurzusnál leírtakkal. Részletes útmutató: [GitHub Classroom előkészületek — Python Alapok](../../python-alapok/doksik/tanar/github-classroom-utmutato.md#1-előkészületek-egyszer-kell-megcsinálni).
+### 1.1 GitHub Organization létrehozása
 
-**Backend-specifikus eltérések:**
-- Organization neve: pl. `openschool-backend-2026`
-- Classroom neve: pl. „Backend FastAPI – 2026"
+1. Lépj be a [github.com](https://github.com) oldalra a saját GitHub fiókoddal
+2. Kattints a jobb felső sarokban a **+** gombra → **New organization**
+3. Válaszd a **Free** tervet
+4. Adj nevet (pl. `openschool-backend-2026`)
+5. Add meg az email címedet, majd kattints a **Create** gombra
+
+### 1.2 GitHub Classroom létrehozása
+
+1. Nyisd meg: [classroom.github.com](https://classroom.github.com)
+2. Kattints: **New Classroom**
+3. Válaszd ki az imént létrehozott Organization-t
+4. Adj nevet a Classroom-nak (pl. „Backend FastAPI – 2026”)
+5. Készen is van!
+
+### 1.3 Diákok meghívása
+
+1. A Classroom oldalán kattints a **Students** fülre
+2. Itt két lehetőséged van:
+   - **Meghívó link** küldése (a diákok magukat adják hozzá)
+   - **Névsor feltöltése** (CSV fájl, hogy a diákok nevüket kiválaszthassák)
+3. **Ajánlás:** Töltsd fel a névjegyzéket, hogy a résztvevők a saját azonosítójukat válasszák ki az első assignment elfogadásakor — így a GitHub felhasználónevük össze lesz rendelve a névjegyzékbeli nevükkel
 
 ---
 
@@ -301,13 +319,13 @@ Minden héten ezeket kell megtenned:
 
 ### Egyszerű értékelési skála:
 
-| Jegy | Feltétel |
-|------|----------|
-| ⭐⭐⭐⭐⭐ (5) | Minden feladat kész, helyes, szép kód, tesztek zöldek |
-| ⭐⭐⭐⭐ (4) | A ⭐ és ⭐⭐ feladatok készen vannak és helyesek |
-| ⭐⭐⭐ (3) | A ⭐ feladatok készen vannak és helyesek |
-| ⭐⭐ (2) | Legalább 2 feladat beadva, de hibás |
-| ⭐ (1) | Nem adott be semmit, vagy nem commitolt |
+| Szint | Feltétel |
+|-------|----------|
+| Kiváló | Minden feladat kész, helyes, szép kód, tesztek zöldek |
+| Haladó | A ⭐ és ⭐⭐ feladatok készen vannak és helyesek |
+| Megfelelő | A ⭐ feladatok készen vannak és helyesek |
+| Kezdő | Legalább 2 feladat beadva, de hibás |
+| Nem teljesített | Nem adott be semmit, vagy nem commitolt |
 
 ---
 
