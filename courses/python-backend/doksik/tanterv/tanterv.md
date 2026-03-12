@@ -4,7 +4,7 @@
 
 | Jellemző | Érték |
 |----------|-------|
-| Évfolyam | 13. (esti tagozat / felnőttképzés) |
+| Szint | Haladó (Python előismeret szükséges) |
 | Időtartam | 25 hét (6 hónap) |
 | Heti óraszám | 6 óra (3 × 2 óra) |
 | Összes óra | 144 |

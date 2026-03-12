@@ -3,7 +3,7 @@
 ## Kurzus áttekintés
 
 **Cél:** A diákok elsajátítsák a Python programozás és a Git/GitHub alapjait, és felkészüljenek a szintfelmérő vizsgára.
-**Időtartam:** 13 hét (heti 2 óra = 26 tanóra)
+**Időtartam:** 13 hét (heti 2 óra = 26 óra)
 **Vizsga:** 40 pontos szintfelmérő (90 perc, GitHub Classroom-on keresztül)
 
 ---

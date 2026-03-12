@@ -17,7 +17,7 @@ A kurzus 25 hétre van bontva (0–24. hét, heti 6 óra = 3 × 2 óra), és fok
 
 ### 0. hét: Git, GitHub, parancssor alapok
 - **Cél:** A diákok beállítják a fejlesztői környezetet, ismétlik a Git-et, és megismerik a GitHub Classroom workflow-t
-- **Tipp:** Előre készíts egy GitHub Classroom szervezetet és egy próba-feladatot. Esti tagozatnál sokan régebben tanultak Git-et — számíts arra, hogy ismétlésre szükség lesz. **Windowsos diákoknál** a Git Bash telepítését és a Docker Desktop beállítását külön segítsd.
+- **Tipp:** Előre készíts egy GitHub Classroom szervezetet és egy próba-feladatot. Egyes résztvevők régebben tanulták a Git-et — számíts arra, hogy ismétlésre szükség lesz. **Windowsos diákoknál** a Git Bash telepítését és a Docker Desktop beállítását külön segítsd.
 - **Beállítás:** Lásd [`github-classroom-utmutato.md`](github-classroom-utmutato.md)
 - **Házi feladat:** Próba repo: klónozás, branch létrehozása, merge, push
 
@@ -196,7 +196,7 @@ Vizsga és házi feladat kezelése GitHub Classroom-ban: lásd [`github-classroo
 | Tesztelés | Shell tesztek (autograding) | pytest (automatikus) |
 | Beadás | Shell + Python tesztek | pytest tesztek a GitHub Classroom-ban |
 | Vizsga | 40 pont, 90 perc | 60 pont, 240 perc |
-| Célcsoport | Nappali tagozat | Esti tagozat / felnőttképzés |
+| Célcsoport | Kezdők | Haladók (Python előismerettel) |
 
 ---
 

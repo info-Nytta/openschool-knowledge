@@ -4,7 +4,7 @@
 #   .\github-setup.ps1 <ORGANIZATION> <TEMPLATE_MAPPA>
 #
 # Példa:
-#   .\github-setup.ps1 iskola-10b-python-2026 ..\..\courses\python-alapok\github-classroom
+#   .\github-setup.ps1 openschool-python-2026 ..\..\courses\python-alapok\github-classroom
 #
 # Előfeltételek:
 #   - GitHub CLI (gh) telepítve és bejelentkezve: https://cli.github.com

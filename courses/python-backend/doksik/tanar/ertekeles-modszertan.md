@@ -7,7 +7,7 @@
 - **Formatív értékelés elsőbbsége:** A félév során a cél a tanulás támogatása, nem a szűrés. A heti házi feladatok visszajelzésként szolgálnak, nem büntetésként.
 - **Fokozatos nehezítés:** A heti feladatok komplexitása nő (egyszerű API → CRUD + DB → auth + teszt), a vizsga az összesített tudást méri (60 pont).
 - **Automatizált + emberi értékelés:** A GitHub Classroom pytest-tel ad objektív alappontszámot, de a tanári kód-átnézés (code review) is része az értékelésnek.
-- **Növekedési szemlélet (growth mindset):** Esti tagozaton/felnőttképzésben a diákok eltérő háttérrel érkeznek — az előrehaladás fontosabb, mint az abszolút szint.
+- **Növekedési szemlélet (growth mindset):** A résztvevők eltérő háttérrel érkeznek — az előrehaladás fontosabb, mint az abszolút szint.
 - **Gyakorlatorientáltság:** A backend fejlesztés kézműves szakma — a vizsga is gyakorlati (kódot kell írni, nem elméleti kérdésekre válaszolni).
 
 ### Mit mérünk?

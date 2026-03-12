@@ -11,7 +11,7 @@ Ez a dokumentum lépésről lépésre elmagyarázza, hogyan kell a GitHub Classr
 1. Lépj be a [github.com](https://github.com) oldalra a saját GitHub fiókoddal
 2. Kattints a jobb felső sarokban a **+** gombra → **New organization**
 3. Válaszd a **Free** tervet
-4. Adj nevet (pl. `iskola-10b-python-2026`)
+4. Adj nevet (pl. `openschool-python-2026`)
 5. Add meg az email címedet, majd kattints a **Create** gombra
 
 ### 1.2 GitHub Classroom létrehozása

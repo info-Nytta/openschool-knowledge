@@ -11,7 +11,7 @@ Ez a dokumentum lépésről lépésre elmagyarázza, hogyan kell a GitHub Classr
 1. Lépj be a [github.com](https://github.com) oldalra a saját GitHub fiókoddal
 2. Kattints a jobb felső sarokban a **+** gombra → **New organization**
 3. Válaszd a **Free** tervet
-4. Adj nevet (pl. `iskola-13-backend-2026`)
+4. Adj nevet (pl. `openschool-backend-2026`)
 5. Add meg az email címedet, majd kattints a **Create** gombra
 
 ### 1.2 GitHub Classroom létrehozása
@@ -345,7 +345,7 @@ Minden héten ezeket kell megtenned:
 
 ## 10. Tippek
 
-- **Első órán** (0. hét): szánj rá időt, hogy mindenki beállítsa a Git-et és a GitHub fiókot. Esti tagozatnál ezt akár otthoni feladatnak is kiadhatod előre.
+- **Első alkalommal** (0. hét): szánj rá időt, hogy mindenki beállítsa a Git-et és a GitHub fiókot. Ezt akár előzetesen kiadhatod önálló feladatnak.
 - **Névsor feltöltése** a Classroom-ba: így a diákok nevéhez rendelheted a GitHub felhasználónevüket
 - **Docker telepítés** (7. hét): készíts lépésről lépésre útmutatót, mert ez a leggyakoribb technikai akadály
 - **pytest bevezetése** (13. hét): innentől az autograding pytest-tel történik — készítsd fel a diákokat, hogy a tesztfájlokat NE módosítsák

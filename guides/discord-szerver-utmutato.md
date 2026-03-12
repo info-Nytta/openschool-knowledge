@@ -23,7 +23,7 @@ Az alábbi struktúra egyetlen szerveren kezeli az összes kurzust. Új kurzus h
 
 ```
 📋 INFORMÁCIÓ
-  #szabályzat           → Szerver szabályok, viselkedési kódex (valódi név kötelező!)
+  #szabályzat           → Szerver szabályok, viselkedési kódex
   #közlemények           → Tanári bejelentések, minden kurzushoz (csak olvasható diákoknak)
   #hasznos-linkek        → Dokumentációk, tutorialok, eszközök
 
@@ -43,7 +43,7 @@ Az alábbi struktúra egyetlen szerveren kezeli az összes kurzust. Új kurzus h
 
 🎤 HANG
   🔊 konzultáció         → Hangcsatorna konzultációs időpontokhoz
-  🔊 tanóra              → Hangcsatorna online órákhoz (képernyőmegosztás)
+  🔊 foglalkozás         → Hangcsatorna online alkalmakhoz (képernyőmegosztás)
 
 🔒 TANÁRI (rejtett)
   #tanári-szoba          → Tanári megbeszélések, diákok nem látják
@@ -94,7 +94,7 @@ Szerver beállítások → **Roles** → **Create Role**
 
 > **Tipp:** Az évszámot tedd a szerepkör nevébe (pl. `Python Alapok – 2026`), hogy évről évre könnyen kezeld, ki az aktív diák. A kurzusonkénti szerepkörökkel szabályozhatod, ki melyik kurzus csatornáit látja. Ha nem szükséges az elkülönítés, elég egyetlen `Diák – 2026` szerepkör.
 
-> **Fontos:** Az új diákok csatlakozása után ellenőrizd, hogy valódi nevet használnak-e becenévként (nickname). Ha nem, kérd meg őket a változtatásra. Beállítás: jobb klikk a felhasználóra → **Change Nickname**.
+> **Tipp:** Érdemes megkérni az új tagokat, hogy felismerhető nevet vagy azonosítót használjanak becenévként (nickname). Beállítás: jobb klikk a felhasználóra → **Change Nickname**.
 
 ### 3.2 Fontos jogosultság-beállítások
 
