@@ -26,7 +26,7 @@ Az OpenSchool megközelítése: **a munkafolyamat maga legyen a tananyag része*
 | Elv | Megvalósítás |
 |-----|-------------|
 | **Valódi eszközök** | GitHub, Discord, VS Code, Docker — nem iskolai pótlékok |
-| **Gyakorlat az elmélet előtt** | Max 15 perc elmélet, utána live coding |
+| **Gyakorlat az elmélet előtt** | Rövid elméleti bevezető, utána azonnal gyakorlati feladatok |
 | **CI mint visszajelzés** | Az automatikus tesztek azonnal megmutatják, mi működik |
 | **A git történet számít** | A commitok mutatják a fejlődést, nem csak a végeredmény |
 
