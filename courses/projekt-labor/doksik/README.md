@@ -4,6 +4,15 @@
 
 → [tanterv/tanterv.md](tanterv/tanterv.md) — Teljes kurzus áttekintés, modulok és célok
 
+## Mentori anyagok
+
+→ [mentor/](mentor/) — Mentorálási útmutató, értékelési módszertan
+
+| Dokumentum | Leírás |
+|------------|--------|
+| [Mentori útmutató](mentor/mentori-utmutato.md) | Modulonkénti mentorálási terv, mérföldkövek, tippek |
+| [Értékelési módszertan](mentor/ertekeles-modszertan.md) | Projektértékelés, kód review, verifikációs tesztek |
+
 ## Tanuló anyagok
 
 → [tanulok/](tanulok/) — Környezet beállítás, Discord használat, közös dokumentumok
