@@ -1,10 +1,17 @@
-# Tanulói adatok (személyes, nem verziókezelt)
-adatok/*/
-!adatok/README.md
-
 # Környezeti változók
 .env
 
 # Python
 __pycache__/
 *.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
