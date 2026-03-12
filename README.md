@@ -2,7 +2,7 @@
 
 Nyílt forráskódú, magyar nyelvű programozásoktatási tudásbázis, amely a valódi fejlesztői munkafolyamatokra építi a tanulást — Git, CI/CD, csapatkommunikáció és automatikus tesztelés az első naptól.
 
-**Nyelv:** magyar | **Licenc:** [MIT](LICENSE) (kód) + [CC BY-SA 4.0](LICENSE-CC-BY-SA) (tartalom) | **Platform:** [openschool-platform](https://github.com/TODO/openschool-platform)
+**Nyelv:** magyar | **Licenc:** [MIT](LICENSE) (kód) + [CC BY-SA 4.0](LICENSE-CC-BY-SA) (tartalom) | **Platform:** [openschool-platform](https://github.com/ghemrich/openschool-platform)
 
 ---
 
@@ -86,7 +86,7 @@ Automatizálási szkriptek: → [tools/](tools/)
 
 ## Kapcsolódó projekt
 
-Az **[OpenSchool Platform](https://github.com/TODO/openschool-platform)** a webalkalmazás, amely erre a tudásbázisra épül: kurzusok böngészése, haladáskövetés GitHub Classroom integrációval, tanúsítvány kiállítás.
+Az **[OpenSchool Platform](https://github.com/ghemrich/openschool-platform)** a webalkalmazás, amely erre a tudásbázisra épül: kurzusok böngészése, haladáskövetés GitHub Classroom integrációval, tanúsítvány kiállítás.
 
 ## Közreműködés
 

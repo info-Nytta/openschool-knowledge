@@ -5,7 +5,7 @@
 #   ./github-setup.sh <ORGANIZATION> <TEMPLATE_MAPPA>
 #
 # Példa:
-#   ./github-setup.sh iskola-10b-python-2026 ../../kurzusok/python/10/github-classroom
+#   ./github-setup.sh iskola-10b-python-2026 ../../courses/python-alapok/github-classroom
 #
 # Előfeltételek:
 #   - GitHub CLI (gh) telepítve és bejelentkezve: https://cli.github.com
@@ -24,7 +24,7 @@ if [[ $# -lt 2 ]]; then
     echo "Használat: $0 <ORGANIZATION> <TEMPLATE_MAPPA>"
     echo ""
     echo "Példa:"
-    echo "  $0 iskola-10b-python-2026 ../../kurzusok/python/10/github-classroom"
+    echo "  $0 iskola-10b-python-2026 ../../courses/python-alapok/github-classroom"
     exit 1
 fi
 
