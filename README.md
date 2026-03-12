@@ -8,7 +8,7 @@ Nyílt forráskódú, magyar nyelvű programozásoktatási tudásbázis, amely a
 
 ## Miért jó ez a projekt?
 
-A programozásoktatás gyakran iskolai platformokra épül: a tanuló feltölt egy fájlt, a mentor kézzel javít, a visszajelzés napokkal később érkezik. A tanuló nem találkozik verziókezeléssel, automatikus tesztekkel vagy fejlesztői kommunikációs csatornákkal — azokkal az eszközökkel, amelyeket az első munkanapján használnia kell majd.
+A programozásoktatás gyakran iskolai platformokra épül: a diák feltölt egy fájlt, a tanár kézzel javít, a visszajelzés napokkal később érkezik. A tanuló nem találkozik verziókezeléssel, automatikus tesztekkel vagy fejlesztői kommunikációs csatornákkal — azokkal az eszközökkel, amelyeket az első munkanapján használnia kell majd.
 
 Az OpenSchool megközelítése: **a munkafolyamat maga legyen a tananyag része**.
 
