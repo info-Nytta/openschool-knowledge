@@ -1,4 +1,4 @@
-# Értékelési rubrika – Backend szintfelmérő 13. évfolyam (A variáns: Todo API)
+# Értékelési rubrika – Backend FastAPI szintfelmérő (A variáns: Todo API)
 
 **Összesen: 60 pont**
 

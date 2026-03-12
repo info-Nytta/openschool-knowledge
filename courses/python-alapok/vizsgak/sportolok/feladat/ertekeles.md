@@ -1,4 +1,4 @@
-# Értékelési rubrika – Python szintfelmérő 10. évfolyam
+# Értékelési rubrika – Python Alapok szintfelmérő
 
 **Összesen: 40 pont**
 

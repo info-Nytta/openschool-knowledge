@@ -28,7 +28,7 @@ A kurzus végére a diák képes önállóan:
 
 ## Szükséges előismeretek
 
-A 10. évfolyamos Python kurzus ismeretanyaga:
+A Python Alapok kurzus ismeretanyaga:
 - Változók, típusok, vezérlési szerkezetek
 - Függvények, listák, szótárak
 - Fájlkezelés (olvasás/írás)

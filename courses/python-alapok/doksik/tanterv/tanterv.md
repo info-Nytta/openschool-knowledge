@@ -1,4 +1,4 @@
-# Python kurzus tanterv – 10. évfolyam
+# Python Alapok – tanterv
 
 ## Kurzus áttekintés
 

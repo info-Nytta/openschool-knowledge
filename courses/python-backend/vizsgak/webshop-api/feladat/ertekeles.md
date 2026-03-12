@@ -1,4 +1,4 @@
-# Értékelési rubrika – Backend szintfelmérő 13. évfolyam (C variáns: Webshop API)
+# Értékelési rubrika – Backend FastAPI szintfelmérő (C variáns: Webshop API)
 
 **Összesen: 60 pont**
 

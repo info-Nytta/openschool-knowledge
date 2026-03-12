@@ -1,6 +1,6 @@
-# Backend (FastAPI) kurzus – 13. évfolyam
+# Backend FastAPI kurzus
 
-25 hetes backend fejlesztés kurzus FastAPI keretrendszerrel, felnőttek és középiskolai diákok számára, GitHub Classroom integrációval és automatizált értékeléssel.
+25 hetes backend fejlesztés kurzus FastAPI keretrendszerrel, GitHub Classroom integrációval és automatizált értékeléssel.
 
 ## Mappaszerkezet
 

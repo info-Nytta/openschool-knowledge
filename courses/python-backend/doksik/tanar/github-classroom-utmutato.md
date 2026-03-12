@@ -1,6 +1,6 @@
 # GitHub Classroom – Tanári útmutató a házi feladatokhoz
 
-Ez a dokumentum lépésről lépésre elmagyarázza, hogyan kell a GitHub Classroom rendszert használni a heti házi feladatok kiosztásához és értékeléséhez. A 13. évfolyamos kurzusban az autograding **pytest** alapú.
+Ez a dokumentum lépésről lépésre elmagyarázza, hogyan kell a GitHub Classroom rendszert használni a heti házi feladatok kiosztásához és értékeléséhez. A Backend FastAPI kurzusban az autograding **pytest** alapú.
 
 ---
 
@@ -19,7 +19,7 @@ Ez a dokumentum lépésről lépésre elmagyarázza, hogyan kell a GitHub Classr
 1. Nyisd meg: [classroom.github.com](https://classroom.github.com)
 2. Kattints: **New Classroom**
 3. Válaszd ki az imént létrehozott Organization-t
-4. Adj nevet a Classroom-nak (pl. „Backend 13. – 2026")
+4. Adj nevet a Classroom-nak (pl. „Backend FastAPI – 2026”)
 5. Készen is van!
 
 ### 1.3 Diákok meghívása
@@ -121,7 +121,7 @@ Minden héten egy új **Assignment**-et kell létrehozni. Ezt kell tenned:
 
 ### 4.1 Hogyan működik?
 
-A 13. évfolyamos kurzusban az autograding **pytest** alapú (nem shell teszt):
+A Backend FastAPI kurzusban az autograding **pytest** alapú (nem shell teszt):
 
 1. A diák pushol → a GitHub Actions automatikusan lefuttatja a `pytest` teszteket
 2. A Classroom felületén megjelenik az eredmény

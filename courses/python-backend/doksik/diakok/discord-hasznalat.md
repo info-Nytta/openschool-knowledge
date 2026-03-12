@@ -28,22 +28,22 @@ Ez a dokumentum elmagyarázza, hogyan csatlakozz a kurzusok közös Discord szer
 
 ## 2. Csatornák áttekintése
 
-A szerver több kurzust szolgál ki. A Backend 13 kurzushoz ezeket a csatornákat használd:
+A szerver több kurzust szolgál ki. A Backend FastAPI kurzushoz ezeket a csatornákat használd:
 
 | Csatorna | Mire való |
 |----------|-----------|
 | `#szabályzat` | Szerver szabályok – olvasd el először! |
-| `#közlemények` | Tanári bejelentések – csak olvasható (⚡ jelöli a Backend 13 híreket) |
+| `#közlemények` | Tanári bejelentések – csak olvasható (⚡ jelöli a Backend FastAPI híreket) |
 | `#hasznos-linkek` | FastAPI, SQLAlchemy, Docker dokumentáció, egyéb segédanyagok |
-| `#backend13-általános` | Kurzussal kapcsolatos kérdések, beszélgetés |
-| `#backend13-segítség` | Feladatokkal kapcsolatos kérdések és hibakeresés |
-| `#backend13-megoldások` | Kód review, megoldások megosztása |
+| `#backend-általános` | Kurzussal kapcsolatos kérdések, beszélgetés |
+| `#backend-segítség` | Feladatokkal kapcsolatos kérdések és hibakeresés |
+| `#backend-megoldások` | Kód review, megoldások megosztása |
 | `#általános` | Szabadtéma, kurzusokon átívelő beszélgetés |
 | `🔊 konzultáció` | Hangcsatorna – konzultációs időpontokban |
 
 ### Heti szálak
 
-A `#backend13-segítség` csatornán a tanár minden héten nyit egy **szálat** (Thread) az aktuális témához, évszámmal jelölve (pl. *„2026 – 7. hét – Docker és PostgreSQL"*). Kérdezz az adott hét szálában, hogy átlátható maradjon a beszélgetés.
+A `#backend-segítség` csatornán a tanár minden héten nyit egy **szálat** (Thread) az aktuális témához, évszámmal jelölve (pl. *„2026 – 7. hét – Docker és PostgreSQL"*). Kérdezz az adott hét szálában, hogy átlátható maradjon a beszélgetés.
 
 > **Megjegyzés:** Régebbi évek szálai is láthatók lehetnek a csatornán. Mindig az aktuális év szálait használd.
 
@@ -129,7 +129,7 @@ Más nyelvekhez:
 2. **Légy tisztelettudató** – Mindenki tanul, senkit nem szabad kigúnyolni kérdés miatt
 3. **Használj kódblokkot** – Formázd a kódot (lásd 3. fejezet)
 4. **Ne oszd meg a teljes megoldást** – Segíts, de ne csináld meg helyette (különösen házi feladatnál)
-5. **Megfelelő csatornán írj** – Backend 13 kérdés → `#backend13-segítség`
+5. **Megfelelő csatornán írj** – Backend FastAPI kérdés → `#backend-segítség`
 6. **Használd a szálakat** – Kérdezz az aktuális hét szálában
 7. **Nincs spam** – Ne küldj felesleges üzeneteket vagy emotikonokat tömegesen
 8. **Privát üzenetek** – Kérdéseket inkább a nyilvános csatornákon tedd fel, mások is tanulhatnak belőle
@@ -158,6 +158,6 @@ Ha túl sok értesítést kapsz:
 | Lehet mobilon használni? | Igen, töltsd le a Discord alkalmazást |
 | Mi az a szál (Thread)? | Egy üzenet alatti albeszélgetés – kattints a 💬 ikonra |
 | Látom a másik kurzus csatornáit? | Csak ha a tanár engedélyezte – ha nem látod, ez normális |
-| Hol kérdezzek? | Az aktuális év + hét szálában a `#backend13-segítség` csatornán |
+| Hol kérdezzek? | Az aktuális év + hét szálában a `#backend-segítség` csatornán |
 | Látom régi évek szálait is? | Igen, ez normális – te mindig az aktuális éves szálakba írj |
 | Mikor van konzultáció? | A `#közlemények` csatornán hirdeti meg a tanár |

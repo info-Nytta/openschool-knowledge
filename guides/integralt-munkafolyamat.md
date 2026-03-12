@@ -33,7 +33,7 @@ Minden hétre létrejön egy template repó (pl. `het01-alapok`, `het02-bevitel-
 Ha még nincs szerver, kövesd a [Discord szerver útmutatót](discord-szerver-utmutato.md).
 
 Ha már van szerver, csak az éves karbantartást kell elvégezni (lásd útmutató 8. fejezet):
-- Új éves szerepkörök létrehozása (`Python 10 – 2026`)
+- Új éves szerepkörök létrehozása (`Python Alapok – 2026`)
 - Régi szálak archiválása
 
 ### 1.3 Webhook-ok beállítása
@@ -41,13 +41,13 @@ Ha már van szerver, csak az éves karbantartást kell elvégezni (lásd útmuta
 A szkriptek webhook-okon keresztül küldenek üzeneteket a Discord csatornákra. A részletes beállítási útmutatót (létrehozás, .env fájl, tesztelés) lásd:
 **[Discord szerver útmutató – 5.3 Webhook-ok](discord-szerver-utmutato.md#53-webhook-ok-beállítása-automatizáláshoz)**
 
-Röviden: 3 webhook kell (`#közlemények`, `#python10-segítség`, `#backend13-segítség`), az URL-eket a `tools/.env` fájlban tárold:
+Röviden: 3 webhook kell (`#közlemények`, `#python-alapok-segítség`, `#backend-segítség`), az URL-eket a `tools/.env` fájlban tárold:
 
 ```bash
 # tools/.env
 DISCORD_WEBHOOK_KOZLEMENYEK=https://discord.com/api/webhooks/...
-DISCORD_WEBHOOK_PYTHON10=https://discord.com/api/webhooks/...
-DISCORD_WEBHOOK_BACKEND13=https://discord.com/api/webhooks/...
+DISCORD_WEBHOOK_PYTHON=https://discord.com/api/webhooks/...
+DISCORD_WEBHOOK_BACKEND=https://discord.com/api/webhooks/...
 ```
 
 ---
@@ -60,10 +60,10 @@ DISCORD_WEBHOOK_BACKEND13=https://discord.com/api/webhooks/...
 cd tools/
 
 # Heti szál nyitása a kurzus csatornáján
-python discord-webhook.py szal python10 3 "Feltételes elágazások"
+python discord-webhook.py szal --kurzus python --het 3 --tema "Feltételes elágazások"
 
 # Bejelentés (opcionális)
-python discord-webhook.py bejelentes python10 "Ma az if/elif/else szerkezeteket nézzük meg."
+python discord-webhook.py bejelentes --kurzus python --het 3 --tema "Feltételes elágazások" --megjegyzes "Ma az if/elif/else szerkezeteket nézzük meg."
 ```
 
 ### 2.2 Házi feladat kiadása
@@ -72,14 +72,14 @@ python discord-webhook.py bejelentes python10 "Ma az if/elif/else szerkezeteket 
 2. Az invite linket küldd el Discord-on:
 
 ```bash
-python discord-webhook.py uzenet python10 "📎 Házi feladat: https://classroom.github.com/a/XXXXXX"
+python discord-webhook.py uzenet --webhook-url $DISCORD_WEBHOOK_PYTHON --uzenet "📎 Házi feladat: https://classroom.github.com/a/XXXXXX"
 ```
 
 ### 2.3 Határidő emlékeztető
 
 ```bash
 # Határidő előtt 1-2 nappal
-python discord-webhook.py emlekezteto python10 3 "2025-02-14"
+python discord-webhook.py emlekezteto --kurzus python --het 3 --hatarido "2026-03-14"
 ```
 
 ### 2.4 Eredmények letöltése
@@ -87,8 +87,8 @@ python discord-webhook.py emlekezteto python10 3 "2025-02-14"
 GitHub Classroom → **Download Grades** → CSV fájl.
 
 Az autograding automatikusan értékeli a beadásokat:
-- **Python 10:** shell-alapú tesztek (`test -f megoldas.py && python megoldas.py < bemenet.txt | diff - vart_kimenet.txt`)
-- **Backend 13:** pytest tesztek (`pytest test_*.py`)
+- **Python Alapok:** shell-alapú tesztek (`test -f megoldas.py && python megoldas.py < bemenet.txt | diff - vart_kimenet.txt`)
+- **Backend FastAPI:** pytest tesztek (`pytest test_*.py`)
 
 ---
 

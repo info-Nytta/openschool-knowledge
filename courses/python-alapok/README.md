@@ -1,6 +1,6 @@
-# Python kurzus – 10. évfolyam
+# Python Alapok kurzus
 
-13 hetes Python programozás kurzus középiskolai diákok számára, GitHub Classroom integrációval és automatizált értékeléssel.
+13 hetes Python programozás kurzus kezdők számára, GitHub Classroom integrációval és automatizált értékeléssel.
 
 ## Mappaszerkezet
 

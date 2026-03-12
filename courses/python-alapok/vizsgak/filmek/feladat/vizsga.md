@@ -1,4 +1,4 @@
-# Python szintfelmérő – 10. évfolyam
+# Python Alapok szintfelmérő
 
 **Időtartam:** 90 perc
 **Összpontszám:** 40 pont

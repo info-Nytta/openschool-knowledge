@@ -1,4 +1,4 @@
-# Értékelési módszertan – Backend fejlesztés FastAPI-val (13. évfolyam)
+# Értékelési módszertan – Backend FastAPI
 
 ## 1. Értékelési filozófia
 
@@ -56,7 +56,7 @@
 
 ### A tesztek jellemzői
 
-**A 13. évfolyamos kurzusban a tesztek pytest-tel futnak:**
+**A Backend FastAPI kurzusban a tesztek pytest-tel futnak:**
 
 ```python
 # Példa: test_api.py

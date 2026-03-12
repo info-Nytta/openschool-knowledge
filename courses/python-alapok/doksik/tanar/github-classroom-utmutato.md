@@ -19,7 +19,7 @@ Ez a dokumentum lépésről lépésre elmagyarázza, hogyan kell a GitHub Classr
 1. Nyisd meg: [classroom.github.com](https://classroom.github.com)
 2. Kattints: **New Classroom**
 3. Válaszd ki az imént létrehozott Organization-t
-4. Adj nevet a Classroom-nak (pl. „Python 10.B – 2026")
+4. Adj nevet a Classroom-nak (pl. „Python Alapok – 2026”)
 5. Készen is van!
 
 ### 1.3 Diákok meghívása

@@ -1,4 +1,4 @@
-# Értékelési rubrika – Backend szintfelmérő 13. évfolyam (B variáns: Blog API)
+# Értékelési rubrika – Backend FastAPI szintfelmérő (B variáns: Blog API)
 
 **Összesen: 60 pont**
 

@@ -1,4 +1,4 @@
-# Értékelési rubrika – Backend szintfelmérő 13. évfolyam (D variáns: Recept API)
+# Értékelési rubrika – Backend FastAPI szintfelmérő (D variáns: Recept API)
 
 **Összesen: 60 pont**
 

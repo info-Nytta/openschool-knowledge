@@ -28,22 +28,22 @@ Ez a dokumentum elmagyarázza, hogyan csatlakozz a kurzusok közös Discord szer
 
 ## 2. Csatornák áttekintése
 
-A szerver több kurzust szolgál ki. A Python 10 kurzushoz ezeket a csatornákat használd:
+A szerver több kurzust szolgál ki. A Python Alapok kurzushoz ezeket a csatornákat használd:
 
 | Csatorna | Mire való |
 |----------|-----------|
 | `#szabályzat` | Szerver szabályok – olvasd el először! |
-| `#közlemények` | Tanári bejelentések – csak olvasható (🐍 jelöli a Python 10 híreket) |
+| `#közlemények` | Tanári bejelentések – csak olvasható (🐍 jelöli a Python Alapok híreket) |
 | `#hasznos-linkek` | W3Schools, Python dokumentáció, egyéb segédanyagok |
-| `#python10-általános` | Kurzussal kapcsolatos kérdések, beszélgetés |
-| `#python10-segítség` | Feladatokkal kapcsolatos kérdések és hibakeresés |
-| `#python10-megoldások` | Saját megoldások, kódrészletek megosztása |
+| `#python-alapok-általános` | Kurzussal kapcsolatos kérdések, beszélgetés |
+| `#python-alapok-segítség` | Feladatokkal kapcsolatos kérdések és hibakeresés |
+| `#python-alapok-megoldások` | Saját megoldások, kódrészletek megosztása |
 | `#általános` | Szabadtéma, kurzusokon átívelő beszélgetés |
 | `🔊 konzultáció` | Hangcsatorna – konzultációs időpontokban |
 
 ### Heti szálak
 
-A `#python10-segítség` csatornán a tanár minden héten nyit egy **szálat** (Thread) az aktuális témához, évszámmal jelölve (pl. *„2026 – 3. hét – Feltételes elágazások"*). Kérdezz az adott hét szálában, hogy átlátható maradjon a beszélgetés.
+A `#python-alapok-segítség` csatornán a tanár minden héten nyit egy **szálat** (Thread) az aktuális témához, évszámmal jelölve (pl. *„2026 – 3. hét – Feltételes elágazások"*). Kérdezz az adott hét szálában, hogy átlátható maradjon a beszélgetés.
 
 > **Megjegyzés:** Régebbi évek szálai is láthatók lehetnek a csatornán. Mindig az aktuális év szálait használd.
 
@@ -114,7 +114,7 @@ print(f"Szia, {nev}!")
 2. **Légy tisztelettudató** – Mindenki tanul, senkit nem szabad kigúnyolni kérdés miatt
 3. **Használj kódblokkot** – Formázd a kódot (lásd 3. fejezet)
 4. **Ne oszd meg a teljes megoldást** – Segíts, de ne csináld meg helyette
-5. **Megfelelő csatornán írj** – Python 10 kérdés → `#python10-segítség`, ne az `#általános`-on
+5. **Megfelelő csatornán írj** – Python Alapok kérdés → `#python-alapok-segítség`, ne az `#általános`-on
 6. **Használd a szálakat** – Kérdezz az aktuális hét szálában
 7. **Nincs spam** – Ne küldj felesleges üzeneteket vagy emotikonokat tömegesen
 8. **Privát üzenetek** – Kérdéseket inkább a nyilvános csatornákon tedd fel, mások is tanulhatnak belőle
@@ -141,5 +141,5 @@ Ha túl sok értesítést kapsz:
 | Lehet mobilon használni? | Igen, töltsd le a Discord alkalmazást |
 | Mi az a szál (Thread)? | Egy üzenet alatti albeszélgetés – kattints a 💬 ikonra |
 | Látom a másik kurzus csatornáit? | Csak ha a tanár engedélyezte – ha nem látod, ez normális |
-| Hol kérdezzek? | Az aktuális év + hét szálában a `#python10-segítség` csatornán |
+| Hol kérdezzek? | Az aktuális év + hét szálában a `#python-alapok-segítség` csatornán |
 | Látom régi évek szálait is? | Igen, ez normális – te mindig az aktuális éves szálakba írj |

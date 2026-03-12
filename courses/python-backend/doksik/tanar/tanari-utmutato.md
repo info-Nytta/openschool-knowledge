@@ -1,4 +1,4 @@
-# Tanári útmutató – Backend fejlesztés FastAPI-val (13. évfolyam)
+# Tanári útmutató – Backend FastAPI
 
 ## Kurzus felépítése
 
@@ -186,9 +186,9 @@ Vizsga és házi feladat kezelése GitHub Classroom-ban: lásd [`github-classroo
 
 ---
 
-## Különbségek a 10. évfolyamos kurzushoz képest
+## Különbségek a Python Alapok kurzushoz képest
 
-| Szempont | 10. évfolyam | 13. évfolyam |
+| Szempont | Python Alapok | Backend FastAPI |
 |----------|-------------|-------------|
 | Időtartam | 13 hét, heti 2 óra | 25 hét, heti 6 óra |
 | Nyelv | Python (script) | Python + FastAPI (web API) |

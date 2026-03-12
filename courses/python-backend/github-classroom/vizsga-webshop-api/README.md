@@ -1,4 +1,4 @@
-# Backend szintfelmérő – 13. évfolyam (C variáns: Webshop API)
+# Backend FastAPI szintfelmérő (C variáns: Webshop API)
 
 **Időtartam:** 240 perc
 **Összpontszám:** 60 pont

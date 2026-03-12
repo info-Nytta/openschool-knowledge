@@ -114,7 +114,7 @@ def info():
     return {
         "alkalmazas": "Backend kurzus API",
         "verzio": "1.0.0",
-        "szerzo": "13. évfolyam"
+        "szerzo": "OpenSchool"
     }
 
 # Lista visszaadása

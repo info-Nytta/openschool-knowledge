@@ -1,4 +1,4 @@
-# Backend szintfelmérő – 13. évfolyam (A variáns: Todo API)
+# Backend FastAPI szintfelmérő (A variáns: Todo API)
 
 **Időtartam:** 240 perc
 **Összpontszám:** 60 pont

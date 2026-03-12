@@ -1,4 +1,4 @@
-# Értékelési módszertan – Python kurzus 10. évfolyam
+# Értékelési módszertan – Python Alapok
 
 ## 1. Értékelési filozófia
 
@@ -7,7 +7,7 @@
 - **Formatív értékelés elsőbbsége:** A félév során a cél a tanulás támogatása, nem a szűrés. A heti házi feladatok pontszámai visszajelzésként szolgálnak, nem büntetésként.
 - **Fokozatos nehezítés:** A heti feladatok pontértéke tükrözi a komplexitást (13–19 pont), a vizsga pedig az összesített tudást méri (40 pont).
 - **Automatizált + emberi értékelés:** A GitHub Classroom autograding ad egy objektív alappontszámot, de a tanári kód-átnézés (code review) is része az értékelésnek.
-- **Növekedési szemlélet (growth mindset):** 10. évfolyamos diákoknál a programozás új — az előrehaladás fontosabb, mint az abszolút szint.
+- **Növekedési szemlélet (growth mindset):** Kezdő programozóknál a programozás új — az előrehaladás fontosabb, mint az abszolút szint.
 
 ### Mit mérünk?
 

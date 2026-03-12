@@ -1,4 +1,4 @@
-# Tanári útmutató – Python kurzus 10. évfolyam
+# Tanári útmutató – Python Alapok
 
 ## Kurzus felépítése
 

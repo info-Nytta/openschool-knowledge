@@ -27,15 +27,15 @@ Az alábbi struktúra egyetlen szerveren kezeli az összes kurzust. Új kurzus h
   #közlemények           → Tanári bejelentések, minden kurzushoz (csak olvasható diákoknak)
   #hasznos-linkek        → Dokumentációk, tutorialok, eszközök
 
-🐍 PYTHON 10
-  #python10-általános    → Kérdések, beszélgetés a kurzusról
-  #python10-segítség     → Feladatokkal kapcsolatos kérdések és hibakeresés
-  #python10-megoldások   → Megoldások, kódrészletek megosztása
+🐍 PYTHON ALAPOK
+  #python-alapok-általános    → Kérdések, beszélgetés a kurzusról
+  #python-alapok-segítség     → Feladatokkal kapcsolatos kérdések és hibakeresés
+  #python-alapok-megoldások   → Megoldások, kódrészletek megosztása
 
-⚡ BACKEND 13
-  #backend13-általános   → Kérdések, beszélgetés a kurzusról
-  #backend13-segítség    → Feladatokkal kapcsolatos kérdések és hibakeresés
-  #backend13-megoldások  → Kód review, megoldások megosztása
+⚡ BACKEND FASTAPI
+  #backend-általános   → Kérdések, beszélgetés a kurzusról
+  #backend-segítség    → Feladatokkal kapcsolatos kérdések és hibakeresés
+  #backend-megoldások  → Kód review, megoldások megosztása
 
 💬 KÖZÖSSÉG
   #általános             → Szabadtéma, kurzusokon átívelő beszélgetés
@@ -73,10 +73,10 @@ Heti csatornák helyett a `#kurzus-segítség` csatornákon használj **szálaka
 ### 2.4 Csatornák létrehozása
 
 1. Kattints a szerver nevére (bal felső sarok) → **Create Category**
-2. Adj nevet a kategóriának (pl. `🐍 PYTHON 10`)
+2. Adj nevet a kategóriának (pl. `🐍 PYTHON ALAPOK`)
 3. A kategória mellett kattints a **+** gombra → **Create Channel**
 4. Válaszd: **Text** vagy **Voice**
-5. Adj nevet a csatornának (pl. `python10-segítség`)
+5. Adj nevet a csatornának (pl. `python-alapok-segítség`)
 
 ---
 
@@ -89,10 +89,10 @@ Szerver beállítások → **Roles** → **Create Role**
 | Szerepkör | Szín | Jogok |
 |-----------|------|-------|
 | `Tanár` | 🔴 Piros | Adminisztrátor |
-| `Python 10 – 2026` | 🟢 Zöld | Üzenetküldés, olvasás, reakciók, fájlcsatolás |
-| `Backend 13 – 2026` | 🔵 Kék | Üzenetküldés, olvasás, reakciók, fájlcsatolás |
+| `Python Alapok – 2026` | 🟢 Zöld | Üzenetküldés, olvasás, reakciók, fájlcsatolás |
+| `Backend FastAPI – 2026` | 🔵 Kék | Üzenetküldés, olvasás, reakciók, fájlcsatolás |
 
-> **Tipp:** Az évszámot tedd a szerepkör nevébe (pl. `Python 10 – 2026`), hogy évről évre könnyen kezeld, ki az aktív diák. A kurzusonkénti szerepkörökkel szabályozhatod, ki melyik kurzus csatornáit látja. Ha nem szükséges az elkülönítés, elég egyetlen `Diák – 2026` szerepkör.
+> **Tipp:** Az évszámot tedd a szerepkör nevébe (pl. `Python Alapok – 2026`), hogy évről évre könnyen kezeld, ki az aktív diák. A kurzusonkénti szerepkörökkel szabályozhatod, ki melyik kurzus csatornáit látja. Ha nem szükséges az elkülönítés, elég egyetlen `Diák – 2026` szerepkör.
 
 > **Fontos:** Az új diákok csatlakozása után ellenőrizd, hogy valódi nevet használnak-e becenévként (nickname). Ha nem, kérd meg őket a változtatásra. Beállítás: jobb klikk a felhasználóra → **Change Nickname**.
 
@@ -109,11 +109,11 @@ Szerver beállítások → **Roles** → **Create Role**
 3. `Tanár` → ✅ **View Channel** (engedélyezés)
 
 **Kurzus-kategória elrejtése (opcionális):**
-Ha szeretnéd, hogy a Python 10 diákok ne lássák a Backend 13 csatornákat:
-1. `⚡ BACKEND 13` kategória → **Permissions**
+Ha szeretnéd, hogy a Python Alapok diákok ne lássák a Backend FastAPI csatornákat:
+1. `⚡ BACKEND FASTAPI` kategória → **Permissions**
 2. `@everyone` → ❌ **View Channel**
-3. `Backend 13` szerepkör → ✅ **View Channel**
-4. Fordítva is, a `🐍 PYTHON 10` kategóriánál
+3. `Backend FastAPI` szerepkör → ✅ **View Channel**
+4. Fordítva is, a `🐍 PYTHON ALAPOK` kategóriánál
 
 ---
 
@@ -161,8 +161,8 @@ A webhook-ok lehetővé teszik, hogy a szkriptek (pl. `discord-webhook.py`) kül
 | Webhook neve | Csatorna | Mire kell |
 |--------------|----------|-----------|
 | Közlemények | `#közlemények` | Tanári bejelentések mindkét kurzusnak |
-| Python 10 | `#python10-segítség` | Heti szálnyitók, emlékeztetők |
-| Backend 13 | `#backend13-segítség` | Heti szálnyitók, emlékeztetők |
+| Python Alapok | `#python-alapok-segítség` | Heti szálnyitók, emlékeztetők |
+| Backend FastAPI | `#backend-segítség` | Heti szálnyitók, emlékeztetők |
 
 #### Webhook létrehozása lépésről lépésre
 
@@ -193,8 +193,8 @@ Hozz létre egy `.env` fájlt az `tools/` mappában (ez a fájl `.gitignore`-ban
 ```bash
 # tools/.env
 DISCORD_WEBHOOK_KOZLEMENYEK=https://discord.com/api/webhooks/1234.../aBcD...
-DISCORD_WEBHOOK_PYTHON10=https://discord.com/api/webhooks/5678.../eFgH...
-DISCORD_WEBHOOK_BACKEND13=https://discord.com/api/webhooks/9012.../iJkL...
+DISCORD_WEBHOOK_PYTHON=https://discord.com/api/webhooks/5678.../eFgH...
+DISCORD_WEBHOOK_BACKEND=https://discord.com/api/webhooks/9012.../iJkL...
 ```
 
 Vagy állítsd be a terminálban:
@@ -202,32 +202,32 @@ Vagy állítsd be a terminálban:
 **Linux / macOS:**
 ```bash
 export DISCORD_WEBHOOK_KOZLEMENYEK="https://discord.com/api/webhooks/..."
-export DISCORD_WEBHOOK_PYTHON10="https://discord.com/api/webhooks/..."
-export DISCORD_WEBHOOK_BACKEND13="https://discord.com/api/webhooks/..."
+export DISCORD_WEBHOOK_PYTHON="https://discord.com/api/webhooks/..."
+export DISCORD_WEBHOOK_BACKEND="https://discord.com/api/webhooks/..."
 ```
 
 **Windows (PowerShell):**
 ```powershell
 $env:DISCORD_WEBHOOK_KOZLEMENYEK = "https://discord.com/api/webhooks/..."
-$env:DISCORD_WEBHOOK_PYTHON10 = "https://discord.com/api/webhooks/..."
-$env:DISCORD_WEBHOOK_BACKEND13 = "https://discord.com/api/webhooks/..."
+$env:DISCORD_WEBHOOK_PYTHON = "https://discord.com/api/webhooks/..."
+$env:DISCORD_WEBHOOK_BACKEND = "https://discord.com/api/webhooks/..."
 ```
 
 **Windows (cmd):**
 ```cmd
 set DISCORD_WEBHOOK_KOZLEMENYEK=https://discord.com/api/webhooks/...
-set DISCORD_WEBHOOK_PYTHON10=https://discord.com/api/webhooks/...
-set DISCORD_WEBHOOK_BACKEND13=https://discord.com/api/webhooks/...
+set DISCORD_WEBHOOK_PYTHON=https://discord.com/api/webhooks/...
+set DISCORD_WEBHOOK_BACKEND=https://discord.com/api/webhooks/...
 ```
 
 #### Tesztelés
 
 ```bash
 # Teszt üzenet küldése
-python tools/discord-webhook.py uzenet python10 "🧪 Teszt üzenet – ha ezt látod, a webhook működik!"
+python tools/discord-webhook.py uzenet --webhook-url $DISCORD_WEBHOOK_PYTHON --uzenet "🧪 Teszt üzenet – ha ezt látod, a webhook működik!"
 ```
 
-Ha a teszt sikeres, az üzenet megjelenik a `#python10-segítség` csatornán.
+Ha a teszt sikeres, az üzenet megjelenik a `#python-alapok-segítség` csatornán.
 
 #### Webhook kezelése
 
@@ -272,7 +272,7 @@ Szerver beállítások → **AutoMod**:
 - Használj **szálakat** a heti témákhoz — ez tartja tisztán a fő csatornát
 - Ha egy diák privátban ír, irányítsd át a nyilvános csatornára — mások is tanulhatnak a válaszból
 - **Reakciókkal** jelezd, hogy láttad a kérdést (👀) vagy hogy megoldódott (✅)
-- A `#közlemények`-ben használj emojit a kurzus jelölésére: 🐍 Python 10, ⚡ Backend 13
+- A `#közlemények`-ben használj emojit a kurzus jelölésére: 🐍 Python Alapok, ⚡ Backend FastAPI
 
 ### Vizsga időszak
 
@@ -288,7 +288,7 @@ A szerver évről évre újrahasználható. Az alábbi lépéseket végezd el mi
 
 ### 8.1 Szerepkörök
 
-1. Hozz létre új éves szerepköröket (pl. `Python 10 – 2027`, `Backend 13 – 2027`)
+1. Hozz létre új éves szerepköröket (pl. `Python Alapok – 2027`, `Backend FastAPI – 2027`)
 2. Az új diákoknak az új szerepkört add ki
 3. A végzett diákoktól vedd el az előző éves szerepkört, vagy hagyd meg – ők továbbra is olvashatják a régi szálakat, de az új szálakban nem aktívak
 

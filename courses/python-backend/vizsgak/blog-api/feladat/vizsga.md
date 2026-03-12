@@ -1,4 +1,4 @@
-# Backend szintfelmérő – 13. évfolyam (B variáns: Blog API)
+# Backend FastAPI szintfelmérő (B variáns: Blog API)
 
 **Időtartam:** 240 perc
 **Összpontszám:** 60 pont

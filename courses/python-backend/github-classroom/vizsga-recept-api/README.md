@@ -1,4 +1,4 @@
-# Backend szintfelmérő – 13. évfolyam (D variáns: Recept API)
+# Backend FastAPI szintfelmérő (D variáns: Recept API)
 
 **Időtartam:** 240 perc
 **Összpontszám:** 60 pont

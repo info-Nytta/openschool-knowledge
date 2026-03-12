@@ -23,7 +23,7 @@
 ## Tanulási útvonal
 
 ```
-Backend 13 kurzus (előfeltétel)
+Backend FastAPI kurzus (előfeltétel)
         │
         ▼
 ┌─────────────────────────────────────────────────────────┐
@@ -231,4 +231,4 @@ A projekt előkészítése arra, hogy mások is hozzájáruljanak.
 - GitHub Discussions vagy Discord integráció
 - First-timer friendly issue-k címkézése (`good first issue`)
 
-**Eredmény:** A repó készen áll arra, hogy Backend 13 végzősök (vagy bárki más) hozzájáruljanak. A munkafolyamat dokumentált, az első PR-ek írásához van útmutató.
+**Eredmény:** A repó készen áll arra, hogy Backend FastAPI végzősök (vagy bárki más) hozzájáruljanak. A munkafolyamat dokumentált, az első PR-ek írásához van útmutató.

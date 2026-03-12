@@ -3,10 +3,10 @@ Discord webhook üzenetküldő – heti bejelentések és emlékeztetők automat
 
 Használat:
     # Bejelentés küldése:
-    python discord-webhook.py bejelentes --kurzus python10 --het 3 --tema "Feltételes elágazások"
+    python discord-webhook.py bejelentes --kurzus python --het 3 --tema "Feltételes elágazások"
 
     # Házi feladat emlékeztető:
-    python discord-webhook.py emlekezteto --kurzus backend13 --het 7 --hatarido "2026-03-15"
+    python discord-webhook.py emlekezteto --kurzus backend --het 7 --hatarido "2026-03-15"
 
     # Szabad üzenet küldése:
     python discord-webhook.py uzenet --webhook-url URL --uzenet "Szabad szöveg"
@@ -14,8 +14,8 @@ Használat:
 Előfeltételek:
     - Discord webhook URL-ek környezeti változókban:
         DISCORD_WEBHOOK_KOZLEMENYEK   → #közlemények csatorna
-        DISCORD_WEBHOOK_PYTHON10      → #python10-segítség csatorna
-        DISCORD_WEBHOOK_BACKEND13     → #backend13-segítség csatorna
+        DISCORD_WEBHOOK_PYTHON        → #python-alapok-segítség csatorna
+        DISCORD_WEBHOOK_BACKEND       → #backend-segítség csatorna
     - Vagy .env fájl a projekt gyökerében
 
 Webhook létrehozása:
@@ -84,13 +84,13 @@ def send_webhook(webhook_url, content=None, embeds=None, username="Kurzus Bot"):
 
 
 KURZUS_EMOJIK = {
-    "python10": "🐍",
-    "backend13": "⚡",
+    "python": "🐍",
+    "backend": "⚡",
 }
 
 KURZUS_NEVEK = {
-    "python10": "Python 10",
-    "backend13": "Backend FastAPI 13",
+    "python": "Python Alapok",
+    "backend": "Backend FastAPI",
 }
 
 
@@ -109,7 +109,7 @@ def cmd_bejelentes(args):
             f"Kérdéseket a `#{args.kurzus}-segítség` csatornán tedd fel "
             f"az aktuális hét szálában."
         ),
-        "color": 0x2ECC71 if args.kurzus == "python10" else 0x3498DB,
+        "color": 0x2ECC71 if args.kurzus == "python" else 0x3498DB,
     }
 
     if args.hatarido:
@@ -168,7 +168,7 @@ def main():
 
     # --- bejelentes ---
     p_bej = subparsers.add_parser("bejelentes", help="Heti bejelentés küldése")
-    p_bej.add_argument("--kurzus", required=True, choices=["python10", "backend13"])
+    p_bej.add_argument("--kurzus", required=True, choices=["python", "backend"])
     p_bej.add_argument("--het", required=True, type=int, help="Hét száma (0-12 vagy 0-24)")
     p_bej.add_argument("--tema", required=True, help="Heti téma neve")
     p_bej.add_argument("--hatarido", help="Házi feladat határideje (pl. 2026-03-15)")
@@ -177,14 +177,14 @@ def main():
 
     # --- emlekezteto ---
     p_eml = subparsers.add_parser("emlekezteto", help="Házi feladat emlékeztető")
-    p_eml.add_argument("--kurzus", required=True, choices=["python10", "backend13"])
+    p_eml.add_argument("--kurzus", required=True, choices=["python", "backend"])
     p_eml.add_argument("--het", required=True, type=int)
     p_eml.add_argument("--hatarido", required=True, help="Határidő dátum")
     p_eml.set_defaults(func=cmd_emlekezteto)
 
     # --- szal ---
     p_szal = subparsers.add_parser("szal", help="Heti szál nyitó üzenet")
-    p_szal.add_argument("--kurzus", required=True, choices=["python10", "backend13"])
+    p_szal.add_argument("--kurzus", required=True, choices=["python", "backend"])
     p_szal.add_argument("--het", required=True, type=int)
     p_szal.add_argument("--tema", required=True, help="Heti téma neve")
     p_szal.add_argument("--ev", default="2026", help="Tanév (alapértelmezett: 2026)")
