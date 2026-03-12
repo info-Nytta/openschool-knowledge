@@ -80,6 +80,8 @@ Platform fejlesztő → Kurzusok írása, platform fejlesztés, code review
 
 ## Hogyan kérdezz jól?
 
+> **Mielőtt kérdezel, próbálj önállóan megoldást találni!** Lásd: [Hogyan keress dokumentációt?](dokumentacio-kereses.md)
+
 Egy jó kérdés segít a válaszolóknak gyorsan segíteni:
 
 1. **Írd le, mit próbáltál** — ne csak azt, hogy „nem működik"

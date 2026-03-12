@@ -90,6 +90,7 @@ Kurzusokon átívelő dokumentumok: → [guides/](guides/)
 ### Tanulóknak
 - **[GitHub Classroom — Diák útmutató](guides/github-classroom-diak-utmutato.md)** — feladat elfogadás, tesztek értelmezése, munkafolyamat
 - **[Hibaelhárítás és GYIK](guides/hibaelharitas.md)** — gyakori problémák és megoldásaik kurzusonként
+- **[Hogyan keress dokumentációt?](guides/dokumentacio-kereses.md)** — önálló tanulás, hibaüzenet-olvasás, hatékony keresés
 - **[Szótár](guides/szotar.md)** — technikai fogalmak magyar magyarázattal
 
 ### Gyors referenciák
