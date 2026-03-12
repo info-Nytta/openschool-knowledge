@@ -22,24 +22,24 @@
 
 ## 2. Értékelési összetevők
 
-### Összesített jegy
+### Összesített értékelés
 
 | Összetevő | Súly | Mérés módja |
 |-----------|------|-------------|
 | Heti házi feladatok (het00–het11) | 25% | GitHub Classroom autograding |
-| Órai munka és aktivitás | 15% | Tanári megfigyelés |
+| Órai munka és aktivitás | 15% | Mentori megfigyelés |
 | Próbavizsga (het12) | 10% | GitHub Classroom autograding + code review |
 | Szintfelmérő vizsga | 50% | GitHub Classroom autograding + code review |
 
-### Jegyhatárok (szintfelmérő)
+### Szinthatárok (szintfelmérő)
 
-| Pontszám | Százalék | Jegy |
-|----------|----------|------|
-| 36–40 | 90–100% | 5 (jeles) |
-| 28–35 | 70–89% | 4 (jó) |
-| 20–27 | 50–69% | 3 (közepes) |
-| 12–19 | 30–49% | 2 (elégséges) |
-| 0–11 | 0–29% | 1 (elégtelen) |
+| Pontszám | Százalék | Szint |
+|----------|----------|-------|
+| 36–40 | 90–100% | Kiváló |
+| 28–35 | 70–89% | Haladó |
+| 20–27 | 50–69% | Megfelelő |
+| 12–19 | 30–49% | Kezdő |
+| 0–11 | 0–29% | Nem teljesített |
 
 ---
 
@@ -80,7 +80,7 @@
 
 ### Fontos: az autograding nem elég
 
-Az autograding **szükséges, de nem elégséges** feltétele a jó jegynek:
+Az autograding **szükséges, de nem elégséges** feltétele a jó eredménynek:
 - Egy diák másolhatott (→ Git history ellenőrzés)
 - A kód működik, de olvashatatlan (→ code review)
 - A kód túl egyszerű megoldást használ (→ struktúra ellenőrzés)
@@ -163,28 +163,28 @@ git blame feladat3.py
 
 ### Kérdések szintenként
 
-**Alapszint (2-es jegyhez):**
+**Alapszint:**
 - Mit csinál az `input()` függvény?
 - Mi a különbség az `int` és a `str` típus között?
 - Mit jelent a `while` ciklus?
 
-**Középszint (3-4-es jegyhez):**
+**Középszint:**
 - Magyarázd el, mit csinál a `beolvasas()` függvényed!
 - Miért kellett `split(";")` -et használni?
 - Hogyan működik a szűrés a programodban?
 
-**Haladó szint (5-ös jegyhez):**
+**Haladó szint:**
 - Milyen adatszerkezetet választottál és miért?
 - Hogyan oldottad meg a maximum/minimum keresést?
 - Mi történne, ha a fájl üres lenne?
 
 ### Szóbeli értékelés hatása
 
-| Eredmény | Hatás a jegyre |
-|----------|----------------|
-| A diák magabiztosan elmagyarázza a kódját | Megerősíti az autograding jegyet |
-| A diák részben érti, de vannak hiányosságok | Az autograding jegyet max 1 jeggyel csökkenti |
-| A diák nem tudja elmagyarázni a saját kódját | A feladatra 0 pont (másolásgyanú) |
+| Eredmény | Hatás az értékelésre |
+|----------|----------------------|
+| A tanuló magabiztosan elmagyarázza a kódját | Megerősíti az autograding eredményt |
+| A tanuló részben érti, de vannak hiányosságok | Az autograding eredményt max 1 szinttel csökkenti |
+| A tanuló nem tudja elmagyarázni a saját kódját | A feladatra 0 pont (másolásgyanú) |
 
 ---
 
@@ -201,13 +201,13 @@ git blame feladat3.py
 
 A 12 heti házi feladat összpontszáma **203 pont**. Ebből számított százalék:
 
-| Százalék | Házi feladat jegy |
-|----------|-------------------|
-| 80–100% | 5 |
-| 60–79% | 4 |
-| 40–59% | 3 |
-| 20–39% | 2 |
-| 0–19% | 1 |
+| Százalék | Házi feladat szint |
+|----------|--------------------|
+| 80–100% | Kiváló |
+| 60–79% | Haladó |
+| 40–59% | Megfelelő |
+| 20–39% | Kezdő |
+| 0–19% | Nem teljesített |
 
 ---
 

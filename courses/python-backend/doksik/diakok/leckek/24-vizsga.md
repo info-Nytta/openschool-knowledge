@@ -47,13 +47,13 @@ Készítsd el a `schemas.py` és `utils.py` fájlokat:
 
 ## Értékelés
 
-| Jegy | Pontszám |
-|------|----------|
-| 5 (jeles) | 54–60 |
-| 4 (jó) | 43–53 |
-| 3 (közepes) | 31–42 |
-| 2 (elégséges) | 19–30 |
-| 1 (elégtelen) | 0–18 |
+| Szint | Pontszám |
+|-------|----------|
+| Kiváló | 54–60 |
+| Haladó | 43–53 |
+| Megfelelő | 31–42 |
+| Kezdő | 19–30 |
+| Nem teljesített | 0–18 |
 
 ---
 

@@ -612,12 +612,12 @@ A Python Alapok kurzus ismeretanyaga:
 | Próbavizsga (12. hét) | 15% |
 | Szintfelmérő vizsga (24. hét) | 50% |
 
-## Jegyhatárok (vizsga: 60 pont)
+## Szinthatárok (vizsga: 60 pont)
 
-| Pont | Jegy |
-|------|------|
-| 54–60 | 5 (jeles) |
-| 43–53 | 4 (jó) |
-| 31–42 | 3 (közepes) |
-| 19–30 | 2 (elégséges) |
-| 0–18 | 1 (elégtelen) |
+| Pont | Szint |
+|------|-------|
+| 54–60 | Kiváló |
+| 43–53 | Haladó |
+| 31–42 | Megfelelő |
+| 19–30 | Kezdő |
+| 0–18 | Nem teljesített |

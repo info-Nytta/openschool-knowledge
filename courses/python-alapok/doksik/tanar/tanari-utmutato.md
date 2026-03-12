@@ -85,7 +85,7 @@ Négy vizsga variáns áll rendelkezésre:
 
 ## Értékelés
 
-Részletes értékelési rendszer, jegyhatárok, code review szempontok és szóbeli kérdések: lásd [`ertekeles-modszertan.md`](ertekeles-modszertan.md).
+Részletes értékelési rendszer, szinthatárok, code review szempontok és szóbeli kérdések: lásd [`ertekeles-modszertan.md`](ertekeles-modszertan.md).
 
 Vizsga és házi feladat kezelése GitHub Classroom-ban: lásd [`github-classroom-utmutato.md`](github-classroom-utmutato.md).
 

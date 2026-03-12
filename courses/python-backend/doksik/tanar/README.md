@@ -6,7 +6,7 @@
 |------------|--------|
 | [Tanári útmutató](tanari-utmutato.md) | Heti ütemterv és tanítási javaslatok, vizsgavariánsok áttekintése, gyakori diákproblémák |
 | [GitHub Classroom útmutató](github-classroom-utmutato.md) | Szervezet létrehozása, template repók, házi feladatok kezelése, autograding beállítás, hibaelhárítás |
-| [Értékelési módszertan](ertekeles-modszertan.md) | Értékelési filozófia, jegyösszetétel, automatikus pontozás, code review, szóbeli vizsga, speciális esetek |
+| [Értékelési módszertan](ertekeles-modszertan.md) | Értékelési filozófia, értékelési összetevők, automatikus pontozás, code review, szóbeli vizsga, speciális esetek |
 | [Discord szerver útmutató](../../../../../guides/discord-szerver-utmutato.md) | Szerver létrehozása, csatornaszerkezet, szerepkörök, jogosultságok, botok, moderáció (közös dokumentum) |
 
 ## Kapcsolódó anyagok

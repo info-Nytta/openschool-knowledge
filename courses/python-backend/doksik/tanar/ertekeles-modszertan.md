@@ -24,24 +24,24 @@
 
 ## 2. Értékelési összetevők
 
-### Összesített jegy
+### Összesített értékelés
 
 | Összetevő | Súly | Mérés módja |
 |-----------|------|-------------|
-| Heti házi feladatok (het00–het23) | 20% | GitHub Classroom pytest + tanári átnézés |
-| Órai munka és aktivitás | 15% | Tanári megfigyelés |
+| Heti házi feladatok (het00–het23) | 20% | GitHub Classroom pytest + mentori átnézés |
+| Órai munka és aktivitás | 15% | Mentori megfigyelés |
 | Próbavizsga (het12) | 15% | GitHub Classroom pytest + code review |
 | Szintfelmérő vizsga (het24) | 50% | GitHub Classroom pytest + code review |
 
-### Jegyhatárok (szintfelmérő vizsga: 60 pont)
+### Szinthatárok (szintfelmérő vizsga: 60 pont)
 
-| Pontszám | Százalék | Jegy |
-|----------|----------|------|
-| 54–60 | 90–100% | 5 (jeles) |
-| 43–53 | 72–89% | 4 (jó) |
-| 31–42 | 52–71% | 3 (közepes) |
-| 19–30 | 32–51% | 2 (elégséges) |
-| 0–18 | 0–31% | 1 (elégtelen) |
+| Pontszám | Százalék | Szint |
+|----------|----------|-------|
+| 54–60 | 90–100% | Kiváló |
+| 43–53 | 72–89% | Haladó |
+| 31–42 | 52–71% | Megfelelő |
+| 19–30 | 32–51% | Kezdő |
+| 0–18 | 0–31% | Nem teljesített |
 
 ---
 
@@ -124,7 +124,7 @@ def client():
 
 ### Fontos: a pytest nem elég
 
-A pytest **szükséges, de nem elégséges** feltétele a jó jegynek:
+A pytest **szükséges, de nem elégséges** feltétele a jó eredménynek:
 - Egy diák másolhatott (→ Git history ellenőrzés)
 - A kód működik, de olvashatatlan (→ code review)
 - A kód túl egyszerű megoldást használ (→ struktúra ellenőrzés)
@@ -213,19 +213,19 @@ git blame app/routers/items.py
 
 ### Kérdések szintenként
 
-**Alapszint (2-es jegyhez):**
+**Alapszint:**
 - Mi a különbség a GET és POST kérés között?
 - Mi az a Pydantic modell, és mire jó?
 - Hogyan indítod el a FastAPI szervert?
 - Mi az a `venv` és miért használjuk?
 
-**Középszint (3–4-es jegyhez):**
+**Középszint:**
 - Magyarázd el, mit csinál a `get_db()` dependency!
 - Miért használunk `dependency_overrides`-t a tesztekben?
 - Mi történik, ha egy Pydantic modell validációja sikertelen?
 - Hogyan működik a JWT authentikáció?
 
-**Haladó szint (5-ös jegyhez):**
+**Haladó szint:**
 - Mi a különbség a Pydantic schema és az SQLAlchemy model között?
 - Hogyan oldottad meg a teszt izolációt (hogy a tesztek ne befolyásolják egymást)?
 - Miért SQLite-ot használunk a tesztekben PostgreSQL helyett?
@@ -233,11 +233,11 @@ git blame app/routers/items.py
 
 ### Szóbeli értékelés hatása
 
-| Eredmény | Hatás a jegyre |
-|----------|----------------|
-| A diák magabiztosan elmagyarázza a kódját | Megerősíti a pytest jegyet |
-| A diák részben érti, de vannak hiányosságok | A pytest jegyet max 1 jeggyel csökkenti |
-| A diák nem tudja elmagyarázni a saját kódját | A feladatra 0 pont (másolásgyanú) |
+| Eredmény | Hatás az értékelésre |
+|----------|----------------------|
+| A tanuló magabiztosan elmagyarázza a kódját | Megerősíti a pytest eredményt |
+| A tanuló részben érti, de vannak hiányosságok | A pytest eredményt max 1 szinttel csökkenti |
+| A tanuló nem tudja elmagyarázni a saját kódját | A feladatra 0 pont (másolásgyanú) |
 
 ---
 
@@ -255,13 +255,13 @@ git blame app/routers/items.py
 
 A 24 heti házi feladat összesített értékelése:
 
-| Teljesítmény | Házi feladat jegy |
-|-------------|-------------------|
-| 80–100% beadva és helyes | 5 |
-| 60–79% beadva és helyes | 4 |
-| 40–59% beadva és helyes | 3 |
-| 20–39% beadva és helyes | 2 |
-| 0–19% beadva | 1 |
+| Teljesítmény | Házi feladat szint |
+|-------------|--------------------|
+| 80–100% beadva és helyes | Kiváló |
+| 60–79% beadva és helyes | Haladó |
+| 40–59% beadva és helyes | Megfelelő |
+| 20–39% beadva és helyes | Kezdő |
+| 0–19% beadva | Nem teljesített |
 
 ---
 

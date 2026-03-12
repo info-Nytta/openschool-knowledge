@@ -221,13 +221,13 @@ Minden héten ezeket kell megtenned:
 
 ### Egyszerű értékelési skála:
 
-| Jegy | Feltétel |
-|------|----------|
-| ⭐⭐⭐⭐⭐ (5) | Minden feladat kész, helyes, szép kód |
-| ⭐⭐⭐⭐ (4) | A ⭐ és ⭐⭐ feladatok készen vannak és helyesek |
-| ⭐⭐⭐ (3) | A ⭐ feladatok készen vannak és helyesek |
-| ⭐⭐ (2) | Legalább 2 feladat beadva, de hibás |
-| ⭐ (1) | Nem adott be semmit, vagy nem commitolt |
+| Szint | Feltétel |
+|-------|----------|
+| Kiváló | Minden feladat kész, helyes, szép kód |
+| Haladó | A ⭐ és ⭐⭐ feladatok készen vannak és helyesek |
+| Megfelelő | A ⭐ feladatok készen vannak és helyesek |
+| Kezdő | Legalább 2 feladat beadva, de hibás |
+| Nem teljesített | Nem adott be semmit, vagy nem commitolt |
 
 ---
 

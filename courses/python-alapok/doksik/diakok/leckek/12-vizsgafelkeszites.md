@@ -48,7 +48,7 @@ A vizsgát a **GitHub Classroom**-on kapod: a tanárod megadja a meghívó linke
 
 ### Pontozási tippek
 
-| Feladat | Max pont | Minimum az elégségeshez |
+| Feladat | Max pont | Minimum a teljesítéshez |
 |---------|----------|------------------------|
 | 1. feladat | 8 | 4 |
 | 2. feladat | 14 | 7 |
