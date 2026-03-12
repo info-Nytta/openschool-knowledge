@@ -26,3 +26,13 @@
 - **Vizsga:** 60 pont, 240 perc, 5 feladat (10 + 20 + 10 + 10 + 10 pont)
 - **Beadás:** GitHub Classroom (automatikus értékelés)
 - **Variánsok:** 4 db (A – todo-api, B – blog-api, C – webshop-api, D – recept-api)
+
+## Hasznos útmutatók
+
+- [Kezdő útmutató — Hogyan kezdj hozzá?](../../guides/kezdo-utmutato.md)
+- [Környezet beállítás](../../guides/kornyezet-beallitas.md) (Python, Git, VS Code, Docker telepítés)
+- [GitHub Classroom — Diák útmutató](../../guides/github-classroom-diak-utmutato.md)
+- [Git puskalap](../../guides/git-puskalap.md)
+- [Docker puskalap](../../guides/docker-puskalap.md)
+- [Hibaelhárítás és GYIK](../../guides/hibaelharitas.md)
+- [Szótár](../../guides/szotar.md)

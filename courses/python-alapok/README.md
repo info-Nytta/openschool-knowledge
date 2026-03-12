@@ -17,6 +17,15 @@
 - **Tanterv:** [13 hetes tanterv](doksik/tanterv/tanterv.md)
 - **Vizsgák:** [4 variáns](vizsgak/) (filmek, könyvek, zenék, sportolók)
 
+## Hasznos útmutatók
+
+- [Kezdő útmutató — Hogyan kezdj hozzá?](../../guides/kezdo-utmutato.md)
+- [Környezet beállítás](../../guides/kornyezet-beallitas.md) (Python, Git, VS Code telepítés)
+- [GitHub Classroom — Diák útmutató](../../guides/github-classroom-diak-utmutato.md)
+- [Git puskalap](../../guides/git-puskalap.md)
+- [Hibaelhárítás és GYIK](../../guides/hibaelharitas.md)
+- [Szótár](../../guides/szotar.md)
+
 ## Összefoglaló
 
 - **Időtartam:** 13 hét (0–12), heti 2 óra

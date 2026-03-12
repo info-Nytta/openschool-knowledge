@@ -56,6 +56,16 @@ A **Projekt Labor** nem hagyományos kurzus: a résztvevő az OpenSchool platfor
 │   ├── python-backend/          #   Backend FastAPI (25 hét)
 │   └── projekt-labor/           #   Projekt Labor (7 modul)
 ├── guides/                      # Kurzusokon átívelő útmutatók
+│   ├── kezdo-utmutato.md       #   Hogyan kezdj hozzá?
+│   ├── kornyezet-beallitas.md   #   Fejlesztői környezet telepítése
+│   ├── kozossegi-utmutato.md    #   Közösség, Discord, viselkedési kódex
+│   ├── github-classroom-diak-utmutato.md  # Feladatok beadása
+│   ├── mentor-utmutato.md       #   Mentorálás, kód-átnézés
+│   ├── kurzus-keszitesi-utmutato.md  # Új kurzus készítése
+│   ├── hibaelharitas.md         #   Gyakori problémák és megoldások
+│   ├── szotar.md                #   Technikai fogalmak szótára
+│   ├── git-puskalap.md          #   Git parancsok gyors referencia
+│   ├── docker-puskalap.md       #   Docker parancsok gyors referencia
 │   ├── discord-szerver-utmutato.md
 │   ├── integralt-munkafolyamat.md
 │   └── open-source-projekt-utmutato.md
@@ -63,6 +73,7 @@ A **Projekt Labor** nem hagyományos kurzus: a résztvevő az OpenSchool platfor
 │   ├── github-setup.sh / .ps1  #   Template repók létrehozása
 │   └── discord-webhook.py      #   Discord értesítések
 ├── CONTRIBUTING.md
+├── CHANGELOG.md                 # Változásnapló
 ├── LICENSE                      # MIT (kód)
 └── LICENSE-CC-BY-SA             # CC BY-SA 4.0 (tartalom)
 ```
@@ -71,6 +82,23 @@ A **Projekt Labor** nem hagyományos kurzus: a résztvevő az OpenSchool platfor
 
 Kurzusokon átívelő dokumentumok: → [guides/](guides/)
 
+### Első lépések
+- **[Kezdő útmutató — Hogyan kezdj hozzá?](guides/kezdo-utmutato.md)** — tanulási útvonal, kurzus előfeltételek, hol kezdd
+- **[Környezet beállítás](guides/kornyezet-beallitas.md)** — Python, Git, VS Code, Docker telepítés minden operációs rendszeren
+- **[Közösségi útmutató](guides/kozossegi-utmutato.md)** — Discord csatornák, szerepkörök, viselkedési kódex, hogyan kérdezz jól
+
+### Tanulóknak
+- **[GitHub Classroom — Diák útmutató](guides/github-classroom-diak-utmutato.md)** — feladat elfogadás, tesztek értelmezése, munkafolyamat
+- **[Hibaelhárítás és GYIK](guides/hibaelharitas.md)** — gyakori problémák és megoldásaik kurzusonként
+- **[Szótár](guides/szotar.md)** — technikai fogalmak magyar magyarázattal
+
+### Gyors referenciák
+- **[Git puskalap](guides/git-puskalap.md)** — leggyakoribb Git parancsok
+- **[Docker puskalap](guides/docker-puskalap.md)** — Docker és Docker Compose parancsok
+
+### Mentoroknak és közreműködőknek
+- **[Mentor útmutató](guides/mentor-utmutato.md)** — mentorálás, kód-átnézés, visszajelzés
+- **[Kurzus készítési útmutató](guides/kurzus-keszitesi-utmutato.md)** — mappastruktúra, elnevezési konvenciók, autograding
 - **[Discord szerver útmutató](guides/discord-szerver-utmutato.md)** — szerver beállítás, csatornák, webhook-ok, moderáció
 - **[Integrált munkafolyamat](guides/integralt-munkafolyamat.md)** — félév eleji beállítástól a félév végéig, lépésről lépésre
 - **[Open source projekt útmutató](guides/open-source-projekt-utmutato.md)** — nyílt forráskódú projekt felépítése
