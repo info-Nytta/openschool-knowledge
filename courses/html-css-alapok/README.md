@@ -19,12 +19,12 @@
 
 ## Hasznos útmutatók
 
-- [Kezdő útmutató — Hogyan kezdj hozzá?](../../guides/kezdo-utmutato.md)
-- [Környezet beállítás](../../guides/kornyezet-beallitas.md) (VS Code, Git, böngésző telepítés)
-- [GitHub Classroom — Tanuló útmutató](../../guides/github-classroom-tanulo-utmutato.md)
-- [Git puskalap](../../guides/git-puskalap.md)
-- [Hibaelhárítás és GYIK](../../guides/hibaelharitas.md)
-- [Szótár](../../guides/szotar.md)
+- [Kezdő útmutató — Hogyan kezdj hozzá?](../../guides/tanuloknak/kezdo-utmutato.md)
+- [Környezet beállítás](../../guides/tanuloknak/kornyezet-beallitas.md) (VS Code, Git, böngésző telepítés)
+- [GitHub Classroom — Tanuló útmutató](../../guides/tanuloknak/github-classroom-tanulo-utmutato.md)
+- [Git puskalap](../../guides/puskak/git-puskalap.md)
+- [Hibaelhárítás és GYIK](../../guides/tanuloknak/hibaelharitas.md)
+- [Szótár](../../guides/tanuloknak/szotar.md)
 
 ## Összefoglaló
 

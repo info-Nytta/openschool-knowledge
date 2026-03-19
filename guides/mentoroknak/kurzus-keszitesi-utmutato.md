@@ -270,5 +270,5 @@ Minden kurzushoz készíts mentori útmutatót a `doksik/mentor/` mappába:
 
 **Kapcsolódó útmutatók:**
 - [Mentor útmutató](mentor-utmutato.md)
-- [GitHub Classroom — Tanuló útmutató](github-classroom-tanulo-utmutato.md)
-- [Git puskalap](git-puskalap.md)
+- [GitHub Classroom — Tanuló útmutató](../tanuloknak/github-classroom-tanulo-utmutato.md)
+- [Git puskalap](../puskak/git-puskalap.md)

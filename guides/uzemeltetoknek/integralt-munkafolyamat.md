@@ -114,8 +114,11 @@ courses/
 tools/                          ← szkriptek
     github-setup.sh
     discord-webhook.py
-guides/                         ← közös dokumentáció
-    discord-szerver-utmutato.md ← szerver beállítás
-    integralt-munkafolyamat.md  ← ez a fájl
-    open-source-projekt-utmutato.md
+guides/
+    tanuloknak/                 ← tanulói útmutatók
+    puskak/                     ← gyors referenciák
+    mentoroknak/                ← mentori útmutatók
+    uzemeltetoknek/             ← üzemeltetési útmutatók
+        discord-szerver-utmutato.md
+        integralt-munkafolyamat.md  ← ez a fájl
 ```

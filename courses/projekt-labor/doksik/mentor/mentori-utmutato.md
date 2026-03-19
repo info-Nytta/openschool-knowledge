@@ -191,4 +191,4 @@ A mentor a verifikációs tesztek mellett **kód review-t** is végez — a tesz
 
 - [Tanterv](../tanterv/tanterv.md)
 - [Értékelési módszertan](ertekeles-modszertan.md)
-- [Integrált munkafolyamat](../../../../guides/integralt-munkafolyamat.md)
+- [Integrált munkafolyamat](../../../../guides/uzemeltetoknek/integralt-munkafolyamat.md)

@@ -88,7 +88,7 @@ git status                   # Mi változott?
 git log --oneline            # Eddigi commitok listája
 ```
 
-> **Teljes parancsreferencia:** [Git puskalap](../../../../../guides/git-puskalap.md)
+> **Teljes parancsreferencia:** [Git puskalap](../../../../../guides/puskak/git-puskalap.md)
 
 ---
 
@@ -122,7 +122,7 @@ git log --oneline            # Eddigi commitok listája
 - Az utolsó `git push` a beadás
 - A határidő után a mentor értékeli a repóban lévő fájlokat
 
-> **Részletes útmutató:** [GitHub Classroom — Tanuló útmutató](../../../../../guides/github-classroom-tanulo-utmutato.md)
+> **Részletes útmutató:** [GitHub Classroom — Tanuló útmutató](../../../../../guides/tanuloknak/github-classroom-tanulo-utmutato.md)
 
 ---
 
@@ -148,6 +148,6 @@ git push
 
 Ha hibába ütközöl, nézd meg a részletes hibaelhárítási útmutatót:
 
-- [Hibaelhárítás és GYIK — Git és GitHub](../../../../../guides/hibaelharitas.md#git-és-github)
-- [Hibaelhárítás és GYIK — GitHub Classroom](../../../../../guides/hibaelharitas.md#github-classroom)
-- [Git puskalap — Gyors parancskereső](../../../../../guides/git-puskalap.md)
+- [Hibaelhárítás és GYIK — Git és GitHub](../../../../../guides/tanuloknak/hibaelharitas.md#git-és-github)
+- [Hibaelhárítás és GYIK — GitHub Classroom](../../../../../guides/tanuloknak/hibaelharitas.md#github-classroom)
+- [Git puskalap — Gyors parancskereső](../../../../../guides/puskak/git-puskalap.md)

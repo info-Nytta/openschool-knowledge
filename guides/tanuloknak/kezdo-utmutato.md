@@ -52,13 +52,13 @@ Telepítsd a szükséges eszközöket: → [Környezet beállítás útmutató](
 
 ### 2. Válaszd ki a kurzusodat
 
-- **[Python Alapok](../courses/python-alapok/)** — ha most kezded, ez a te kurzusod
-- **[Backend FastAPI](../courses/python-backend/)** — ha már tudsz Pythonban és API-kat szeretnél fejleszteni
-- **[Projekt Labor](../courses/projekt-labor/)** — ha a Backend kurzust elvégezted és valódi projektet szeretnél építeni
+- **[Python Alapok](../../courses/python-alapok/)** — ha most kezded, ez a te kurzusod
+- **[Backend FastAPI](../../courses/python-backend/)** — ha már tudsz Pythonban és API-kat szeretnél fejleszteni
+- **[Projekt Labor](../../courses/projekt-labor/)** — ha a Backend kurzust elvégezted és valódi projektet szeretnél építeni
 
 ### 3. Csatlakozz a közösséghez
 
-A Discord szerveren kérdezhetsz, segítséget kérhetsz, és megismerheted a többi tanulót: → [Közösségi útmutató](kozossegi-utmutato.md)
+A Discord szerveren kérdezhetsz, segítséget kérhetsz, és megismerheted a többi tanulót: → [Közösségi útmutató](../mentoroknak/kozossegi-utmutato.md)
 
 ### 4. Ismerd meg a GitHub Classroom-ot
 
@@ -81,8 +81,8 @@ A feladatokat GitHub Classroom-on keresztül adod be. Olvasd el a használati ú
 | Cél | Útmutató |
 |-----|----------|
 | Probléma megoldása | [Hibaelhárítás és GYIK](hibaelharitas.md) |
-| Git parancsok segédlet | [Git puskalap](git-puskalap.md) |
-| Docker parancsok segédlet | [Docker puskalap](docker-puskalap.md) |
+| Git parancsok segédlet | [Git puskalap](../puskak/git-puskalap.md) |
+| Docker parancsok segédlet | [Docker puskalap](../puskak/docker-puskalap.md) |
 | Szakkifejezések | [Szótár](szotar.md) |
-| Közreműködés a projektben | [CONTRIBUTING.md](../CONTRIBUTING.md) |
-| Mentorrá válás | [Mentor útmutató](mentor-utmutato.md) |
+| Közreműködés a projektben | [CONTRIBUTING.md](../../CONTRIBUTING.md) |
+| Mentorrá válás | [Mentor útmutató](../mentoroknak/mentor-utmutato.md) |

@@ -187,6 +187,6 @@ git commit -m "."
 ---
 
 **Kapcsolódó útmutatók:**
-- [Környezet beállítás](kornyezet-beallitas.md)
-- [GitHub Classroom — Tanuló útmutató](github-classroom-tanulo-utmutato.md)
-- [Hibaelhárítás](hibaelharitas.md)
+- [Környezet beállítás](../tanuloknak/kornyezet-beallitas.md)
+- [GitHub Classroom — Tanuló útmutató](../tanuloknak/github-classroom-tanulo-utmutato.md)
+- [Hibaelhárítás](../tanuloknak/hibaelharitas.md)

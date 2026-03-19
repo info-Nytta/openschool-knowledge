@@ -195,7 +195,7 @@ docker compose down
 
 | Hiba | Megoldás |
 |------|----------|
-| `docker: command not found` | Docker nincs telepítve. Lásd: [Környezet beállítás](kornyezet-beallitas.md) |
+| `docker: command not found` | Docker nincs telepítve. Lásd: [Környezet beállítás](../tanuloknak/kornyezet-beallitas.md) |
 | `permission denied` (Linux) | `sudo usermod -aG docker $USER` → kijelentkezés → bejelentkezés |
 | `permission denied` (Windows) | Docker Desktop fut? Rendszergazdaként indítsd. |
 | `port is already allocated` | `docker compose down`, vagy másik portot használj |
@@ -216,7 +216,7 @@ docker compose down
 ---
 
 **Kapcsolódó útmutatók:**
-- [Környezet beállítás](kornyezet-beallitas.md)
+- [Környezet beállítás](../tanuloknak/kornyezet-beallitas.md)
 - [Git puskalap](git-puskalap.md)
-- [Hibaelhárítás](hibaelharitas.md)
-- [Szótár](szotar.md)
+- [Hibaelhárítás](../tanuloknak/hibaelharitas.md)
+- [Szótár](../tanuloknak/szotar.md)

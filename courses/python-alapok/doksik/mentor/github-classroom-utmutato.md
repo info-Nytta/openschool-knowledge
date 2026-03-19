@@ -235,9 +235,9 @@ Minden héten ezeket kell megtenned:
 
 Részletes hibaelhárítási táblázat és megoldások:
 
-- [Hibaelhárítás és GYIK — GitHub Classroom](../../../../guides/hibaelharitas.md#github-classroom)
-- [Hibaelhárítás és GYIK — Git és GitHub](../../../../guides/hibaelharitas.md#git-és-github)
-- [GitHub Classroom — Tanuló útmutató](../../../../guides/github-classroom-tanulo-utmutato.md) (tanulóknak továbbítható)
+- [Hibaelhárítás és GYIK — GitHub Classroom](../../../../guides/tanuloknak/hibaelharitas.md#github-classroom)
+- [Hibaelhárítás és GYIK — Git és GitHub](../../../../guides/tanuloknak/hibaelharitas.md#git-és-github)
+- [GitHub Classroom — Tanuló útmutató](../../../../guides/tanuloknak/github-classroom-tanulo-utmutato.md) (tanulóknak továbbítható)
 
 ---
 

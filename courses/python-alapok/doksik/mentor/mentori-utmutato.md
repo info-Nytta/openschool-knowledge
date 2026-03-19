@@ -95,6 +95,6 @@ Vizsga és házi feladat kezelése GitHub Classroom-ban: lásd [`github-classroo
 
 A kurzus-specifikus hibák és megoldásaik részletes listáját lásd a központi hibaelhárítási útmutatóban:
 
-- [Hibaelhárítás és GYIK — Python Alapok kurzus](../../../../guides/hibaelharitas.md#python-alapok-kurzus)
-- [Hibaelhárítás és GYIK — Git és GitHub](../../../../guides/hibaelharitas.md#git-és-github)
-- [Hibaelhárítás és GYIK — GitHub Classroom](../../../../guides/hibaelharitas.md#github-classroom)
+- [Hibaelhárítás és GYIK — Python Alapok kurzus](../../../../guides/tanuloknak/hibaelharitas.md#python-alapok-kurzus)
+- [Hibaelhárítás és GYIK — Git és GitHub](../../../../guides/tanuloknak/hibaelharitas.md#git-és-github)
+- [Hibaelhárítás és GYIK — GitHub Classroom](../../../../guides/tanuloknak/hibaelharitas.md#github-classroom)

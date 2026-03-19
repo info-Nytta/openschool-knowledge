@@ -188,16 +188,6 @@ node --version          # Node.js (Projekt Laborhoz)
 
 ---
 
-## Gyakori problémák
-
-| Probléma | Megoldás |
-|----------|----------|
-| `python3: command not found` | **Windows:** használd `python`-t (`python3` helyett). **Linux:** `sudo apt install python3` |
-| `pip: command not found` | `sudo apt install python3-pip` vagy `python -m pip --version` |
-| `git: command not found` | Telepítsd a Git-et (lásd fent) |
-| `docker: permission denied` | **Linux:** `sudo usermod -aG docker $USER` + kijelentkezés. **Windows:** Docker Desktop fut? |
-| VS Code nem találja a Python-t | `Ctrl+Shift+P` → "Python: Select Interpreter" → válaszd ki a Python 3.10+ verziót |
-
----
+Elakadtál? Lásd a [Hibaelhárítás](hibaelharitas.md) útmutatót.
 
 **Következő lépés:** [Kezdő útmutató — Hogyan kezdj hozzá?](kezdo-utmutato.md)

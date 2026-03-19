@@ -71,7 +71,7 @@ Platform fejlesztő → Kurzusok írása, platform fejlesztés, code review
 
 1. **Légy tisztelettudó** — mindenki tanul, senkit nem szabad kigúnyolni kérdés miatt
 2. **Segíts, de ne csináld meg helyette** — mutasd meg az irányt, ne a teljes megoldást
-3. **Formázd a kódot** — használj kódblokkot (lásd: [hogyan formázzak kódot Discordon?](hibaelharitas.md))
+3. **Formázd a kódot** — használj kódblokkot (lásd: [hogyan formázzak kódot Discordon?](../tanuloknak/hibaelharitas.md))
 4. **Megfelelő csatornán írj** — Python kérdés → `#python-alapok-segítség`, ne az `#általános`-on
 5. **Használd a szálakat** — ha egy heti feladathoz kérdezel, válaszolj a hét szálában
 6. **Ne oszd meg mások személyes adatait** — tiszteld a magánszférát
@@ -80,7 +80,7 @@ Platform fejlesztő → Kurzusok írása, platform fejlesztés, code review
 
 ## Hogyan kérdezz jól?
 
-> **Mielőtt kérdezel, próbálj önállóan megoldást találni!** Lásd: [Hogyan keress dokumentációt?](dokumentacio-kereses.md)
+> **Mielőtt kérdezel, próbálj önállóan megoldást találni!** Lásd: [Hogyan keress dokumentációt?](../tanuloknak/dokumentacio-kereses.md)
 
 Egy jó kérdés segít a válaszolóknak gyorsan segíteni:
 
@@ -114,7 +114,7 @@ Egy jó kérdés segít a válaszolóknak gyorsan segíteni:
 
 1. Forkold az [openschool-platform](https://github.com/ghemrich/openschool-platform) repót
 2. Nézd meg az Issue-kat — a `good first issue` címke jó kiindulópont
-3. Kövesd a [CONTRIBUTING.md](../CONTRIBUTING.md) útmutatót
+3. Kövesd a [CONTRIBUTING.md](../../CONTRIBUTING.md) útmutatót
 
 ### Hibák jelzése
 
@@ -122,4 +122,4 @@ Ha hibát találsz (elírás, nem működő kód, hibás link), nyiss egy **Issu
 
 ---
 
-**Következő lépés:** [Kezdő útmutató — Hogyan kezdj hozzá?](kezdo-utmutato.md)
+**Következő lépés:** [Kezdő útmutató — Hogyan kezdj hozzá?](../tanuloknak/kezdo-utmutato.md)

@@ -116,5 +116,5 @@ Vizsga és házi feladat kezelése GitHub Classroom-ban: lásd [`github-classroo
 - **A stílus nem érvényesül:** CSS specificitás – az `id` szelektor erősebb, mint az `osztály`, ami erősebb, mint az elem
 
 ### Git hibák
-- A központi hibaelhárítási útmutatóban: [Hibaelhárítás és GYIK — Git és GitHub](../../../../guides/hibaelharitas.md#git-és-github)
-- [GitHub Classroom hibák](../../../../guides/hibaelharitas.md#github-classroom)
+- A központi hibaelhárítási útmutatóban: [Hibaelhárítás és GYIK — Git és GitHub](../../../../guides/tanuloknak/hibaelharitas.md#git-és-github)
+- [GitHub Classroom hibák](../../../../guides/tanuloknak/hibaelharitas.md#github-classroom)

@@ -4,7 +4,7 @@
 
 Az OpenSchool platform előkészítése arra, hogy mások is hozzájáruljanak. A modul végére:
 
-> **Háttérolvasmány:** Az open source projektek általános felépítését (README, LICENSE, CI/CD, branch stratégia, verziókezelés, közösségépítés) lásd az [Open source projekt útmutatóban](../../../../guides/open-source-projekt-utmutato.md). Ez a modul az OpenSchool platformra alkalmazza ezeket a gyakorlatokat.
+> **Háttérolvasmány:** Az open source projektek általános felépítését (README, LICENSE, CI/CD, branch stratégia, verziókezelés, közösségépítés) lásd az [Open source projekt útmutatóban](../../../../guides/mentoroknak/open-source-projekt-utmutato.md). Ez a modul az OpenSchool platformra alkalmazza ezeket a gyakorlatokat.
 
 - A repó professzionálisan dokumentált, készen áll kontribútorok fogadására
 - Van CONTRIBUTING guide, issue és PR template

@@ -171,10 +171,10 @@ Vizsga és házi feladat kezelése GitHub Classroom-ban: lásd [`github-classroo
 
 A kurzus-specifikus hibák és megoldásaik részletes listáját lásd a központi hibaelhárítási útmutatóban:
 
-- [Hibaelhárítás és GYIK — Backend FastAPI kurzus](../../../../guides/hibaelharitas.md#backend-fastapi-kurzus)
-- [Hibaelhárítás és GYIK — Docker](../../../../guides/hibaelharitas.md#docker)
-- [Hibaelhárítás és GYIK — Git és GitHub](../../../../guides/hibaelharitas.md#git-és-github)
-- [Hibaelhárítás és GYIK — GitHub Classroom](../../../../guides/hibaelharitas.md#github-classroom)
+- [Hibaelhárítás és GYIK — Backend FastAPI kurzus](../../../../guides/tanuloknak/hibaelharitas.md#backend-fastapi-kurzus)
+- [Hibaelhárítás és GYIK — Docker](../../../../guides/tanuloknak/hibaelharitas.md#docker)
+- [Hibaelhárítás és GYIK — Git és GitHub](../../../../guides/tanuloknak/hibaelharitas.md#git-és-github)
+- [Hibaelhárítás és GYIK — GitHub Classroom](../../../../guides/tanuloknak/hibaelharitas.md#github-classroom)
 
 ---
 

@@ -55,5 +55,5 @@ python discord-webhook.py uzenet --webhook-url URL --uzenet "Szabad szöveg"
 
 ## Kapcsolódó dokumentumok
 
-- [Discord szerver útmutató](../guides/discord-szerver-utmutato.md) — szerver beállítás, webhook-ok
-- [Integrált munkafolyamat](../guides/integralt-munkafolyamat.md) — félév eleji beállítástól a félév végéig
+- [Discord szerver útmutató](../guides/uzemeltetoknek/discord-szerver-utmutato.md) — szerver beállítás, webhook-ok
+- [Integrált munkafolyamat](../guides/uzemeltetoknek/integralt-munkafolyamat.md) — félév eleji beállítástól a félév végéig
