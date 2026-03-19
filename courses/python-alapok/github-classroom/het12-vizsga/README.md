@@ -1,7 +1,6 @@
 # 12. hét – Vizsgafelkészítés (próbavizsga)
 
-> **Határidő:** az óra végén (90 perc)
-> **Beadás:** az utolsó `git push` az óra végén = beadás!
+> **Beadás:** az utolsó `git push` = beadás!
 > Ez egy próbavizsga – vizsga körülmények között dolgozz!
 
 ---
@@ -131,4 +130,4 @@ Az összes korábbi heti anyagot és a vizsgafelkészüléshez szükséges anyag
 ## Beadás
 
 1. `git add .` → `git commit -m "próbavizsga megoldás"` → `git push`
-2. Az utolsó push az óra végén = beadás!
+2. Az utolsó push = beadás!

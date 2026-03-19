@@ -2,7 +2,7 @@
 
 > **Időtartam:** 90 perc
 > **Összpontszám:** 40 pont
-> **Beadás:** az utolsó `git push` az óra végén = beadás!
+> **Beadás:** az utolsó `git push` = beadás!
 
 ---
 

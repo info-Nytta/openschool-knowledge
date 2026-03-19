@@ -8,7 +8,7 @@ Automatizálási szkriptek a kurzusok adminisztrálásához.
 |---|---|
 | `github-setup.sh` | GitHub Classroom template repók létrehozása (Linux/macOS) |
 | `github-setup.ps1` | GitHub Classroom template repók létrehozása (Windows) |
-| `discord-webhook.py` | Discord webhook üzenetküldő — bejelentések és emlékeztetők |
+| `discord-webhook.py` | Discord webhook üzenetküldő — bejelentések |
 
 ## GitHub Setup
 
@@ -32,7 +32,7 @@ Template repókat hoz létre egy GitHub Organization alatt a `github-classroom/`
 
 ## Discord Webhook
 
-Heti bejelentések, házi feladat emlékeztetők és szabad üzenetek küldése Discord csatornákra.
+Heti bejelentések és szabad üzenetek küldése Discord csatornákra.
 
 **Előfeltételek:**
 - Webhook URL-ek környezeti változókban (vagy `.env` fájl):
@@ -45,9 +45,6 @@ Heti bejelentések, házi feladat emlékeztetők és szabad üzenetek küldése 
 ```bash
 # Bejelentés küldése
 python discord-webhook.py bejelentes --kurzus python --het 3 --tema "Feltételes elágazások"
-
-# Házi feladat emlékeztető
-python discord-webhook.py emlekezteto --kurzus backend --het 7 --hatarido "2026-03-15"
 
 # Szabad üzenet
 python discord-webhook.py uzenet --webhook-url URL --uzenet "Szabad szöveg"

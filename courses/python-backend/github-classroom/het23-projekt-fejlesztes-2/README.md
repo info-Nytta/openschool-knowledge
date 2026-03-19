@@ -1,6 +1,5 @@
 # 23. hét – Projekt fejlesztés II.
 
-> **Határidő:** a következő óra előtt
 > **Beadás:** commitold és pushold a megoldásaidat ebbe a repóba!
 
 ---

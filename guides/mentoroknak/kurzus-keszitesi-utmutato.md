@@ -65,8 +65,6 @@ het01-alapok/
 ```markdown
 # X. hét – Téma neve
 
-> **Határidő:** a következő foglalkozás előtt
-
 ## Feladatok
 
 ### X.1 – Feladat címe ⭐

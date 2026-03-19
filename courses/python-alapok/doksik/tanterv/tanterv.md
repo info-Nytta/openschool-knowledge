@@ -3,7 +3,7 @@
 ## Kurzus áttekintés
 
 **Cél:** A tanulók elsajátítsák a Python programozás és a Git/GitHub alapjait, és felkészüljenek a szintfelmérő vizsgára.
-**Időtartam:** 13 hét (heti 2 óra = 26 óra)
+**Időtartam:** 13 hét
 **Vizsga:** 40 pontos szintfelmérő (90 perc, GitHub Classroom-on keresztül)
 
 ---
@@ -32,7 +32,7 @@
 ## Heti bontás
 
 ### 0. hét – Git és GitHub alapok
-**0. óra: Git bevezetés**
+**0. lecke: Git bevezetés**
 - Mi a Git? Mi a GitHub?
 - Git telepítés és beállítás (`git config`)
 - Alapfogalmak: repository, commit, push, clone
@@ -43,13 +43,13 @@
 ---
 
 ### 1. hét – Bevezetés és alapok
-**1. óra: A Python világa**
+**1. lecke: A Python világa**
 - Mi a programozás? Mi a Python?
 - Fejlesztői környezet beállítása
 - Első program: `print("Hello, világ!")`
 - Megjegyzések (`#`)
 
-**2. óra: Változók és típusok**
+**2. lecke: Változók és típusok**
 - Változók létrehozása, elnevezési szabályok
 - Alaptípusok: `int`, `float`, `str`, `bool`
 - `type()` függvény
@@ -58,12 +58,12 @@
 ---
 
 ### 2. hét – Bevitel és szövegkezelés
-**3. óra: Billentyűzetes bevitel**
+**3. lecke: Billentyűzetes bevitel**
 - `input()` függvény
 - Típuskonverzió: `int()`, `float()`, `str()`
 - Gyakorlat: egyszerű számológép (két szám összeadása)
 
-**4. óra: Szövegműveletek**
+**4. lecke: Szövegműveletek**
 - Szöveg összefűzés (`+`)
 - Szöveg indexelés (`[0]`, `[-1]`)
 - Szöveg metódusok: `.lower()`, `.upper()`, `.strip()`
@@ -73,13 +73,13 @@
 ---
 
 ### 3. hét – Feltételes elágazások
-**5. óra: Az `if` utasítás**
+**5. lecke: Az `if` utasítás**
 - `if`, `else` szerkezet
 - Összehasonlító operátorok (`==`, `!=`, `<`, `>`, `<=`, `>=`)
 - Logikai operátorok (`and`, `or`, `not`)
 - Gyakorlat: páros/páratlan eldöntése
 
-**6. óra: Többágú elágazás**
+**6. lecke: Többágú elágazás**
 - `elif` használata
 - Összetett feltételek
 - Beágyazott elágazások
@@ -88,13 +88,13 @@
 ---
 
 ### 4. hét – Ciklusok
-**7. óra: A `while` ciklus**
+**7. lecke: A `while` ciklus**
 - `while` ciklus felépítése
 - Számláló változó
 - Végtelen ciklus és kilépés
 - Gyakorlat: visszaszámlálás, számkitalálós játék
 
-**8. óra: A `for` ciklus és `range()`**
+**8. lecke: A `for` ciklus és `range()`**
 - `for` ciklus szövegen és `range()`-en
 - `range(start, stop, step)`
 - `break` és `continue`
@@ -103,13 +103,13 @@
 ---
 
 ### 5. hét – Listák
-**9. óra: Listák alapjai**
+**9. lecke: Listák alapjai**
 - Lista létrehozása, indexelés
 - `append()`, `len()`, `sum()`
 - Lista bejárása `for` ciklussal
 - Gyakorlat: bevásárlólista kezelő
 
-**10. óra: Listműveletek**
+**10. lecke: Listműveletek**
 - Lista szeletelés (`[1:3]`)
 - `in` operátor
 - Lista rendezés (`.sort()`, `sorted()`)
@@ -119,13 +119,13 @@
 ---
 
 ### 6. hét – Függvények I.
-**11. óra: Függvények alapjai**
+**11. lecke: Függvények alapjai**
 - Miért kellenek függvények?
 - `def`, paraméterek, `return`
 - Függvény hívása
 - Gyakorlat: köszöntő függvény, területszámítók
 
-**12. óra: Függvények gyakorlat**
+**12. lecke: Függvények gyakorlat**
 - Több paraméter, több visszatérési érték
 - Függvények egymás hívása
 - Program struktúrálása függvényekkel
@@ -134,13 +134,13 @@
 ---
 
 ### 7. hét – Random modul és játéklogika
-**13. óra: A `random` modul**
+**13. lecke: A `random` modul**
 - `import random`
 - `random.randint(a, b)`
 - `random.choice()`, `random.shuffle()`
 - Gyakorlat: dobókocka szimulátor
 
-**14. óra: Játékprogram építése**
+**14. lecke: Játékprogram építése**
 - `while` ciklus + feltételek + számláló kombinálása
 - Hibajelzés érvénytelen bemenetre
 - **Gyakorlat: 2. vizsga feladat típusú program** (tippelős játék)
@@ -148,14 +148,14 @@
 ---
 
 ### 8. hét – Fájlkezelés I.
-**15. óra: Fájlból olvasás**
+**15. lecke: Fájlból olvasás**
 - `open()` függvény, `encoding="utf-8"`
 - Fájl soronkénti olvasása (`for sor in f`)
 - `.strip()` és `.split(";")`
 - `with` blokk
 - Gyakorlat: egyszerű szövegfájl beolvasása és kiírása
 
-**16. óra: Fájlba írás**
+**16. lecke: Fájlba írás**
 - Fájl megnyitása írásra (`"w"`)
 - `f.write()` használata
 - Gyakorlat: lista mentése fájlba, majd visszaolvasása
@@ -163,13 +163,13 @@
 ---
 
 ### 9. hét – Összetett adatszerkezetek
-**17. óra: Lista listája**
+**17. lecke: Lista listája**
 - Lista, amelynek elemei listák
 - Beolvasás fájlból lista listába
 - Típuskonverzió beolvasáskor (`int()`, `float()`)
 - Gyakorlat: tanulók adatainak tárolása és kiírása
 
-**18. óra: Szótárak és szótárak listája**
+**18. lecke: Szótárak és szótárak listája**
 - Szótár (`dict`) alapok: kulcs-érték párok
 - Szótárak listája mint adatszerkezet
 - Hozzáférés: `film["cim"]` vs `film[0]`
@@ -178,13 +178,13 @@
 ---
 
 ### 10. hét – Adatfeldolgozás
-**19. óra: Számlálás, szűrés**
+**19. lecke: Számlálás, szűrés**
 - Elemek számlálása feltétel alapján
 - Szűrés kategória/típus szerint
 - `.get()` szótár metódus számláláshoz
 - Gyakorlat: filmek/könyvek számlálása kategóriánként
 
-**20. óra: Keresés, min/max**
+**20. lecke: Keresés, min/max**
 - Lineáris keresés listában
 - Minimum és maximum keresés
 - Keresés eredményének kiírása
@@ -193,14 +193,14 @@
 ---
 
 ### 11. hét – Modulok és összefoglaló projekt
-**21. óra: Saját modul készítése**
+**21. lecke: Saját modul készítése**
 - Mi a modul? Miért hasznos?
 - `fgv.py` létrehozása függvényekkel
 - `import fgv` használata a főprogramban
 - `fgv.fuggvenynev()` hívása
 - Gyakorlat: adatfeldolgozó program modulokra bontása
 
-**22. óra: Komplex feladat – teljes 3. vizsga feladat**
+**22. lecke: Komplex feladat – teljes 3. vizsga feladat**
 - Fájl beolvasás → adatszerkezet → feldolgozás → fájlba írás
 - Minden részfeladat összekötése
 - **Gyakorlat: teljes 3. feladat megoldása lépésről lépésre**
@@ -208,12 +208,12 @@
 ---
 
 ### 12. hét – Vizsgafelkészítés
-**23. óra: Próbavizsga**
+**23. lecke: Próbavizsga**
 - Teljes vizsga szimulálása (90 perc, 40 pont)
 - Vizsga körülmények között dolgozás
 - Önellenőrzés az értékelési rubrika alapján
 
-**24. óra: Próbavizsga megbeszélése és kérdések**
+**24. lecke: Próbavizsga megbeszélése és kérdések**
 - Közös megoldás áttekintése
 - Tipikus hibák megbeszélése
 - Utolsó kérdések, hiánypótlás
@@ -238,6 +238,6 @@
 - **Git:** 2.x+ (Windows: [git-scm.com](https://git-scm.com))
 - **Operációs rendszer:** Windows 10+, Linux vagy macOS
 - **GitHub fiók:** minden tanulónak kell (ingyenes)
-- **Segédanyagok:** órai kódpéldák a `doksik/tanulok/` mappában
+- **Segédanyagok:** kódpéldák a `doksik/tanulok/` mappában
 
 > **Windows megjegyzés:** A `python3` parancs helyett Windowson `python`-t használj. A terminál lehet PowerShell, Parancssor (cmd), vagy a VS Code beépített terminálja.

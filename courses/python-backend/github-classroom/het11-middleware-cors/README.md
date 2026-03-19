@@ -1,6 +1,5 @@
 # 11. hét – Middleware és CORS
 
-> **Határidő:** a következő óra előtt
 > **Beadás:** commitold és pushold a megoldásaidat ebbe a repóba!
 > A feladatok nehézség szerint vannak jelölve: ⭐ könnyű | ⭐⭐ közepes | ⭐⭐⭐ nehéz
 

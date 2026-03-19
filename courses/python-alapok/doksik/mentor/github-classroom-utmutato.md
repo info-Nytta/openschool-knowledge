@@ -89,7 +89,6 @@ Minden héten egy új **Assignment**-et kell létrehozni. Ezt kell tenned:
 | Mező | Érték | Példa |
 |------|-------|-------|
 | **Title** | A hét neve | `Het 03 - Felteteles elagazasok` |
-| **Deadline** | A következő óra dátuma + időpont | `2026-03-16 08:00` |
 | **Individual or Group** | **Individual** | - |
 | **Repository visibility** | **Private** | (ne másolhassák egymástól) |
 | **Template repository** | Az adott heti template | `het03-feltetelek` |
@@ -181,10 +180,10 @@ Minden héten ezeket kell megtenned:
 
 | # | Teendő | Mikor |
 |---|--------|-------|
-| 1 | Hozd létre az Assignment-et a Classroom-ban | Az óra előtt |
-| 2 | Oszd ki a meghívó linket a tanulóknak | Az órán |
-| 3 | A deadline után nézd meg a beadásokat | A következő óra előtt |
-| 4 | Adj visszajelzést (GitHub komment vagy szóban) | A következő órán |
+| 1 | Hozd létre az Assignment-et a Classroom-ban | Előkészítéskor |
+| 2 | Oszd ki a meghívó linket a tanulóknak | Kiadáskor |
+| 3 | A deadline után nézd meg a beadásokat | Beadási idő után |
+| 4 | Adj visszajelzést (GitHub komment vagy szóban) | Értékeléskor |
 
 ---
 

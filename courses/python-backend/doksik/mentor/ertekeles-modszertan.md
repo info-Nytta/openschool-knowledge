@@ -247,9 +247,8 @@ git blame app/routers/items.py
 
 - **Automatikus (13. héttől):** pytest eredmény (azonnal látható a tanulónak)
 - **Manuális (0–12. hét):** Mentori kód-átnézés (nincs autograding ezeken a heteken)
-- **Határidő:** A következő óra előtt 1 nappal
 - **Késés:** Heti 1 nap késés megengedett, utána 50% levonás
-- **Minimumkövetelmény:** A félév végéig legalább 16 házi feladat beadva (a 24-ből)
+- **Minimumkövetelmény:** Legalább 16 házi feladat beadva (a 24-ből)
 
 ### Összesítés
 
@@ -300,7 +299,7 @@ A variánsok **azonos nehézségűek** — mindegyik azonos struktúrájú (5 fe
 ## 9. Különleges esetek
 
 ### Hiányzó tanuló a vizsgán
-- Pótvizsga: másik variánssal (C vagy D, ha az órákon A és B volt)
+- Pótvizsga: másik variánssal (C vagy D, ha az A és B volt)
 - Határidő: 1 héten belül
 
 ### Technikai probléma a vizsgán

@@ -2,7 +2,7 @@
 
 ## Kurzus felépítése
 
-A kurzus 13 hétre van bontva (0–12. hét, heti 2 óra), és fokozatosan építi fel a vizsgához szükséges tudást. A vizsga beadása **GitHub Classroom**-on keresztül történik.
+A kurzus 13 hétre van bontva (0–12. hét), és fokozatosan építi fel a vizsgához szükséges tudást. A vizsga beadása **GitHub Classroom**-on keresztül történik.
 
 **Kapcsolódó dokumentumok:**
 - Tanterv: [`doksik/tanterv/tanterv.md`](../tanterv/tanterv.md)
@@ -17,7 +17,7 @@ A kurzus 13 hétre van bontva (0–12. hét, heti 2 óra), és fokozatosan épí
 
 ### 0. hét: Git és GitHub Classroom
 - **Cél:** A tanulók beállítják a Git-et, létrehoznak GitHub fiókot, és megtanulják az alapokat
-- **Tipp:** Előre készíts egy GitHub Classroom szervezetet és egy próba-feladatot. Az órán segítsd a tanulókat a fióklétrehozásban.
+- **Tipp:** Előre készíts egy GitHub Classroom szervezetet és egy próba-feladatot. Segítsd a tanulókat a fióklétrehozásban.
 - **Beállítás:** Lásd [`github-classroom-utmutato.md`](github-classroom-utmutato.md)
 - **Házi feladat:** Próba repo: klónozás, `index.html` létrehozása, commit, push
 

@@ -2,7 +2,7 @@
 
 ## Kurzus felépítése
 
-A kurzus 25 hétre van bontva (0–24. hét, heti 6 óra = 3 × 2 óra), és fokozatosan építi fel a vizsgához szükséges tudást. A vizsga beadása **GitHub Classroom**-on keresztül történik, automatikus pytest értékeléssel.
+A kurzus 25 hétre van bontva (0–24. hét), és fokozatosan építi fel a vizsgához szükséges tudást. A vizsga beadása **GitHub Classroom**-on keresztül történik, automatikus pytest értékeléssel.
 
 **Kapcsolódó dokumentumok:**
 - Tanterv: [`doksik/tanterv/tanterv.md`](../tanterv/tanterv.md)
@@ -23,12 +23,12 @@ A kurzus 25 hétre van bontva (0–24. hét, heti 6 óra = 3 × 2 óra), és fok
 
 ### 1. hét: Python ismétlés, virtuális környezet
 - **Cél:** A tanulók kényelmesen írjanak Python programokat és értsék a `venv` jelentőségét
-- **Tipp:** A virtuális környezet koncepció sok tanulónak új — dedikálj rá egy teljes órapárt. Mutasd meg, mi történik `venv` nélkül, ha két projekt különböző verziójú csomagokat igényel.
+- **Tipp:** A virtuális környezet koncepció sok tanulónak új — szánj rá elég időt. Mutasd meg, mi történik `venv` nélkül, ha két projekt különböző verziójú csomagokat igényel.
 - **Házi feladat:** Python gyakorló feladatok, `venv` készítése, `requirements.txt` generálása
 
 ### 2. hét: FastAPI bevezetés
 - **Cél:** Az első működő REST API elkészítése
-- **Tipp:** A Swagger UI (`/docs`) nagy motiváló erő — az óra elején mutasd meg az elkészült eredményt, utána építsétek fel lépésről lépésre.
+- **Tipp:** A Swagger UI (`/docs`) nagy motiváló erő — először mutasd meg az elkészült eredményt, utána építsétek fel lépésről lépésre.
 - **Házi feladat:** Hello API: 3-4 végpont, Swagger UI-ban tesztelés
 
 ### 3. hét: Útvonalak és paraméterek
@@ -63,7 +63,7 @@ A kurzus 25 hétre van bontva (0–24. hét, heti 6 óra = 3 × 2 óra), és fok
 
 ### 9. hét: CRUD műveletek adatbázissal
 - **Cél:** `get_db()` dependency, CRUD függvények, router integráció
-- **Tipp:** Ez a hét köti össze az eddigi tudást (FastAPI + SQLAlchemy + Pydantic). Érdemes egy komplett példát (pl. Termék entitás) elejétől a végéig felépíteni az órán.
+- **Tipp:** Ez a hét köti össze az eddigi tudást (FastAPI + SQLAlchemy + Pydantic). Érdemes egy komplett példát (pl. Termék entitás) elejétől a végéig felépíteni.
 - **Házi feladat:** Teljes CRUD API PostgreSQL-lel
 
 ### 10. hét: Authentikáció és JWT
@@ -108,7 +108,7 @@ A kurzus 25 hétre van bontva (0–24. hét, heti 6 óra = 3 × 2 óra), és fok
 
 ### 18. hét: Background Tasks és WebSocket
 - **Cél:** `BackgroundTasks`, WebSocket echo/broadcast
-- **Tipp:** Az email küldés szimuláció (fájlba írás) jó bevezetés — ne használj valódi SMTP-t az órán. A WebSocket tesztelése a böngésző konzolból is megmutatható.
+- **Tipp:** Az email küldés szimuláció (fájlba írás) jó bevezetés — ne használj valódi SMTP-t. A WebSocket tesztelése a böngésző konzolból is megmutatható.
 - **Házi feladat:** Háttérfeladat + egyszerű WebSocket endpoint
 
 ### 19. hét: Docker Compose haladó, éles üzem
@@ -182,7 +182,7 @@ A kurzus-specifikus hibák és megoldásaik részletes listáját lásd a közpo
 
 | Szempont | Python Alapok | Backend FastAPI |
 |----------|-------------|-------------|
-| Időtartam | 13 hét, heti 2 óra | 25 hét, heti 6 óra |
+| Időtartam | 13 hét | 25 hét |
 | Nyelv | Python (script) | Python + FastAPI (web API) |
 | Adatbázis | Fájlkezelés (txt) | PostgreSQL (Docker) |
 | Tesztelés | Shell tesztek (autograding) | pytest (automatikus) |
@@ -194,18 +194,18 @@ A kurzus-specifikus hibák és megoldásaik részletes listáját lásd a közpo
 
 ## Ajánlott mentori workflow
 
-### Óra előtt
+### Előkészítés
 1. Olvasd át a heti lecke anyagot
 2. Készítsd el a GitHub Classroom Assignment-et (ha házi feladat van)
 3. Teszteld lokálisan a feladatokat és a megoldásokat
 
-### Óra közben
-1. Rövid elméleti bevezető (max 15 perc órapáronként)
+### Foglalkozás közben
+1. Rövid elméleti bevezető (max 15 perc)
 2. Élő kód írás (live coding) — a tanulók együtt kódolnak
-3. Gyakorlás: a feladatsor 1-2 feladata az órán
+3. Gyakorlás: a feladatsor 1-2 feladata
 4. Kérdések megbeszélése
 
-### Óra után
+### Foglalkozás után
 1. Oszd ki a házi feladat GitHub Classroom linkjét
 2. Ellenőrizd a korábbi heti beadásokat
 3. Adj visszajelzést (GitHub comment vagy szóban)

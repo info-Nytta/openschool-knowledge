@@ -1,6 +1,5 @@
 # 9. hét – Flexbox
 
-> **Határidő:** a következő óra előtt
 > **Beadás:** commitold és pushold a megoldásaidat ebbe a repoba!
 > A feladatok nehézség szerint vannak jelölve: ⭐ könnyű | ⭐⭐ közepes | ⭐⭐⭐ nehéz
 

@@ -1,6 +1,5 @@
 # 12. hét – Vizsgafelkészítés
 
-> **Határidő:** a vizsga előtt
 > **Beadás:** commitold és pushold a megoldásaidat ebbe a repoba!
 > A feladatok nehézség szerint vannak jelölve: ⭐ könnyű | ⭐⭐ közepes | ⭐⭐⭐ nehéz
 

@@ -1,6 +1,5 @@
 # 21. hét – Projekt tervezés
 
-> **Határidő:** a következő óra előtt
 > **Beadás:** commitold és pushold a megoldásaidat ebbe a repóba!
 
 ---

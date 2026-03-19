@@ -2,7 +2,7 @@
 
 > **Időtartam:** 90 perc
 > **Összpontszám:** 40 pont
-> **Beadás:** az utolsó `git push` az óra végén = beadás!
+> **Beadás:** az utolsó `git push` = beadás!
 
 ---
 
@@ -105,4 +105,4 @@ A nyelvek: angol, német, francia. A műfajok: fantasy, krimi, sci-fi, történe
 2. `git commit -m "vizsga megoldás"`
 3. `git push`
 
-Az utolsó push az óra végén = beadás!
+Az utolsó push = beadás!

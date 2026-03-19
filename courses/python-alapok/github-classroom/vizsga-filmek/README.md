@@ -2,7 +2,7 @@
 
 > **Időtartam:** 90 perc
 > **Összpontszám:** 40 pont
-> **Beadás:** az utolsó `git push` az óra végén = beadás!
+> **Beadás:** az utolsó `git push` = beadás!
 
 ---
 
@@ -106,4 +106,4 @@ A kategóriák: akció, vígjáték, dráma, horror.
 2. `git commit -m "vizsga megoldás"`
 3. `git push`
 
-Az utolsó push az óra végén = beadás!
+Az utolsó push = beadás!

@@ -1,12 +1,9 @@
 """
-Discord webhook üzenetküldő – heti bejelentések és emlékeztetők automatizálása.
+Discord webhook üzenetküldő – heti bejelentések automatizálása.
 
 Használat:
     # Bejelentés küldése:
     python discord-webhook.py bejelentes --kurzus python --het 3 --tema "Feltételes elágazások"
-
-    # Házi feladat emlékeztető:
-    python discord-webhook.py emlekezteto --kurzus backend --het 7 --hatarido "2026-03-15"
 
     # Szabad üzenet küldése:
     python discord-webhook.py uzenet --webhook-url URL --uzenet "Szabad szöveg"
@@ -112,29 +109,10 @@ def cmd_bejelentes(args):
         "color": 0x2ECC71 if args.kurzus == "python" else 0x3498DB,
     }
 
-    if args.hatarido:
-        embed["description"] += f"\n\n⏰ **Határidő:** {args.hatarido}"
-
     if args.megjegyzes:
         embed["description"] += f"\n\n📝 {args.megjegyzes}"
 
     send_webhook(webhook_url, embeds=[embed])
-
-
-def cmd_emlekezteto(args):
-    """Házi feladat emlékeztető küldése."""
-    webhook_url = get_webhook_url("KOZLEMENYEK")
-    emoji = KURZUS_EMOJIK.get(args.kurzus, "📚")
-    nev = KURZUS_NEVEK.get(args.kurzus, args.kurzus)
-
-    content = (
-        f"⏰ {emoji} **{nev} – Emlékeztető**\n\n"
-        f"A **{args.het}. heti** házi feladat határideje: **{args.hatarido}**\n\n"
-        f"Ne felejtsd el pusholni a megoldásodat a GitHub-ra! "
-        f"Az autograding automatikusan lefut push után."
-    )
-
-    send_webhook(webhook_url, content=content)
 
 
 def cmd_szal(args):
@@ -162,7 +140,7 @@ def main():
     load_env()
 
     parser = argparse.ArgumentParser(
-        description="Discord webhook üzenetküldő – kurzus bejelentések és emlékeztetők"
+        description="Discord webhook üzenetküldő – kurzus bejelentések"
     )
     subparsers = parser.add_subparsers(dest="parancs", required=True)
 
@@ -171,16 +149,8 @@ def main():
     p_bej.add_argument("--kurzus", required=True, choices=["python", "backend"])
     p_bej.add_argument("--het", required=True, type=int, help="Hét száma (0-12 vagy 0-24)")
     p_bej.add_argument("--tema", required=True, help="Heti téma neve")
-    p_bej.add_argument("--hatarido", help="Házi feladat határideje (pl. 2026-03-15)")
     p_bej.add_argument("--megjegyzes", help="Extra megjegyzés")
     p_bej.set_defaults(func=cmd_bejelentes)
-
-    # --- emlekezteto ---
-    p_eml = subparsers.add_parser("emlekezteto", help="Házi feladat emlékeztető")
-    p_eml.add_argument("--kurzus", required=True, choices=["python", "backend"])
-    p_eml.add_argument("--het", required=True, type=int)
-    p_eml.add_argument("--hatarido", required=True, help="Határidő dátum")
-    p_eml.set_defaults(func=cmd_emlekezteto)
 
     # --- szal ---
     p_szal = subparsers.add_parser("szal", help="Heti szál nyitó üzenet")

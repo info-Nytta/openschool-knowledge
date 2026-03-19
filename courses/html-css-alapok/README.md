@@ -28,7 +28,7 @@
 
 ## Összefoglaló
 
-- **Időtartam:** 13 hét (0–12), heti 2 óra
+- **Időtartam:** 13 hét (0–12)
 - **Technológiák:** HTML5, CSS3
 - **Vizsga:** 40 pont, 90 perc, 3 feladat (8 + 14 + 18 pont)
 - **Beadás:** GitHub Classroom (automatikus értékelés)

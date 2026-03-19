@@ -3,7 +3,7 @@
 ## Kurzus áttekintés
 
 **Cél:** A tanulók elsajátítsák a HTML és CSS webfejlesztés és a Git/GitHub alapjait, és felkészüljenek a szintfelmérő vizsgára.
-**Időtartam:** 13 hét (heti 2 óra = 26 óra)
+**Időtartam:** 13 hét
 **Vizsga:** 40 pontos szintfelmérő (90 perc, GitHub Classroom-on keresztül)
 
 ---
@@ -33,7 +33,7 @@
 ## Heti bontás
 
 ### 0. hét – Git és GitHub alapok
-**0. óra: Git bevezetés**
+**0. lecke: Git bevezetés**
 - Mi a Git? Mi a GitHub?
 - Git telepítés és beállítás (`git config`)
 - Alapfogalmak: repository, commit, push, clone
@@ -44,14 +44,14 @@
 ---
 
 ### 1. hét – HTML bevezetés és dokumentum szerkezet
-**1. óra: Mi a HTML?**
+**1. lecke: Mi a HTML?**
 - A web működése: böngésző, szerver, HTML
 - HTML fájl létrehozása VS Code-ban
 - Első weboldal: `<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`
 - `<title>` és az oldal címe a böngészőben
 - Megjegyzések (`<!-- komment -->`)
 
-**2. óra: Alapvető szöveges elemek**
+**2. lecke: Alapvető szöveges elemek**
 - Címsorok: `<h1>` – `<h6>`
 - Bekezdések: `<p>`
 - Sortörés: `<br>`, vízszintes vonal: `<hr>`
@@ -61,13 +61,13 @@
 ---
 
 ### 2. hét – Szöveg és listák
-**3. óra: Listák**
+**3. lecke: Listák**
 - Rendezetlen lista: `<ul>`, `<li>`
 - Rendezett lista: `<ol>`, `<li>`
 - Beágyazott listák
 - Gyakorlat: kedvenc filmek/zenék listája
 
-**4. óra: Szöveg finomítás**
+**4. lecke: Szöveg finomítás**
 - `<span>` és `<div>` elemek
 - Speciális karakterek (`&amp;`, `&lt;`, `&gt;`, `&nbsp;`)
 - `<blockquote>` és `<cite>`
@@ -77,14 +77,14 @@
 ---
 
 ### 3. hét – Linkek és képek
-**5. óra: Linkek**
+**5. lecke: Linkek**
 - `<a href="">` elem
 - Abszolút és relatív URL-ek
 - Új ablakban megnyitás: `target="_blank"`
 - Oldal belső link: `id` és `#`
 - Gyakorlat: navigációs menü készítése
 
-**6. óra: Képek**
+**6. lecke: Képek**
 - `<img src="" alt="">` elem
 - Képformátumok: JPG, PNG, SVG, WebP
 - Képméretezés: `width`, `height` attribútumok
@@ -94,13 +94,13 @@
 ---
 
 ### 4. hét – Táblázatok és űrlapok I.
-**7. óra: Táblázatok**
+**7. lecke: Táblázatok**
 - `<table>`, `<tr>`, `<th>`, `<td>`
 - Táblázat címe: `<caption>`
 - Cellaösszevonás: `colspan`, `rowspan`
 - Gyakorlat: órarend vagy árlista táblázat
 
-**8. óra: Űrlapok alapjai**
+**8. lecke: Űrlapok alapjai**
 - `<form>` elem
 - `<input>` típusok: `text`, `email`, `password`, `number`
 - `<label>` és `for` attribútum
@@ -110,14 +110,14 @@
 ---
 
 ### 5. hét – Űrlapok II. és szemantikus HTML
-**9. óra: Haladó űrlapelemek**
+**9. lecke: Haladó űrlapelemek**
 - `<select>` és `<option>` legördülő lista
 - `<input type="checkbox">` és `<input type="radio">`
 - `<input type="date">`, `<input type="range">`
 - `required`, `placeholder`, `value` attribútumok
 - Gyakorlat: regisztrációs űrlap
 
-**10. óra: Szemantikus HTML**
+**10. lecke: Szemantikus HTML**
 - Mi a szemantikus HTML és miért fontos?
 - `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`
 - Az oldal felépítése szemantikus elemekkel
@@ -126,14 +126,14 @@
 ---
 
 ### 6. hét – CSS bevezetés
-**11. óra: CSS alapok**
+**11. lecke: CSS alapok**
 - Mi a CSS? Hogyan kapcsolódik a HTML-hez?
 - CSS beágyazás módjai: inline, belső (`<style>`), külső (`<link>`)
 - CSS szintaxis: szelektor, tulajdonság, érték
 - Elem szelektor, osztály szelektor (`.`), azonosító szelektor (`#`)
 - Gyakorlat: meglévő HTML oldal színezése
 
-**12. óra: Színek és szövegformázás**
+**12. lecke: Színek és szövegformázás**
 - Színek: névvel, hex (`#FF5733`), RGB (`rgb()`), HSL
 - `color`, `background-color`
 - `font-family`, `font-size`, `font-weight`, `font-style`
@@ -144,14 +144,14 @@
 ---
 
 ### 7. hét – CSS box modell
-**13. óra: A box modell**
+**13. lecke: A box modell**
 - Minden elem egy doboz: content, padding, border, margin
 - `width`, `height`, `max-width`
 - `padding` (rövidített és egyedi oldalak)
 - `border` (szín, vastagság, stílus, lekerekítés: `border-radius`)
 - Gyakorlat: kártyák készítése szegéllyel és paddingal
 
-**14. óra: Margin és elrendezés alapok**
+**14. lecke: Margin és elrendezés alapok**
 - `margin` (rövidített és egyedi oldalak)
 - Margin összeomlás (collapse)
 - `box-sizing: border-box` és miért fontos
@@ -161,13 +161,13 @@
 ---
 
 ### 8. hét – CSS elrendezés és pozícionálás
-**15. óra: Pozícionálás**
+**15. lecke: Pozícionálás**
 - `position: static`, `relative`, `absolute`, `fixed`, `sticky`
 - `top`, `right`, `bottom`, `left`
 - `z-index`
 - Gyakorlat: rögzített navigáció és vissza-a-tetejére gomb
 
-**16. óra: Float és clearfix**
+**16. lecke: Float és clearfix**
 - `float: left`, `float: right`
 - `clear: both`
 - `overflow` tulajdonság
@@ -177,14 +177,14 @@
 ---
 
 ### 9. hét – Flexbox
-**17. óra: Flexbox alapok**
+**17. lecke: Flexbox alapok**
 - `display: flex`
 - Főtengely és kereszttengely
 - `flex-direction`, `justify-content`, `align-items`
 - `gap`
 - Gyakorlat: navigációs sáv Flexbox-szal
 
-**18. óra: Flexbox haladó**
+**18. lecke: Flexbox haladó**
 - `flex-wrap`
 - `flex-grow`, `flex-shrink`, `flex-basis`
 - `align-self`, `order`
@@ -193,14 +193,14 @@
 ---
 
 ### 10. hét – Reszponzív design
-**19. óra: Media query-k**
+**19. lecke: Media query-k**
 - Mi a reszponzív design?
 - `<meta name="viewport">`
 - `@media` lekérdezések: `min-width`, `max-width`
 - Mobile-first megközelítés
 - Gyakorlat: navigáció átalakítása mobilra
 
-**20. óra: Reszponzív minták**
+**20. lecke: Reszponzív minták**
 - Relatív egységek: `%`, `em`, `rem`, `vw`, `vh`
 - Reszponzív képek: `max-width: 100%`
 - Reszponzív tipográfia
@@ -209,14 +209,14 @@
 ---
 
 ### 11. hét – CSS haladó témák és projekt
-**21. óra: Dekoráció és vizuális effektek**
+**21. lecke: Dekoráció és vizuális effektek**
 - `box-shadow`, `text-shadow`
 - `opacity` és `rgba()`/`hsla()` átlátszóság
 - `transition` (egyszerű animáció hover-re)
 - CSS változók (`--szin-elsodleges`, `var()`)
 - Gyakorlat: interaktív gombok és kártyák hover effektekkel
 
-**22. óra: Komplex feladat – teljes weboldal**
+**22. lecke: Komplex feladat – teljes weboldal**
 - Fejléc navigációval
 - Fő tartalom szekciókkal
 - Kártya elrendezés Flexbox-szal
@@ -227,12 +227,12 @@
 ---
 
 ### 12. hét – Vizsgafelkészítés
-**23. óra: Próbavizsga**
+**23. lecke: Próbavizsga**
 - Teljes vizsga szimulálása (90 perc, 40 pont)
 - Vizsga körülmények között dolgozás
 - Önellenőrzés az értékelési rubrika alapján
 
-**24. óra: Próbavizsga megbeszélése és kérdések**
+**24. lecke: Próbavizsga megbeszélése és kérdések**
 - Közös megoldás áttekintése
 - Tipikus hibák megbeszélése
 - Utolsó kérdések, hiánypótlás
@@ -257,6 +257,6 @@
 - **Git:** 2.x+ (Windows: [git-scm.com](https://git-scm.com))
 - **Operációs rendszer:** Windows 10+, Linux vagy macOS
 - **GitHub fiók:** minden tanulónak kell (ingyenes)
-- **Segédanyagok:** órai kódpéldák a `doksik/tanulok/` mappában
+- **Segédanyagok:** kódpéldák a `doksik/tanulok/` mappában
 
 > **VS Code tipp:** A Live Server kiegészítő telepítése után jobb klikk az `index.html`-re → „Open with Live Server" – automatikus frissítés minden mentésnél.

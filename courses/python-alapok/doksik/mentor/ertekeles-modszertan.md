@@ -193,9 +193,8 @@ git blame feladat3.py
 ### Heti házi feladatok (het00–het11)
 
 - **Automatikus:** GitHub Classroom pontszám (azonnal látható a tanulónak)
-- **Határidő:** A következő óra előtt 1 nappal
 - **Késés:** Heti 1 nap késés megengedett, utána 50% levonás
-- **Minimumkövetelmény:** A félév végéig legalább 8 házi feladat beadva
+- **Minimumkövetelmény:** Legalább 8 házi feladat beadva
 
 ### Összesítés
 
@@ -235,7 +234,7 @@ A variánsok **azonos nehézségűek** — mindegyik azonos struktúrájú (3 fe
 ## 9. Különleges esetek
 
 ### Hiányzó tanuló a vizsgán
-- Pótvizsga: másik variánssal (C vagy D, ha az órákon A és B volt)
+- Pótvizsga: másik variánssal (C vagy D, ha az A és B volt)
 - Határidő: 1 héten belül
 
 ### Technikai probléma a vizsgán

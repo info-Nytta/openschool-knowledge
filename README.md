@@ -42,9 +42,9 @@ Az OpenSchool megközelítése: **a munkafolyamat maga legyen a tananyag része*
 
 | Kurzus | Időtartam | Technológia | Leírás |
 |--------|-----------|-------------|--------|
-| [Python alapok](courses/python-alapok/) | 13 hét, heti 2 óra | Python 3.10+ | Változók, ciklusok, függvények, fájlkezelés, adatfeldolgozás |
-| [HTML & CSS alapok](courses/html-css-alapok/) | 13 hét, heti 2 óra | HTML5 + CSS3 | Dokumentum szerkezet, szemantikus HTML, CSS box model, Flexbox, reszponzív dizájn |
-| [Backend FastAPI](courses/python-backend/) | 25 hét, heti 6 óra | Python + FastAPI + PostgreSQL | REST API, autentikáció, tesztelés, Docker, CI/CD |
+| [Python alapok](courses/python-alapok/) | 13 hét | Python 3.10+ | Változók, ciklusok, függvények, fájlkezelés, adatfeldolgozás |
+| [HTML & CSS alapok](courses/html-css-alapok/) | 13 hét | HTML5 + CSS3 | Dokumentum szerkezet, szemantikus HTML, CSS box model, Flexbox, reszponzív dizájn |
+| [Backend FastAPI](courses/python-backend/) | 25 hét | Python + FastAPI + PostgreSQL | REST API, autentikáció, tesztelés, Docker, CI/CD |
 | [Projekt Labor](courses/projekt-labor/) | 7 modul, egyéni tempó | FastAPI + Docker + Astro | Az OpenSchool platform felépítése nulláról élesig |
 
 A **Projekt Labor** nem hagyományos kurzus: a résztvevő az OpenSchool platform kódját építi fel az alapoktól — a végeredmény egy működő, open source webalkalmazás.

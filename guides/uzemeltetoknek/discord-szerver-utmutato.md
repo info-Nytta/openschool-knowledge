@@ -98,8 +98,7 @@ Szerver beállítások → **Safety Setup**:
 
 1. **Hét eleje**: közlemény a `#közlemények`-ben (🐍 vagy ⚡ jelöléssel)
 2. **Szál nyitása**: a `#segítség` csatornán az aktuális héthez
-3. **Határidő előtt**: emlékeztető a házi leadásáról
-4. **Pinelés**: fontos üzenetek pin-elése, kérdéseknél 👀/✅ reakció
+3. **Pinelés**: fontos üzenetek pin-elése, kérdéseknél 👀/✅ reakció
 
 ## Évváltás
 

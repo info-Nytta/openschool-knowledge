@@ -120,7 +120,7 @@ git log --oneline            # Eddigi commitok listája
 
 ### Beadás
 - Az utolsó `git push` a beadás
-- A határidő után a mentor értékeli a repóban lévő fájlokat
+- A mentor értékeli a repóban lévő fájlokat
 
 > **Részletes útmutató:** [GitHub Classroom — Tanuló útmutató](../../../../../guides/tanuloknak/github-classroom-tanulo-utmutato.md)
 

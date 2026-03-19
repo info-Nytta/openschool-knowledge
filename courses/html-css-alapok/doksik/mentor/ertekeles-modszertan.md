@@ -200,9 +200,8 @@ git blame index.html
 ### Heti házi feladatok (het00–het11)
 
 - **Automatikus:** GitHub Classroom pontszám (azonnal látható a tanulónak)
-- **Határidő:** A következő óra előtt 1 nappal
 - **Késés:** Heti 1 nap késés megengedett, utána 50% levonás
-- **Minimumkövetelmény:** A félév végéig legalább 8 házi feladat beadva
+- **Minimumkövetelmény:** Legalább 8 házi feladat beadva
 
 ### Összesítés
 

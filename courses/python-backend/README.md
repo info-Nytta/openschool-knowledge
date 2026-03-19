@@ -19,7 +19,7 @@
 
 ## Összefoglaló
 
-- **Időtartam:** 25 hét (0–24), heti 6 óra
+- **Időtartam:** 25 hét (0–24)
 - **Nyelv:** Python 3.10+, FastAPI keretrendszer
 - **Adatbázis:** PostgreSQL 16 (Docker), SQLAlchemy ORM, Alembic
 - **Tesztelés:** pytest + TestClient, SQLite in-memory mock DB

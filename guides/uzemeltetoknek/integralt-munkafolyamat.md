@@ -54,7 +54,7 @@ DISCORD_WEBHOOK_BACKEND=https://discord.com/api/webhooks/...
 
 ## 2. Heti rutin
 
-### 2.1 Óra előtt – szál nyitása és bejelentés
+### 2.1 Szál nyitása és bejelentés
 
 ```bash
 cd tools/
@@ -75,14 +75,7 @@ python discord-webhook.py bejelentes --kurzus python --het 3 --tema "Feltételes
 python discord-webhook.py uzenet --webhook-url $DISCORD_WEBHOOK_PYTHON --uzenet "📎 Házi feladat: https://classroom.github.com/a/XXXXXX"
 ```
 
-### 2.3 Határidő emlékeztető
-
-```bash
-# Határidő előtt 1-2 nappal
-python discord-webhook.py emlekezteto --kurzus python --het 3 --hatarido "2026-03-14"
-```
-
-### 2.4 Eredmények letöltése
+### 2.3 Eredmények letöltése
 
 GitHub Classroom → **Download Grades** → CSV fájl.
 
@@ -100,7 +93,6 @@ Az autograding automatikusan értékeli a beadásokat:
 | Heti | `discord-webhook.py szal` | Heti szál nyitása |
 | Heti | `discord-webhook.py bejelentes` | Bejelentés küldése |
 | Házi kiadásakor | `discord-webhook.py uzenet` | Invite link megosztása |
-| Határidő előtt | `discord-webhook.py emlekezteto` | Emlékeztető küldése |
 
 ---
 
