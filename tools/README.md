@@ -8,6 +8,8 @@ Automatizálási szkriptek a kurzusok adminisztrálásához.
 |---|---|
 | `github-setup.sh` | GitHub Classroom template repók létrehozása (Linux/macOS) |
 | `github-setup.ps1` | GitHub Classroom template repók létrehozása (Windows) |
+| `github-update.sh` | GitHub Classroom template repók frissítése (Linux/macOS) |
+| `github-update.ps1` | GitHub Classroom template repók frissítése (Windows) |
 | `discord-webhook.py` | Discord webhook üzenetküldő — bejelentések |
 
 ## GitHub Setup
@@ -28,6 +30,30 @@ Template repókat hoz létre egy GitHub Organization alatt a `github-classroom/`
 # Windows (PowerShell)
 .\github-setup.ps1 <ORGANIZATION> <TEMPLATE_MAPPA>
 .\github-setup.ps1 openschool-python-2026 ..\..\courses\python-alapok\github-classroom
+```
+
+## GitHub Update
+
+Meglévő template repókat frissíti a helyi fájlok alapján. A szkript klónozza a repót, lecseréli a tartalmát, és pusholja a változásokat. Csak akkor commitol, ha van tényleges változás.
+
+**`--classroom` mód:** A GitHub Classroom saját nevű template repókat hoz létre (pl. `python-alapok-git-alapok-het00-git-alapok`). A `--classroom` kapcsolóval a szkript a mappa neve alapján megkeresi a hozzá tartozó repót az Organization-ben.
+
+**Előfeltételek:**
+- [GitHub CLI (gh)](https://cli.github.com) telepítve és bejelentkezve
+- A repók már létre lettek hozva a `github-setup` szkripttel
+
+**Használat:**
+
+```bash
+# Linux/macOS
+./github-update.sh <ORGANIZATION> <TEMPLATE_MAPPA> [--classroom]
+./github-update.sh OpenSchool-HU ../courses/python-alapok/github-classroom
+./github-update.sh OpenSchool-HU ../courses/python-alapok/github-classroom --classroom
+
+# Windows (PowerShell)
+.\github-update.ps1 <ORGANIZATION> <TEMPLATE_MAPPA> [-Classroom]
+.\github-update.ps1 OpenSchool-HU ..\courses\python-alapok\github-classroom
+.\github-update.ps1 OpenSchool-HU ..\courses\python-alapok\github-classroom -Classroom
 ```
 
 ## Discord Webhook
